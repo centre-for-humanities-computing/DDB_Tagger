@@ -10,6 +10,7 @@ from ufal.udpipe import Model, Pipeline, ProcessingError
 
 # Main function
 def tagfiles() :
+
     """
     Tagging
     """
@@ -18,13 +19,13 @@ def tagfiles() :
     #Timer
     start = time.time()
 
+    # Iterate over all files in diretory, skipping noise like .DS_Store
     for filename in os.listdir("in/"):
         if not filename.startswith('.'):
-            """
-            Read in file
-            TODO: glob.
-            """
 
+            """
+            Read in file (TODO: glob).
+            """
             print(f"Working on {filename}...")
             infile = "in/" + filename
             outfile = "out/" + filename
@@ -33,9 +34,8 @@ def tagfiles() :
                 f.close()
 
             """
-            Tokenize and POS tag using stanfordNLP
+            Tokenize and POS tag using UDPipe
             """
-
             print("Tokenizing and POS tagging...")
             # create doc object
             data = pd.DataFrame([y.split("\t") for y in pipeline.process(text,error).split("\n")])\
@@ -48,7 +48,11 @@ def tagfiles() :
 
 
             """
-            UdPipe has separate POS tags for coordianting and subordinating conjunctions, particles, and auxiliaries.
+            UdPipe has separate POS tags for:
+                - coordinating and subordinating conjunctions,
+                - particles,
+                - and auxiliaries.
+
             This is absent in the DBO data, so we need to convert all UPOS tags.
             """
             print("Cleaning up POS tags...")
