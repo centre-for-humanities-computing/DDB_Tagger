@@ -38,7 +38,10 @@ def tagfiles() :
 
             print("Tokenizing and POS tagging...")
             # create doc object
-            data = pd.DataFrame([y.split("\t") for y in pipeline.process(text,error).split("\n")]).dropna().set_index(0).reset_index(drop=True)
+            data = pd.DataFrame([y.split("\t") for y in pipeline.process(text,error).split("\n")])\
+                    .dropna()\
+                    .set_index(0).\
+                    reset_index(drop=True)
             # create list of (word,pos) tuples from doc object
             tups = list(zip(data[1], data[3]))
             print("...done!")
