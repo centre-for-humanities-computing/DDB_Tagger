@@ -103,7 +103,6 @@ def tagfiles() :
 
 
 if __name__ == '__main__':
-
     if sys.version_info[:2] < (3,6):
         sys.exit("Oops! You need Python 3.6+!")
     """
