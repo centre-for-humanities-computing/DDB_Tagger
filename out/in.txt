@@ -1,0 +1,228 @@
+WORD	POS	DBO_TAG
+Euridice	NOUN	--
+,	PUNCT	--
+var	VERB	[('11|011|Måle, regne', 0.981), ('12|011|Betegnelse, ord', 0.974), ('08|001|Opholdssted, beboet sted', 0.972), ('12|012|Betydning', 0.959), ('07|001|Synlig', 0.949)]
+det	PRON	--
+Graciela	PROPN	--
+Oddones	PROPN	--
+umådeligt	ADV	--
+virkningsfulde	ADJ	[('05|037|Kraft', 0.941)]
+Messaggiera	PROPN	--
+,	PUNCT	--
+der	PRON	--
+blev	VERB	[('11|011|Måle, regne', 0.979), ('12|011|Betegnelse, ord', 0.971)]
+stående	VERB	[('02|007|Dyreliv', 0.974), ('05|046|Begivenhed', 0.93), ('06|011|Varig, bestandig', 0.919)]
+.	PUNCT	--
+Også	ADV	[('04|031|Forene, samle', 0.961), ('12|015|Tale', 0.956), ('12|037|Indvende, protestere', 0.936), ('10|029|Forundret', 0.929)]
+efter	ADP	[('06|015|Efter, senere', 0.951), ('03|034|Række', 0.944)]
+at	PART	[('12|025|Grammatik', 0.975)]
+hun	PRON	[('02|013|Menneske', 0.945)]
+-	PUNCT	--
+som	ADP	--
+et	DET	--
+symbol	NOUN	[('22|001|Religiøsitet, tro', 0.979), ('12|001|Tegn', 0.97), ('12|028|Retorik, billedsprog', 0.954)]
+på	ADP	[('09|067|Middel', 0.914)]
+den	DET	[('06|004|Klokkeslæt, dato', 0.953)]
+død	NOUN	[('05|043|Ødelæggelse', 0.957), ('10|025|Kedelig, kede sig', 0.954)]
+enhver	DET	--
+tragedies	VERB	--
+overbringere	NOUN	--
+af	ADP	[('05|042|Oprindelse', 0.921)]
+dårlige	ADJ	[('02|037|Sygdom', 0.986), ('04|004|Lille', 0.946)]
+budskaber	NOUN	[('22|001|Religiøsitet, tro', 0.978), ('12|006|Nyhed', 0.939)]
+er	VERB	[('11|011|Måle, regne', 0.981), ('12|011|Betegnelse, ord', 0.974), ('08|001|Opholdssted, beboet sted', 0.972), ('12|012|Betydning', 0.959), ('07|001|Synlig', 0.949)]
+hjemfalden	NOUN	--
+til	ADP	[('13|005|Geometri, figur', 0.973), ('08|023|Styre mod, retning', 0.949), ('09|014|Hensigt, formål', 0.937), ('05|018|Ligne', 0.924)]
+-	PUNCT	--
+lod	VERB	[('08|016|Skib', 0.986), ('19|015|Elektronik', 0.971), ('05|033|Årsag', 0.931)]
+sig	PRON	--
+falde	VERB	[('20|038|Værdipapirer', 0.979), ('08|042|Ned', 0.952), ('15|017|Undlade, nægte', 0.95), ('15|050|Nederlag', 0.938)]
+ned	ADV	[('08|042|Ned', 0.948), ('04|046|Mindre grad', 0.897)]
+og	KONJ	[('04|028|Tilføje', 0.932)]
+opsluge	VERB	[('15|042|Magtudøvelse', 0.976), ('07|003|Usynlig', 0.907)]
+af	ADP	[('05|042|Oprindelse', 0.921)]
+orkestergravens	NOUN	[('14|023|Teater, optræden', 0.982)]
+klangmættede	VERB	--
+mørke	NOUN	[('11|038|Glemme', 0.947), ('10|041|Bekymret', 0.943)]
+.	PUNCT	--
+Endnu	ADV	[('04|044|Høj grad', 0.932), ('06|014|Før, tidligere', 0.915)]
+mere	ADJ	[('04|020|Mange, meget', 0.961), ('04|028|Tilføje', 0.939), ('04|045|Højere grad', 0.938)]
+overskridende	NOUN	--
+var	VERB	[('11|011|Måle, regne', 0.981), ('12|011|Betegnelse, ord', 0.974), ('08|001|Opholdssted, beboet sted', 0.972), ('12|012|Betydning', 0.959), ('07|001|Synlig', 0.949)]
+sydafrikaneren	NOUN	[('18|003|Verdens lande og hovedstæder', 0.98)]
+William	PROPN	--
+Kentridges	PROPN	--
+dukketeaterudgave	NOUN	--
+af	ADP	[('05|042|Oprindelse', 0.921)]
+""""	PUNCT	--
+Il	PROPN	--
+ritorno	X	--
+d'	PROPN	--
+Ulisse	PROPN	--
+""""	PUNCT	--
+på	ADP	[('09|067|Middel', 0.914)]
+Lunateater	NOUN	--
+.	PUNCT	--
+Her	ADV	[('20|016|Forære, forsørge', 0.967), ('03|003|Tilstedeværelse', 0.888)]
+er	VERB	[('11|011|Måle, regne', 0.981), ('12|011|Betegnelse, ord', 0.974), ('08|001|Opholdssted, beboet sted', 0.972), ('12|012|Betydning', 0.959), ('07|001|Synlig', 0.949)]
+Odysseus	PROPN	--
+kommet	VERB	[('02|029|Sex og begær', 0.977), ('06|024|Nær fremtid', 0.831)]
+længere	ADV	--
+væk	ADV	[('20|008|Besidde, eje', 0.975), ('08|023|Styre mod, retning', 0.952), ('08|030|Fjerne sig', 0.944), ('11|008|Uopmærksom', 0.944), ('05|044|Ophør', 0.937), ('07|003|Usynlig', 0.921), ('04|026|Ingenting', 0.883)]
+hjemmefra	ADV	[('19|001|Bolig', 0.977)]
+end	ADP	--
+nogen	DET	--
+sinde	NOUN	[('02|044|Psykologi', 0.958), ('10|001|Bevidsthed, sjæleliv', 0.954)]
+.	PUNCT	--
+Vi	PRON	[('15|057|Aristokrati', 0.973)]
+er	VERB	[('11|011|Måle, regne', 0.981), ('12|011|Betegnelse, ord', 0.974), ('08|001|Opholdssted, beboet sted', 0.972), ('12|012|Betydning', 0.959), ('07|001|Synlig', 0.949)]
+i	ADP	[('19|008|Tøj, påklædning', 0.99), ('13|004|Matematik', 0.978), ('03|002|Beliggenhed, sted', 0.962), ('06|004|Klokkeslæt, dato', 0.96), ('03|003|Tilstedeværelse', 0.9)]
+et	DET	--
+medicinsk	ADJ	[('02|042|Medicin', 0.97)]
+auditorium	NOUN	[('11|034|Uddannelse', 0.976), ('07|038|Høre', 0.945)]
+i	ADP	[('19|008|Tøj, påklædning', 0.99), ('13|004|Matematik', 0.978), ('03|002|Beliggenhed, sted', 0.962), ('06|004|Klokkeslæt, dato', 0.96), ('03|003|Tilstedeværelse', 0.9)]
+Johannesburg	PROPN	--
+.	PUNCT	--
+På	ADP	[('09|067|Middel', 0.914)]
+briksen	NOUN	[('19|004|Møbler', 0.981), ('03|015|Understøtte', 0.93)]
+ligger	VERB	[('02|037|Sygdom', 0.988), ('08|016|Skib', 0.987), ('18|021|Militær, hærstyrker', 0.981), ('08|001|Opholdssted, beboet sted', 0.972), ('09|033|Ro, hvile', 0.963)]
+Odysseus	PROPN	--
+fjernt	ADV	--
+fra	ADP	[('03|002|Beliggenhed, sted', 0.959), ('09|026|Begynde', 0.956), ('05|042|Oprindelse', 0.928)]
+sit	DET	--
+Ithaca	PROPN	--
+,	PUNCT	--
+lidende	VERB	[('10|049|Samvittighed, skyldfølelse', 0.941)]
+,	PUNCT	--
+selvgranskende	VERB	--
+,	PUNCT	--
+drømmende	VERB	[('11|025|Indbildning, illusion', 0.959), ('02|020|Søvn', 0.943)]
+.	PUNCT	--
+Odysseen	NOUN	[('17|028|Rejser, turisme', 0.981)]
+forvandlet	VERB	[('22|009|Overtro, trolddom', 0.973)]
+til	ADP	[('13|005|Geometri, figur', 0.973), ('08|023|Styre mod, retning', 0.949), ('09|014|Hensigt, formål', 0.937), ('05|018|Ligne', 0.924)]
+en	DET	--
+rejse	NOUN	[('11|025|Indbildning, illusion', 0.957)]
+i	ADP	[('19|008|Tøj, påklædning', 0.99), ('13|004|Matematik', 0.978), ('03|002|Beliggenhed, sted', 0.962), ('06|004|Klokkeslæt, dato', 0.96), ('03|003|Tilstedeværelse', 0.9)]
+sind	NOUN	[('02|044|Psykologi', 0.958), ('10|001|Bevidsthed, sjæleliv', 0.954)]
+og	KONJ	[('04|028|Tilføje', 0.932)]
+drøm	NOUN	[('15|052|Vække beundring', 0.972), ('22|004|Overnaturlig', 0.972), ('11|025|Indbildning, illusion', 0.961)]
+.	PUNCT	--
+En	DET	--
+videoprojektion	NOUN	--
+skal	VERB	[('02|037|Sygdom', 0.987), ('12|011|Betegnelse, ord', 0.973), ('09|003|Være nødt til', 0.944), ('07|054|Løs', 0.931)]
+understrege	VERB	[('12|041|Skrift', 0.978), ('12|035|Argumentere, bevise', 0.961)]
+den	DET	[('06|004|Klokkeslæt, dato', 0.953)]
+menneskelige	ADJ	[('15|034|Tilgive', 0.903)]
+fysiologis	NOUN	[('02|025|Menneskets krop', 0.986), ('12|046|Bog, hæfte', 0.983), ('13|016|Biologi', 0.983)]
+fragilitet	NOUN	--
+og	KONJ	[('04|028|Tilføje', 0.932)]
+sårbarhed	NOUN	[('10|006|Følsomhed', 0.936)]
+,	PUNCT	--
+som	ADP	--
+en	DET	--
+form	NOUN	[('19|012|Værktøj, redskab', 0.989), ('02|026|Menneskets udseende', 0.979), ('02|007|Dyreliv', 0.977), ('12|011|Betegnelse, ord', 0.976), ('14|004|Stilarter', 0.968), ('11|004|Begreb, forestilling', 0.963), ('12|028|Retorik, billedsprog', 0.96), ('07|002|Fremtoning', 0.956), ('04|041|Slags', 0.949)]
+for	ADP	[('20|025|Køb, handel', 0.975), ('09|067|Middel', 0.922), ('03|025|Foran', 0.895)]
+landskabsmæssig	ADJ	--
+ramme	NOUN	[('14|009|Fotografi', 0.976), ('20|030|Vare', 0.975), ('19|005|Støtte', 0.963), ('05|014|Relation, sammenhæng', 0.932)]
+for	ADP	[('20|025|Køb, handel', 0.975), ('09|067|Middel', 0.922), ('03|025|Foran', 0.895)]
+handlingen	NOUN	[('14|023|Teater, optræden', 0.983), ('17|025|Fridag, mærkedag', 0.97)]
+,	PUNCT	--
+men	KONJ	[('12|037|Indvende, protestere', 0.926)]
+den	DET	[('06|004|Klokkeslæt, dato', 0.953)]
+flimrende	ADJ	--
+gengivelse	NOUN	[('12|048|Oversættelse, fremmedsprog', 0.956)]
+tangerer	VERB	[('13|005|Geometri, figur', 0.971), ('08|034|Mødes, støde sammen', 0.94)]
+i	ADP	[('19|008|Tøj, påklædning', 0.99), ('13|004|Matematik', 0.978), ('03|002|Beliggenhed, sted', 0.962), ('06|004|Klokkeslæt, dato', 0.96), ('03|003|Tilstedeværelse', 0.9)]
+længden	NOUN	[('13|007|Fysik', 0.978)]
+det	DET	--
+monotone	ADJ	[('07|035|Bilyd, mislyd', 0.966), ('12|032|Udtryksløs', 0.947)]
+og	KONJ	[('04|028|Tilføje', 0.932)]
+trivielle	ADJ	[('15|054|Social nedvurdering', 0.962)]
+.	PUNCT	--
+Mere	ADV	--
+fascinerende	ADV	--
+er	VERB	[('11|011|Måle, regne', 0.981), ('12|011|Betegnelse, ord', 0.974), ('08|001|Opholdssted, beboet sted', 0.972), ('12|012|Betydning', 0.959), ('07|001|Synlig', 0.949)]
+udtrykket	VERB	--
+hos	ADP	[('05|009|Egenskab', 0.948)]
+de	DET	--
+menneskestore	ADJ	--
+,	PUNCT	--
+håndholdte	ADJ	[('19|018|Computer', 0.982), ('09|052|Forbedre', 0.96)]
+dukker	NOUN	[('19|009|Tekstil, håndarbejde', 0.985), ('17|024|Leg og legetøj', 0.979), ('11|048|Ubegavet, dum', 0.97)]
+,	PUNCT	--
+som	PRON	--
+styres	VERB	[('15|042|Magtudøvelse', 0.979), ('18|010|Regere', 0.978), ('19|015|Elektronik', 0.974), ('18|018|Undertrykkelse, diktatur', 0.972), ('09|068|Benyttelse, forbrug', 0.952), ('08|023|Styre mod, retning', 0.951)]
+af	ADP	[('05|042|Oprindelse', 0.921)]
+dygtige	ADJ	[('09|047|Dygtighed, behændighed', 0.958), ('04|002|Stor', 0.952)]
+dukkeførere	NOUN	[('14|023|Teater, optræden', 0.982)]
+fra	ADP	[('03|002|Beliggenhed, sted', 0.959), ('09|026|Begynde', 0.956), ('05|042|Oprindelse', 0.928)]
+Handspring	PROPN	--
+Puppet	PROPN	--
+Company	PROPN	--
+.	PUNCT	--
+De	PRON	--
+gør	VERB	[('07|036|Dyrelyde', 0.968), ('02|033|Afføring, kropsvæsker', 0.966), ('15|039|Modstand', 0.965), ('15|016|Udføre, lystre', 0.95), ('09|020|Handle, agere', 0.943), ('05|040|Tilblivelse, opståen', 0.941)]
+deres	DET	--
+entré	NOUN	[('19|003|Bygningsdel', 0.986), ('14|023|Teater, optræden', 0.984), ('20|034|Privatøkonomi, forbrug', 0.972)]
+og	KONJ	[('04|028|Tilføje', 0.932)]
+sortie	NOUN	[('14|023|Teater, optræden', 0.983), ('09|030|Afbryde', 0.939)]
+ugenert	ADV	--
+sammen	ADV	[('21|013|Aftale, kontrakt', 0.966), ('08|034|Mødes, støde sammen', 0.945), ('06|016|Samtidig', 0.941), ('08|031|Nærme sig', 0.922)]
+med	ADP	[('13|004|Matematik', 0.978), ('15|009|Gruppe', 0.974), ('04|042|Tilhørende', 0.946), ('05|014|Relation, sammenhæng', 0.934), ('09|067|Middel', 0.927)]
+dukkefører	NOUN	[('14|023|Teater, optræden', 0.982)]
+og	KONJ	[('04|028|Tilføje', 0.932)]
+sangsolist	NOUN	[('14|013|Sang', 0.971)]
+,	PUNCT	--
+og	KONJ	[('04|028|Tilføje', 0.932)]
+man	PRON	--
+tager	VERB	[('19|016|Radio og tv', 0.986), ('21|025|Politi', 0.981), ('11|034|Uddannelse', 0.98), ('15|042|Magtudøvelse', 0.98), ('02|042|Medicin', 0.977), ('17|001|Sport', 0.976), ('21|022|Stjæle', 0.974), ('20|012|Tilegnelse, erhvervelse', 0.969), ('09|011|Valg', 0.957)]
+sig	PRON	--
+i	ADP	[('19|008|Tøj, påklædning', 0.99), ('13|004|Matematik', 0.978), ('03|002|Beliggenhed, sted', 0.962), ('06|004|Klokkeslæt, dato', 0.96), ('03|003|Tilstedeværelse', 0.9)]
+at	PART	[('12|025|Grammatik', 0.975)]
+se	VERB	[('12|046|Bog, hæfte', 0.985), ('17|026|Fornøjelser og fritidsaktiviteter', 0.985), ('15|027|Venskab', 0.962), ('11|017|Bemærke, opdage', 0.947), ('08|031|Nærme sig', 0.926), ('03|003|Tilstedeværelse', 0.903)]
+bort	ADV	[('20|008|Besidde, eje', 0.973), ('08|023|Styre mod, retning', 0.949), ('08|030|Fjerne sig', 0.939), ('05|044|Ophør', 0.932)]
+fra	ADP	[('03|002|Beliggenhed, sted', 0.959), ('09|026|Begynde', 0.956), ('05|042|Oprindelse', 0.928)]
+disse	DET	--
+udenværker	NOUN	[('09|042|Uvigtig', 0.908)]
+og	KONJ	[('04|028|Tilføje', 0.932)]
+lade	VERB	[('08|016|Skib', 0.987), ('19|021|Energiforsyning', 0.979), ('19|026|Skydevåben', 0.979), ('05|033|Årsag', 0.934)]
+sig	PRON	--
+opsluge	VERB	[('15|042|Magtudøvelse', 0.976), ('07|003|Usynlig', 0.907)]
+af	ADP	[('05|042|Oprindelse', 0.921)]
+det	DET	--
+gestiske	ADJ	--
+og	KONJ	[('04|028|Tilføje', 0.932)]
+musikalske	ADJ	[('14|011|Musik', 0.984), ('14|019|Velklang', 0.917)]
+udtryk	NOUN	[('13|004|Matematik', 0.978), ('14|001|Kunst, kulturliv', 0.977), ('12|011|Betegnelse, ord', 0.974), ('10|003|Følelse, sindsstemning', 0.961), ('12|028|Retorik, billedsprog', 0.957)]
+.	PUNCT	--
+Men	KONJ	[('12|037|Indvende, protestere', 0.926)]
+eksperimentet	NOUN	[('13|003|Eksperiment, forsøg', 0.95), ('10|039|Dumdristig', 0.939), ('09|025|Forsøge, prøve', 0.915)]
+var	VERB	[('11|011|Måle, regne', 0.981), ('12|011|Betegnelse, ord', 0.974), ('08|001|Opholdssted, beboet sted', 0.972), ('12|012|Betydning', 0.959), ('07|001|Synlig', 0.949)]
+næppe	ADV	[('12|023|Benægte', 0.915), ('04|046|Mindre grad', 0.897)]
+blevet	VERB	[('11|011|Måle, regne', 0.979), ('12|011|Betegnelse, ord', 0.971)]
+overbevisende	VERB	[('15|012|Foreslå, bede om', 0.955)]
+,	PUNCT	--
+og	KONJ	[('04|028|Tilføje', 0.932)]
+Monteverdi	PROPN	--
+havde	VERB	[('02|037|Sygdom', 0.988), ('12|011|Betegnelse, ord', 0.974), ('20|008|Besidde, eje', 0.973), ('06|004|Klokkeslæt, dato', 0.96), ('04|042|Tilhørende', 0.946)]
+aldrig	ADV	[('15|017|Undlade, nægte', 0.943)]
+overlevet	VERB	[('05|049|Modgang', 0.955), ('05|012|Fare', 0.944), ('06|011|Varig, bestandig', 0.919)]
+operationen	NOUN	[('02|040|Behandling, helbredelse', 0.984), ('20|003|Lønarbejde', 0.984), ('19|018|Computer', 0.983), ('13|004|Matematik', 0.977)]
+,	PUNCT	--
+hvis	KONJ	[('05|034|Betingelse, forudsætning', 0.894)]
+det	PRON	--
+ikke	ADV	--
+var	VERB	[('11|011|Måle, regne', 0.981), ('12|011|Betegnelse, ord', 0.974), ('08|001|Opholdssted, beboet sted', 0.972), ('12|012|Betydning', 0.959), ('07|001|Synlig', 0.949)]
+for	ADP	[('20|025|Køb, handel', 0.975), ('09|067|Middel', 0.922), ('03|025|Foran', 0.895)]
+den	DET	[('06|004|Klokkeslæt, dato', 0.953)]
+stærke	ADJ	[('16|009|Alkohol', 0.986), ('12|025|Grammatik', 0.982), ('15|055|Kendt, indflydelsesrig', 0.975), ('15|037|Fræk, uhøflig', 0.97), ('09|047|Dygtighed, behændighed', 0.968), ('09|037|Anstrengelse', 0.967), ('10|003|Følelse, sindsstemning', 0.967), ('08|019|Hurtig bevægelse', 0.966), ('04|002|Stor', 0.964), ('07|012|Optiske instrumenter', 0.96), ('02|019|Liv', 0.956), ('10|034|Trøst, lindring', 0.955), ('07|050|Hård', 0.953), ('16|015|Stærkt, salt, bittert', 0.953)]
+besætning	NOUN	[('19|009|Tekstil, håndarbejde', 0.986), ('02|010|Dyreavl', 0.981), ('08|017|Flyvemaskine', 0.978), ('15|009|Gruppe', 0.974)]
+på	ADP	[('09|067|Middel', 0.914)]
+vokalsiden	NOUN	--
+og	KONJ	[('04|028|Tilføje', 0.932)]
+her	ADV	[('20|016|Forære, forsørge', 0.967), ('03|003|Tilstedeværelse', 0.888)]
+mere	ADJ	[('04|020|Mange, meget', 0.961), ('04|028|Tilføje', 0.939), ('04|045|Højere grad', 0.938)]
+end	ADP	--
+nogen	PRON	[('04|017|Mængde, antal', 0.953), ('04|024|Lidt, få', 0.937)]
+anden	PRON	--
