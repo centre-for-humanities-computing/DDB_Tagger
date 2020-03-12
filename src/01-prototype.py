@@ -131,8 +131,4 @@ if __name__ == '__main__':
     print("\n ================== \n")
 
     # Run tagger
-    try:
-        tagfiles()
-    except SyntaxError:
-        ("Oops! Try using Python 3.6+!")
-
+    tagfiles()
