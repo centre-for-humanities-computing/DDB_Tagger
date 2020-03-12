@@ -69,8 +69,8 @@ for filename in os.listdir("in/"):
 
 
         """
-        stanfordNLP has separate POS tags for coordianting and subordinating conjunctions, particles, and auxiliaries.
-        This is absent in the DBO data, so we need to convert all the Stanford UPOS tags to a single KONJ representation
+        UDPipe has separate POS tags for coordianting and subordinating conjunctions, particles, and auxiliaries.
+        This is absent in the DBO data, so we need to convert all the UDPipe UPOS tags to a single KONJ representation
         """
         print("Cleaning up POS tags...")
         cleaned = []
