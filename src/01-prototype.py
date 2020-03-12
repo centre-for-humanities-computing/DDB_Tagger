@@ -3,6 +3,7 @@
 """
 Import libraries to be used.
 """
+import sys
 import time
 import os
 import pandas as pd
@@ -100,7 +101,11 @@ def tagfiles() :
     print(f"{tagged_no} files tagged in {round(time.time()-start, 2)} seconds!")
 
 
+
 if __name__ == '__main__':
+
+    if sys.version_info[:2] < (3,6):
+        sys.exit("Oops! You need Python 3.6+!")
     """
     Import super_dict
     """
@@ -126,5 +131,8 @@ if __name__ == '__main__':
     print("\n ================== \n")
 
     # Run tagger
-    tagfiles()
+    try:
+        tagfiles()
+    except SyntaxError:
+        ("Oops! Try using Python 3.6+!")
 
