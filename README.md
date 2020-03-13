@@ -44,6 +44,8 @@ The tagger therefore currently returns a tab seperated file, with the word, Part
 
 ## How to run the prototype
 
+(NB: For copyright reasons, the data from DBO cannot be included in this repository. These instructions assume you have the data, in a folder called _dict_)
+
 First, create a virtual environment to work in. Then you should activate the virtual environemnt and install the necessary requirements.
 
 For example:
