@@ -33,7 +33,7 @@ At present, the tagger uses the _[UDPipe](http://ufal.mff.cuni.cz/udpipe)_ frame
 
 For the current prototype, the tagger returns all possible semantic fields associated with a word. These are ranked relative to which sense is most 'central' for the word in question. To do this, I used a TFIDF vectorizer to find the 'keywords' for each category. 
 
-If a high TFIDF score indicates keyness, then it stands to reason that a low TFIDF score suggests the sense is more central to the semantics of that word. thus, I assume that the lowest TFIDF score for each category tends to correspond to the root or most basic sense of that word.
+If a high TFIDF score indicates keyness, then it stands to reason that a low TFIDF score suggests the sense is more central to the semantics of that word. Thus, I assume that the lowest TFIDF score for each category tends to correspond to the root or most basic sense of that word.
 
 The tagger therefore currently returns a tab seperated file, with the word, Part-of-Speech, and all possible DBO tags, ranked according the following formula:
 
