@@ -1,4 +1,4 @@
-## Tagginng Danish texts using _Den Danske Begrebsordbog_
+## Tagging Danish texts using _Den Danske Begrebsordbog_
 
 This repository contains code for a prototype semantic tagger for Danish language texts, using linguistic information taken from _[Den Danske Begrebsordbog](https://dsl.dk/projekter/den-danske-begrebsordbog)_.
 
