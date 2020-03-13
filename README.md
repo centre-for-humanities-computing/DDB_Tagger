@@ -87,8 +87,11 @@ For more information, please contact the author directly.
 ## Author
 
 Author:   [rdkm89](https://github.com/rdkm89) <br>
-Data:     March 2020
+Date:     March 2020
 
 ## Licence
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
+
+"Ordbogsdata fra Den Danske Begrebsordbog, © Det Danske Sprog- og Litteraturselskab
+2020".
