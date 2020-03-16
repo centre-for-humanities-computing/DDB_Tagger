@@ -1,5 +1,4 @@
-# DK_SemTag
-## Semantic annotation for Danish using _Den Danske Begrebsordbog_
+## Tagging Danish texts using _Den Danske Begrebsordbog_
 
 This repository contains code for a prototype semantic tagger for Danish language texts, using linguistic information taken from _[Den Danske Begrebsordbog](https://dsl.dk/projekter/den-danske-begrebsordbog)_.
 
@@ -18,7 +17,7 @@ Possible research questions this tool can be used to address:
 
 ### Annotation data
 
-Den Danske Begrebsordbog (_DBO_ for short) groups words together into 888 different semantic fields. These semantic fields have a unique identifier, while some words belong to multiple categories. For example, consider the following entry:
+Den Danske Begrebsordbog (_DBO_ for short) groups words together into 888 different semantic fields, an overview of which can be found _[here](https://www.dansksproghistorie.dk/wp-content/uploads/2016/08/19.-Den-Danske-Begrebsordbogs-kapitel-og-afsnitsoversigt.pdf)_. These semantic fields have a unique identifier, while some words belong to multiple categories. For example, consider the following entry:
 
 ```
     semantik | 11045505 | sb. | 12.012 Betydning | 13.18 Humaniora
@@ -34,7 +33,7 @@ At present, the tagger uses the _[UDPipe](http://ufal.mff.cuni.cz/udpipe)_ frame
 
 For the current prototype, the tagger returns all possible semantic fields associated with a word. These are ranked relative to which sense is most 'central' for the word in question. To do this, I used a TFIDF vectorizer to find the 'keywords' for each category. 
 
-If a high TFIDF score indicates keyness, then it stands to reason that a low TFIDF score suggests the sense is more central to the semantics of that word. thus, I assume that the lowest TFIDF score for each category tends to correspond to the root or most basic sense of that word.
+If a high TFIDF score indicates keyness, then it stands to reason that a low TFIDF score suggests the sense is more central to the semantics of that word. Thus, I assume that the lowest TFIDF score for each category tends to correspond to the root or most basic sense of that word.
 
 The tagger therefore currently returns a tab seperated file, with the word, Part-of-Speech, and all possible DBO tags, ranked according the following formula:
 
@@ -43,6 +42,8 @@ The tagger therefore currently returns a tab seperated file, with the word, Part
 ```
 
 ## How to run the prototype
+
+(NB: For copyright reasons, the data from DBO cannot be included in this repository. These instructions assume you have the data, in a folder called _dict_)
 
 First, create a virtual environment to work in. Then you should activate the virtual environemnt and install the necessary requirements.
 
@@ -76,15 +77,20 @@ A version of this software is currently being developed using Rust. This will cr
 
 ## Data and results
 
-Due to copyright issues, this repo contains _only_ the code used for the tagger, along with example input and output files. It does not contain any data related to the contents of DBO.
+_[Det Danske Sprog- og Litteraturselskab](https://dsl.dk/)_ have kindly allowed me access to the data behind _Den Danske Begrebsordbog_ for the purposes of developing this prototype.
+
+However, due to copyright issues, this repo contains _only_ the code used for the tagger, along with example input and output files. It does not contain any data related to the contents of DBO.
 
 For more information, please contact the author directly.
 
 ## Author
 
 Author:   [rdkm89](https://github.com/rdkm89) <br>
-Data:     March 2020
+Date:     March 2020
 
 ## Licence
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
+
+"Ordbogsdata fra Den Danske Begrebsordbog, © Det Danske Sprog- og Litteraturselskab
+2020".
