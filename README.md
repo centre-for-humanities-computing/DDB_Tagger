@@ -100,5 +100,6 @@ Date:     September 2020
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
 
-"Ordbogsdata fra Den Danske Begrebsordbog, © Det Danske Sprog- og Litteraturselskab
-2020".
+Danish DDT model: Straka, M. & Straková, J. (2019). 'Universal Dependencies 2.5 Models for UDPipe (2019-12-06)', LINDAT/CLARIAH-CZ digital library at the Institute of Formal and Applied Linguistics (ÚFAL), Faculty of Mathematics and Physics, Charles University, [http://hdl.handle.net/11234/1-3131](http://hdl.handle.net/11234/1-3131)) 
+
+"Ordbogsdata fra Den Danske Begrebsordbog, © Det Danske Sprog- og Litteraturselskab 2020".
