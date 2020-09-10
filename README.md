@@ -23,7 +23,7 @@ Den Danske Begrebsordbog (_DBO_ for short) groups words together into 888 differ
     semantik | 11045505 | sb. | 12.012 Betydning | 13.18 Humaniora
 ```
 
-Here we see a word (_semantik_); an ID number unique to this word; POS (_sb._). There are then two possible meanings for this word, taken from two different semantic fields - _12.012 Betydning_ or _13.18 Humaniora_.
+Here we see a word (_semantik_); an ID number unique to this word; POS (_sb._). There are then two possible meanings for this word, taken from two different semantic fields - _12.012 Betydning_ or _13.18 Humaniora_. The tagger has two levels of granularity: a top-level category; and a sub-category. For example, _12.012 Betydning_ has the top-level category 
 
 ### NLP Framework
 
@@ -31,14 +31,19 @@ At present, the tagger uses the _[UDPipe](http://ufal.mff.cuni.cz/udpipe)_ frame
 
 ### Polysemous words
 
-For the current prototype, the tagger returns all possible semantic fields associated with a word. These are ranked relative to which sense is most 'central' for the word in question. To do this, I used a TFIDF vectorizer to find the 'keywords' for each category. 
+Disambigutation of polysemous word senses is an open problem in NLP, particularly for low resource languages such as Danish. To try to address this, the tagger uses Jaccard Distance as a method of infering the most likely category. This distance is calculated using the set of all words in context window ±5 words, as well as their parts-of-speech. The smaller the Jaccard Distance between the set of context words and the individual sets of possible categories for a target word, the more likely it is to be the correct sense of that word.
 
-If a high TFIDF score indicates keyness, then it stands to reason that a low TFIDF score suggests the sense is more central to the semantics of that word. Thus, I assume that the lowest TFIDF score for each category tends to correspond to the root or most basic sense of that word.
+The disambiguatiom algorithm has the following steps:
 
-The tagger therefore currently returns a tab seperated file, with the word, Part-of-Speech, and all possible DBO tags, ranked according the following formula:
+  - For each word, take all the other words in a window of ±5 words, along with their POS tag.
+  - For the target word, find all possible categories from the DBO hierarchy.
+  - For each possible category, calculate the Jaccard Distance between the set of word_POS in the context and the set of all word_POS in the top level category for each tag.
+  - Return an ordered list of three most likely tags based on lowest Jaccard Distance.
+  
+The algorithm uses the top-level category for disambigutation, rather than the sub-category. This is based on a linguistic intuition regarding the distribution of semantic categories. For any given word, it is unlikely that there will be many context words which belong to the exact same sub-category. However, sub-categories which belong to the same top-level category share a degree of semantic similarity. 
 
-```
-  category_rank = 1 - TFIDF
+Take for example, _13.005 Geometri, figur_ and _13.004 Matematik_. Both are clearly related and in fact both belong to the top-level category _13 Videnskab_. It thus seems likely to assume that the presence of these tags would likely be accompanied by more words from _13 Videnskab_, rather than from the specfic sub-categories. This allows the algorithm to infer tags based on a looser set of semantic relations.
+  
 ```
 
 ## How to run the prototype
@@ -58,7 +63,7 @@ pip3 install -r requirements.txt
 Next, save any data you want to tag as plain text (.txt) files in the folder called _*in*_. Then simply run the script from the root directory:
 
 ```
-python3 src/01-prototype.py
+python3 src/DNO_tag.py
 ```
 
 If things are working correctly, you should get some feedback in the terminal about the progress of the script. 
@@ -70,9 +75,11 @@ And that's it! Your output files are saved in folder called _*out*_.
 
 At the moment, this requires Python ≥ 3.6 and only works on macOS and Linux. 
 
-From a linguistic perspective, the current tagger is quite unsophisticated. It does not perform any contextual word-sense disambiguation, instead returning categories based on a measure of centrality. Future iterations will explore more detailed disambiguation methods, in order to improve the accuracy.
+From a linguistic perspective, there needs to be some evaluation of the accuracy of the tagger. Further word sense disambiguation methods can be explored.
 
-A version of this software is currently being developed using Rust. This will cross compile to other operating systems and will require no runtime dependencies. Watch this space.
+From a technical perspective, the tagger should be refactored in order to be used as an module that can be imported into other programs.
+
+Lastly, version of this software is currently being developed using Rust. This will cross compile to other operating systems and will require no runtime dependencies. Watch this space.
 
 
 ## Data and results
@@ -86,7 +93,7 @@ For more information, please contact the author directly.
 ## Author
 
 Author:   [rdkm89](https://github.com/rdkm89) <br>
-Date:     March 2020
+Date:     September 2020
 
 ## Licence
 
