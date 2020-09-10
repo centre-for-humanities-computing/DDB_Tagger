@@ -29,7 +29,7 @@ Note that the DBO structure includes Danish part-of-speech tags (e.g. _sb._ or _
 
 ### NLP Framework
 
-At present, the tagger uses the _[UDPipe](http://ufal.mff.cuni.cz/udpipe)_ framework to annotate texts. There are a number of pragmatic reasons for choosing this framework over others (e.g. stanfordNLP, spaCy, OpenNLP on the JVM). Ultimately, UDPipe won out for the breadth of it's linguistic annotations, it's speed, and the fact that it ships with an easy-to-use REST server implementation (see _Issues and Further Work_ below).
+At present, the tagger uses the _[UDPipe](http://ufal.mff.cuni.cz/udpipe)_ framework to annotate texts. There are a number of pragmatic reasons for choosing this framework over others (e.g. Stanza, spaCy, OpenNLP). Ultimately, UDPipe won out for the breadth of its linguistic annotations, its speed, and the fact that it ships with an easy-to-use REST server implementation. This allows us to make a tool that can be easily shared without copyright issues and which can easily be incorporated into a GUI or browser interface. (see _Issues and Further Work_ below).
 
 ### Disambiguating Polysemous Words
 
@@ -41,7 +41,7 @@ The disambiguatiom algorithm has the following steps:
   - For the target word, find all possible categories from the DBO hierarchy.
   - For each possible category, calculate the Jaccard Distance between the set of word_POS in the context and the set of all word_POS in the top level category for each tag.
   - Return an ordered list of three most likely tags based on lowest Jaccard Distance.
-  
+
 The algorithm uses the top-level category for disambigutation, rather than the sub-category. This is based on a linguistic intuition regarding the distribution of semantic categories. For any given word, it is unlikely that there will be many context words which belong to the exact same sub-category. However, sub-categories which belong to the same top-level category share a degree of semantic similarity. 
 
 Take for example, _13.005 Geometri, figur_ and _13.004 Matematik_. Both are clearly related and in fact both belong to the top-level category _13 Videnskab_. It thus seems likely to assume that the presence of these tags would likely be accompanied by more words from _13 Videnskab_, rather than from the specfic sub-categories. This allows the algorithm to infer tags based on a looser set of semantic relations.
