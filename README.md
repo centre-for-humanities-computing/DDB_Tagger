@@ -15,7 +15,7 @@ Possible research questions this tool can be used to address:
 
 ## Key points
 
-### Annotation data
+### Annotation Data
 
 Den Danske Begrebsordbog (_DBO_ for short) groups words together into 888 different semantic fields, an overview of which can be found _[here](https://www.dansksproghistorie.dk/wp-content/uploads/2016/08/19.-Den-Danske-Begrebsordbogs-kapitel-og-afsnitsoversigt.pdf)_. These semantic fields have a unique identifier, while some words belong to multiple categories. For example, consider the following entry:
 
