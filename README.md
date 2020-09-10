@@ -31,7 +31,7 @@ Note that the DBO structure includes Danish part-of-speech tags (e.g. _sb._ or _
 
 At present, the tagger uses the _[UDPipe](http://ufal.mff.cuni.cz/udpipe)_ framework to annotate texts. There are a number of pragmatic reasons for choosing this framework over others (e.g. stanfordNLP, spaCy, OpenNLP on the JVM). Ultimately, UDPipe won out for the breadth of it's linguistic annotations, it's speed, and the fact that it ships with an easy-to-use REST server implementation (see _Issues and Further Work_ below).
 
-### Polysemous words
+### Disambiguating Polysemous Words
 
 Disambigutation of polysemous word senses is an open problem in NLP, particularly for low resource languages such as Danish. To try to address this, the tagger uses Jaccard Distance as a method of infering the most likely category. This distance is calculated using the set of all words in context window ±5 words, as well as their parts-of-speech. The smaller the Jaccard Distance between the set of context words and the individual sets of possible categories for a target word, the more likely it is to be the correct sense of that word.
 
