@@ -23,7 +23,7 @@ Den Danske Begrebsordbog (_DBO_ for short) groups words together into 888 differ
     semantik | 11045505 | sb. | 12.012 Betydning | 13.18 Humaniora
 ```
 
-Here we see a word (_semantik_); an ID number unique to this word (_11045505_); POS (_sb._). There are then two possible meanings for this word, taken from two different semantic fields - _12.012 Betydning_ or _13.18 Humaniora_. The tagger has two levels of granularity: a top-level category; and a sub-category. For example, _12.012 Betydning_ has the top-level category _12 Tegn, meddelelse, sprog_.
+Here we see a word (_semantik_); an ID number unique to this word (_11045505_); POS (_sb._). There are then two possible meanings for this word, taken from two different semantic fields - _12.012 Betydning_ or _13.18 Humaniora_. The tagger has two levels of granularity: a top-level category; and a sub-category. For example, the sub-category _12.012 Betydning_ has the top-level category _12 Tegn, meddelelse, sprog_.
 
 Note that the DBO structure includes Danish part-of-speech tags (e.g. _sb._ or _substantive_). As part of a preprocessing step, all of the POS tags in the DBO were converted to a Universal POS tagset ([link](https://universaldependencies.org/treebanks/da_ddt/index.html)).
 
