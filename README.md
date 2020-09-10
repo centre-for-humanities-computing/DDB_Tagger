@@ -2,7 +2,7 @@
 
 This repository contains code for a prototype semantic tagger for Danish language texts, using linguistic information taken from _[Den Danske Begrebsordbog](https://dsl.dk/projekter/den-danske-begrebsordbog)_.
 
-The goal of this project is to be able to annotate Danish texts in a way that is compuationally light, conceptually simple, and linguistically plausible. This will allow researchers in Arts, Humanities, and Social Science subjects to extract semantic information from their corpora of Danish texts.
+The goal of this project is to be able to annotate Danish texts in a way that is compuationally light, conceptually simple, and linguistically intutive. This will allow researchers in Arts, Humanities, and Social Science subjects to extract semantic information from their corpora of Danish texts.
 
 Possible research questions this tool can be used to address:
 
