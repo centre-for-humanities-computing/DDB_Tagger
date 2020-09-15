@@ -1,2 +1,0 @@
-ufal.udpipe==1.2.0.2
-pandas==1.0.1
