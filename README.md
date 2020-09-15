@@ -1,6 +1,6 @@
 ## Tagging Danish texts using _Den Danske Begrebsordbog_
 
-This repository contains code for a prototype semantic tagger for Danish language texts, using linguistic information taken from _[Den Danske Begrebsordbog](https://dsl.dk/projekter/den-danske-begrebsordbog)_.
+This repository contains code for a prototype semantic tagger for Danish language texts, using linguistic information taken from _[Den Danske Begrebsordbog](https://dsl.dk/projekter/den-danske-begrebsordbog)_ (DDB).
 
 The goal of this project is to be able to annotate Danish texts in a way that is compuationally light, conceptually simple, and linguistically intutive. This will allow researchers in Arts, Humanities, and Social Science subjects to extract semantic information from their corpora of Danish texts.
 
@@ -64,7 +64,7 @@ pip3 install -r requirements.txt
 Next, save any data you want to tag as plain text (.txt) files in the folder called _*in*_. Then simply run the script from the root directory:
 
 ```
-python3 src/DBO_tag.py
+python3 src/DDB_tagger.py
 ```
 
 If things are working correctly, you should get some feedback in the terminal about the progress of the script. 
