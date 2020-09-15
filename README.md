@@ -1,6 +1,6 @@
 ## Tagging Danish texts using _Den Danske Begrebsordbog_
 
-This repository contains code for a prototype semantic tagger for Danish language texts, using linguistic information taken from _[Den Danske Begrebsordbog](https://dsl.dk/projekter/den-danske-begrebsordbog)_ (DDB).
+This repository contains code for a prototype semantic tagger for Danish language texts, using linguistic information taken from _[Den Danske Begrebsordbog](https://dsl.dk/projekter/den-danske-begrebsordbog)_.
 
 The goal of this project is to be able to annotate Danish texts in a way that is compuationally light, conceptually simple, and linguistically intutive. This will allow researchers in Arts, Humanities, and Social Science subjects to extract semantic information from their corpora of Danish texts.
 
@@ -17,7 +17,7 @@ Possible research questions this tool can be used to address:
 
 ### Annotation Data
 
-Den Danske Begrebsordbog (_DBO_ for short) groups words together into 888 different semantic fields, an overview of which can be found _[here](https://www.dansksproghistorie.dk/wp-content/uploads/2016/08/19.-Den-Danske-Begrebsordbogs-kapitel-og-afsnitsoversigt.pdf)_. These semantic fields have a unique identifier, while some words belong to multiple categories. For example, consider the following entry:
+Den Danske Begrebsordbog (_DDB_ for short) groups words together into 888 different semantic fields, an overview of which can be found _[here](https://www.dansksproghistorie.dk/wp-content/uploads/2016/08/19.-Den-Danske-Begrebsordbogs-kapitel-og-afsnitsoversigt.pdf)_. These semantic fields have a unique identifier, while some words belong to multiple categories. For example, consider the following entry:
 
 ```
     semantik | 11045505 | sb. | 12.012 Betydning | 13.18 Humaniora
@@ -25,7 +25,7 @@ Den Danske Begrebsordbog (_DBO_ for short) groups words together into 888 differ
 
 Here we see a word (_semantik_); an ID number unique to this word (_11045505_); POS (_sb._). There are then two possible meanings for this word, taken from two different semantic fields - _12.012 Betydning_ or _13.18 Humaniora_. The tagger has two levels of granularity: a top-level category; and a sub-category. For example, the sub-category _12.012 Betydning_ has the top-level category _12 Tegn, meddelelse, sprog_.
 
-Note that the DBO structure includes Danish part-of-speech tags (e.g. _sb._ or _substantive_). As part of a preprocessing step, all of the POS tags in the DBO were converted to a Universal POS tagset ([link](https://universaldependencies.org/treebanks/da_ddt/index.html)).
+Note that DDB structure includes Danish part-of-speech tags (e.g. _sb._ or _substantive_). As part of a preprocessing step, all of the POS tags in DDB were converted to a Universal POS tagset ([link](https://universaldependencies.org/treebanks/da_ddt/index.html)).
 
 ### NLP Framework
 
@@ -87,7 +87,7 @@ Lastly, version of this software is currently being developed using Rust. This w
 
 _[Det Danske Sprog- og Litteraturselskab](https://dsl.dk/)_ have kindly allowed me access to the data behind _Den Danske Begrebsordbog_ for the purposes of developing this prototype.
 
-However, due to copyright issues, this repo contains _only_ the code used for the tagger, along with example input and output files. It does not contain any data related to the contents of DBO.
+However, due to copyright issues, this repo contains _only_ the code used for the tagger, along with example input and output files. It does not contain any data related to the contents of DDB.
 
 For more information, please contact the author directly.
 
