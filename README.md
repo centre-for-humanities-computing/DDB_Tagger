@@ -64,7 +64,7 @@ pip3 install -r requirements.txt
 Next, save any data you want to tag as plain text (.txt) files in the folder called _*in*_. Then simply run the script from the root directory:
 
 ```
-python3 src/DNO_tag.py
+python3 src/DBO_tag.py
 ```
 
 If things are working correctly, you should get some feedback in the terminal about the progress of the script. 
