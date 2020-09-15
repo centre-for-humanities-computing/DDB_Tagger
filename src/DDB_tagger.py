@@ -12,12 +12,12 @@ import multiprocessing as mp
 import pandas as pd
 from ufal.udpipe import Model, Pipeline, ProcessingError
 
-def jaccard_distance(target, DBO_category):
+def jaccard_distance(target, DDB_category):
     """
     Simple function for calculating Jaccard Distance
 
     s1: The set of all words+POS ±5 from target word
-    s2: The set of all words+POS from the top-level DBO category
+    s2: The set of all words+POS from the top-level DDB category
 
     JD = (s1 ∪ s2) - (s1 ∩ s2) / (s1 ∪ s2)
 
@@ -26,7 +26,7 @@ def jaccard_distance(target, DBO_category):
     """
 
     s1 = set(target)
-    s2 = set(DBO_category)
+    s2 = set(DDB_category)
     union = len(s1.union(s2))
     intersection = len(s1.intersection(s2))
     return (union-intersection) / union
@@ -34,11 +34,10 @@ def jaccard_distance(target, DBO_category):
 # Main function
 def tagfiles(filename) :
     """
-    Main function to tag texts with DBO categories
+    Main function to tag texts with DDB categories
     """
     # Create I/O names
     infile = "in/" + filename
-    outfile = "out/" + filename
 
     # Read in file (TODO: glob).
     with open(infile, 'r') as f:
@@ -61,7 +60,7 @@ def tagfiles(filename) :
         - particles,
         - and auxiliaries.
 
-    This is absent in the DBO data, so we need to convert all UPOS tags.
+    This is absent in the DDB data, so we need to convert all UPOS tags.
     """
     cleaned = []
     for idx,(k,v) in enumerate(tups):
@@ -86,7 +85,7 @@ def tagfiles(filename) :
     no_punc = [(idx,(word,pos)) for (idx,(word,pos)) in cleaned if pos!="PUNCT"]
     punc = [[idx,word,pos,"--"] for (idx,(word,pos)) in cleaned if pos=="PUNCT"]
 
-    # Empty list of DBO tagged text to go in
+    # Empty list of DDB tagged text to go in
     tagged = []
     for idx,tup in enumerate(no_punc):
         # For first five words
@@ -112,9 +111,9 @@ def tagfiles(filename) :
                     score = jaccard_distance(context,full_set)
                     scores.append((CAT, score))
                 top_results = sorted(scores, key=lambda tup: tup[1])[:3]
-                tagged.append((idx,word,pos,top_results))
+                tagged.append([idx,word,pos,top_results])
             else:
-                tagged.append((idx,word,pos,"--"))
+                tagged.append([idx,word,pos,"--"])
 
         # From sixth word to the fifth from the end; otherwise logic identical to above
         elif idx > 5 and idx <= (len(no_punc)-5):
@@ -139,9 +138,9 @@ def tagfiles(filename) :
                     score = jaccard_distance(context,full_set)
                     scores.append((CAT, score))
                 top_results = sorted(scores, key=lambda tup: tup[1])[:3]
-                tagged.append((idx,word,pos,top_results))
+                tagged.append([idx,word,pos,top_results])
             else:
-                tagged.append((idx,word,pos,"--"))
+                tagged.append([idx,word,pos,"--"])
 
         # Last five words to end of text; otherwise logic identical to above
         elif idx >= len(no_punc)-5:
@@ -166,20 +165,16 @@ def tagfiles(filename) :
                     score = jaccard_distance(context,full_set)
                     scores.append((CAT, score))
                 top_results = sorted(scores, key=lambda tup: tup[1])[:3]
-                tagged.append((idx,word,pos,top_results))
+                tagged.append([idx,word,pos,top_results])
             else:
-                tagged.append((idx,word,pos,"--"))
+                tagged.append([idx,word,pos,"--"])
 
     """
     Create DataFrame and save
     """
     # Create df with column names
-    df = pd.DataFrame(tagged)
-    df.columns = ['INDEX', 'WORD', 'POS', 'DBO_TAG']
-    # Joing DBO_TAG column as string for readability
-    df['DBO_TAG'] = [','.join(map(str, l)) for l in df['DBO_TAG']]
-    df['DBO_TAG'] = df['DBO_TAG'].replace('-,-' ,'--')
-
+    df = pd.DataFrame(tagged, columns=['INDEX', 'WORD', 'POS', 'DDB_TAG'])
+    
     """
     We need to update the indices on the removed punctuation, so that they fit into the new dataframe
     """
@@ -195,10 +190,25 @@ def tagfiles(filename) :
     # Sort values on INDEX ascending and POS descending; ensures punctuation comes in the right place
     df_with_punctuation = df_with_punctuation.sort_values(['INDEX','POS'], ascending=[True, False])\
                                              .reset_index(drop=True)
-    # Save to file
-    df_with_punctuation.to_csv(outfile, index=False, sep="\t", encoding="utf-8")
+    
+    # Split list of tags into separate columns; delete grouped column
+    df_with_punctuation[["DDB1", "DDB2", "DDB3"]] = pd.DataFrame(df_with_punctuation["DDB_TAG"].values.tolist())
+    del df_with_punctuation["DDB_TAG"]
+    
+    
+    # Replace NaN with empty string
+    output = df_with_punctuation.fillna("--")
+    output.to_csv("out/full_results-" + filename, index=False, sep="\t", encoding="utf-8")
+    # Save full results with Jaccard score to file
+    #output.to_csv(outfile, index=False, sep="\t", encoding="utf-8")
 
+    output["DDB1"] = output["DDB1"].str[0]
+    output["DDB2"] = output["DDB2"].str[0]
+    output["DDB3"] = output["DDB3"].str[0]
 
+    # Save full results with Jaccard score to file
+    output.to_csv("out/tags_only-" + filename, index=False, sep="\t", encoding="utf-8")
+    
 if __name__ == '__main__':
 
     # Must be python 3.6 or higher!
@@ -209,19 +219,19 @@ if __name__ == '__main__':
     """
     Import super_dict
 
-    This is the main source of DBO data for tagging. Dictionary structured the following way:
+    This is the main source of DDB data for tagging. Dictionary structured the following way:
 
  
-    { DBO Category 1: [list of words+POS in category],
-      DBO Category 2: [list of words+POS in category],
+    { DDB Category 1: [list of words+POS in category],
+      DDB Category 2: [list of words+POS in category],
       [...]
-      DBO Category 888: [list of words+POS in category]
+      DDB Category 888: [list of words+POS in category]
       }
 
-    For each word, the POS tag in the super_dict comes from the DBO itself.
+    For each word, the POS tag in the super_dict comes from the DDB itself.
 
     """
-    print("Loading DBO data...")
+    print("Loading DDB data...")
     # load tagging data
     super_dict = pickle.load(open("dict/dict.pkl", "rb"))
     print("...done!")
@@ -242,7 +252,7 @@ if __name__ == '__main__':
     print("...done!")
     print("\n ================== \n")
 
-    # Run tagger
+    # Run tagger for each file from "in/*.txt"
     texts = []
     for filename in os.listdir("in"):
         if filename.endswith(".txt"):

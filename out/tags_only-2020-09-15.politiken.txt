@@ -1,0 +1,342 @@
+INDEX	WORD	POS	DDB1	DDB2	DDB3
+0	Da	KONJ	11|013|Begrundelse	06|017|Straks	-
+1	demonstrationerne	NOUN	18|017|Protest, oprør	11|019|Mening, holdning	09|061|Hjælp
+2	mod	ADP	08|023|Styre mod, retning	05|024|Modsætning	15|039|Modstand
+3	politivold	NOUN	21|025|Politi	-	-
+4	og	KONJ	04|028|Tilføje	-	-
+5	racisme	NOUN	18|004|Ideologi, styreform	18|019|Ligestilling	-
+6	eksploderede	VERB	08|035|Sprede	05|038|Voldsom	13|007|Fysik
+7	overalt	ADV	08|035|Sprede	-	-
+8	i	ADP	06|004|Klokkeslæt, dato	13|004|Matematik	19|008|Tøj, påklædning
+9	USA	PROPN	-	-	-
+10	først	ADV	08|025|Gå foran	06|014|Før, tidligere	05|010|Væsentlig
+11	på	ADP	09|067|Middel	-	-
+12	sommeren	NOUN	10|020|Begejstring, glæde, lykke	01|006|Klart vejr, godt vejr	-
+13	,	XPUNCT	-	-	-
+13	greb	NOUN	09|022|Metode	20|008|Besidde, eje	17|018|Kampsport
+14	Donald	PROPN	-	-	-
+15	Trump	PROPN	-	-	-
+16	straks	ADV	09|036|Hast, hastværk	06|005|Tidligt tidspunkt	06|017|Straks
+17	chancen	NOUN	05|047|Skæbne, tilfælde	11|039|Forvente	-
+18	for	ADP	09|067|Middel	20|025|Køb, handel	03|025|Foran
+19	at	PART	12|025|Grammatik	-	-
+20	gøre	VERB	05|040|Tilblivelse, opståen	09|020|Handle, agere	15|016|Udføre, lystre
+21	præsidentvalget	NOUN	18|009|Valghandling	-	-
+22	til	ADP	05|018|Ligne	09|014|Hensigt, formål	13|005|Geometri, figur
+23	et	DET	-	-	-
+24	spørgsmål	NOUN	11|020|Skepsis, mistro	12|028|Retorik, billedsprog	-
+25	om	ADP	11|005|Tema	-	-
+26	lov	NOUN	13|002|Forskning, videnskab	22|010|Bøn, fromhed	21|017|Lov
+27	og	KONJ	04|028|Tilføje	-	-
+28	orden	NOUN	13|016|Biologi	22|014|Præst	15|010|Forening
+29	.	XPUNCT	-	-	-
+29	Siden	ADV	06|015|Efter, senere	06|023|Fremtid	-
+30	har	VERB	04|042|Tilhørende	06|004|Klokkeslæt, dato	20|008|Besidde, eje
+31	han	PRON	02|013|Menneske	-	-
+32	tordnet	VERB	05|038|Voldsom	08|019|Hurtig bevægelse	07|033|Knald
+33	mod	ADP	05|024|Modsætning	08|023|Styre mod, retning	03|007|Nær
+34	demokratiske	ADJ	18|005|Politiske holdninger	18|010|Regere	18|015|Demokrati
+35	borgmestre	NOUN	20|001|Stillingsbetegnelser	-	-
+36	i	ADP	03|002|Beliggenhed, sted	03|003|Tilstedeværelse	13|004|Matematik
+37	uroplagede	ADJ	-	-	-
+38	byer	NOUN	-	-	-
+39	som	ADP	-	-	-
+40	Chicago	PROPN	-	-	-
+41	,	XPUNCT	-	-	-
+41	Portland	PROPN	-	-	-
+42	og	KONJ	04|028|Tilføje	-	-
+43	Seattle	PROPN	-	-	-
+44	–	XPUNCT	-	-	-
+44	hvis	KONJ	05|034|Betingelse, forudsætning	-	-
+45	han	PRON	02|013|Menneske	-	-
+46	da	ADV	05|011|Omstændighed, forhold	12|037|Indvende, protestere	06|020|Fortid
+47	ikke	ADV	-	-	-
+48	bare	ADV	04|025|For lidt	04|034|En	09|049|Let, enkel
+49	har	VERB	04|042|Tilhørende	12|011|Betegnelse, ord	06|004|Klokkeslæt, dato
+50	tweetet	VERB	19|020|Internet	-	-
+51	ordene	NOUN	12|014|Sætning	22|013|Religionsudøvelse	-
+52	’LOV	NOUN	-	-	-
+53	OG	KONJ	04|028|Tilføje	-	-
+54	ORDEN’	NOUN	-	-	-
+55	med	ADP	04|042|Tilhørende	13|004|Matematik	15|009|Gruppe
+56	versaler	NOUN	-	-	-
+57	.	XPUNCT	-	-	-
+57	Desværre	ADV	11|043|Ærgrelse	15|025|Høflighed, hilsen	10|026|Utilfreds
+58	for	ADP	09|067|Middel	20|025|Køb, handel	03|025|Foran
+59	Trump	PROPN	-	-	-
+60	har	VERB	04|042|Tilhørende	20|008|Besidde, eje	02|037|Sygdom
+61	strategien	X	-	-	-
+62	ikke	ADV	-	-	-
+63	virket	VERB	11|002|Tanke, indskydelse	19|011|Teknik	-
+64	.	XPUNCT	-	-	-
+64	Hans	DET	-	-	-
+65	demokratiske	ADJ	18|005|Politiske holdninger	18|010|Regere	18|015|Demokrati
+66	modkandidat	NOUN	18|009|Valghandling	-	-
+67	Joe	PROPN	-	-	-
+68	Biden	PROPN	-	-	-
+69	fører	VERB	05|033|Årsag	08|006|Godstrafik, forsendelse	08|011|Vej, gade, plads
+70	stadig	ADV	06|019|Nutid	-	-
+71	solidt	ADV	-	-	-
+72	i	ADP	06|004|Klokkeslæt, dato	19|008|Tøj, påklædning	03|002|Beliggenhed, sted
+73	meningsmålingerne	NOUN	18|009|Valghandling	-	-
+74	.	XPUNCT	-	-	-
+74	Trumps	PROPN	-	-	-
+75	republikanske	ADJ	18|004|Ideologi, styreform	18|005|Politiske holdninger	-
+76	kernevælgere	NOUN	18|009|Valghandling	-	-
+77	har	VERB	04|042|Tilhørende	02|037|Sygdom	06|004|Klokkeslæt, dato
+78	godt	ADV	09|051|Kvalitet, perfekt	11|005|Tema	05|018|Ligne
+79	nok	ADV	15|025|Høflighed, hilsen	10|015|Velbehag, tilfredshed	-
+80	taget	VERB	11|034|Uddannelse	02|042|Medicin	15|042|Magtudøvelse
+81	imod	ADP	-	-	-
+82	lov	NOUN	13|002|Forskning, videnskab	22|010|Bøn, fromhed	21|017|Lov
+83	og	KONJ	04|028|Tilføje	-	-
+84	orden-budskabet	NOUN	-	-	-
+85	–	XPUNCT	-	-	-
+85	i	ADP	13|004|Matematik	03|002|Beliggenhed, sted	03|003|Tilstedeværelse
+86	en	DET	-	-	-
+87	grad	NOUN	04|002|Stor	13|004|Matematik	13|005|Geometri, figur
+88	,	XPUNCT	-	-	-
+88	så	KONJ	09|014|Hensigt, formål	11|012|Logisk tænkning	11|014|Konkludere
+89	hardcore	DET	-	-	-
+90	Trump-tilhængere	NOUN	-	-	-
+91	går	VERB	08|017|Flyvemaskine	14|010|Film og biograf	17|026|Fornøjelser og fritidsaktiviteter
+92	til	ADP	08|023|Styre mod, retning	05|018|Ligne	13|005|Geometri, figur
+93	modangreb	NOUN	12|020|Svar	-	-
+94	mod	ADP	08|023|Styre mod, retning	05|024|Modsætning	09|062|Ombytte
+95	demonstranter	NOUN	18|017|Protest, oprør	-	-
+96	i	ADP	03|002|Beliggenhed, sted	03|003|Tilstedeværelse	06|004|Klokkeslæt, dato
+97	gaderne	NOUN	08|011|Vej, gade, plads	-	-
+98	.	XPUNCT	-	-	-
+98	Men	KONJ	12|037|Indvende, protestere	-	-
+99	flest	ADJ	04|020|Mange, meget	11|009|Sammenligne	-
+100	amerikanere	NOUN	18|003|Verdens lande og hovedstæder	16|006|Mad og madretter	15|002|Fremmede, udlandet
+101	svarer	VERB	20|022|Betale tilbage	-	-
+102	rent	ADV	-	-	-
+103	faktisk	ADV	-	-	-
+104	i	ADP	03|002|Beliggenhed, sted	03|003|Tilstedeværelse	06|004|Klokkeslæt, dato
+105	undersøgelser	NOUN	13|003|Eksperiment, forsøg	18|014|Offentlig forvaltning, tilsyn	-
+106	,	XPUNCT	-	-	-
+106	at	PART	12|025|Grammatik	-	-
+107	de	PRON	-	-	-
+108	mener	VERB	11|019|Mening, holdning	11|026|Antagelse	09|014|Hensigt, formål
+109	,	XPUNCT	-	-	-
+109	Joe	PROPN	-	-	-
+110	Biden	PROPN	-	-	-
+111	er	VERB	11|011|Måle, regne	08|001|Opholdssted, beboet sted	12|011|Betegnelse, ord
+112	bedre	ADJ	11|009|Sammenligne	04|020|Mange, meget	09|047|Dygtighed, behændighed
+113	til	ADP	09|014|Hensigt, formål	13|005|Geometri, figur	08|023|Styre mod, retning
+114	at	PART	12|025|Grammatik	-	-
+115	skabe	VERB	11|018|Udtænke, opfinde	14|001|Kunst, kulturliv	05|001|Eksistens
+116	lov	NOUN	13|002|Forskning, videnskab	22|010|Bøn, fromhed	21|017|Lov
+117	og	KONJ	04|028|Tilføje	-	-
+118	orden	NOUN	13|016|Biologi	22|014|Præst	03|034|Række
+119	end	ADP	-	-	-
+120	Trump	PROPN	-	-	-
+121	.	XPUNCT	-	-	-
+121	I	ADP	13|004|Matematik	03|002|Beliggenhed, sted	03|003|Tilstedeværelse
+122	en	DET	-	-	-
+123	måling	NOUN	11|011|Måle, regne	-	-
+124	i	ADP	03|002|Beliggenhed, sted	03|003|Tilstedeværelse	06|004|Klokkeslæt, dato
+125	det	DET	-	-	-
+126	politiske	ADJ	18|004|Ideologi, styreform	18|010|Regere	-
+127	medie	NOUN	19|024|Råstoffer, materialer	09|067|Middel	22|009|Overtro, trolddom
+128	The	PROPN	-	-	-
+129	Hill	PROPN	-	-	-
+130	viser	VERB	18|006|International politik	03|017|Ydre, udvendig	19|026|Skydevåben
+131	54	NUM	-	-	-
+132	procent	NOUN	11|011|Måle, regne	13|004|Matematik	-
+133	af	ADP	05|042|Oprindelse	-	-
+134	vælgerne	NOUN	18|009|Valghandling	-	-
+135	for	ADP	09|067|Middel	03|025|Foran	20|025|Køb, handel
+136	eksempel	NOUN	12|034|Gøre forståelig, forklare	-	-
+137	mest	ADJ	04|045|Højere grad	11|009|Sammenligne	06|031|Ofte
+138	tillid	NOUN	15|027|Venskab	-	-
+139	til	ADP	09|014|Hensigt, formål	13|005|Geometri, figur	08|023|Styre mod, retning
+140	Biden	NOUN	-	-	-
+141	i	ADP	06|004|Klokkeslæt, dato	13|004|Matematik	03|002|Beliggenhed, sted
+142	spørgsmålet	NOUN	11|020|Skepsis, mistro	12|028|Retorik, billedsprog	-
+143	.	XPUNCT	-	-	-
+143	Joe	PROPN	-	-	-
+144	Biden	PROPN	-	-	-
+145	fører	VERB	08|006|Godstrafik, forsendelse	08|011|Vej, gade, plads	05|033|Årsag
+146	i	ADP	06|004|Klokkeslæt, dato	03|002|Beliggenhed, sted	03|003|Tilstedeværelse
+147	øjeblikket	NOUN	06|012|Kortvarig, forgængelig	-	-
+148	over	ADP	06|004|Klokkeslæt, dato	08|040|Hen over, overskride	15|058|Ledelse, chef
+149	Donald	PROPN	-	-	-
+150	Trump	PROPN	-	-	-
+151	med	ADP	04|042|Tilhørende	05|014|Relation, sammenhæng	13|004|Matematik
+152	cirka	ADV	-	-	-
+153	7	NUM	04|037|Fire osv.	-	-
+154	procentpoint	NOUN	04|033|Tal	-	-
+155	i	ADP	13|004|Matematik	06|004|Klokkeslæt, dato	19|008|Tøj, påklædning
+156	et	DET	-	-	-
+157	vægtet	ADJ	-	-	-
+158	gennemsnit	NOUN	13|006|Statistik	-	-
+159	af	ADP	05|042|Oprindelse	-	-
+160	de	DET	-	-	-
+161	nationale	ADJ	-	-	-
+162	meningsmålinger	NOUN	18|009|Valghandling	-	-
+163	,	XPUNCT	-	-	-
+163	udregnet	VERB	13|004|Matematik	11|012|Logisk tænkning	-
+164	af	ADP	05|042|Oprindelse	-	-
+165	det	DET	-	-	-
+166	statistiske	ADJ	13|006|Statistik	-	-
+167	medie	NOUN	09|067|Middel	19|024|Råstoffer, materialer	22|009|Overtro, trolddom
+168	Fivethirtyeight	PROPN	-	-	-
+169	.	XPUNCT	-	-	-
+169	Vis	KONJ	-	-	-
+170	mere	ADV	-	-	-
+171	På	ADP	09|067|Middel	-	-
+172	den	DET	06|004|Klokkeslæt, dato	-	-
+173	baggrund	NOUN	14|005|Tegning, maleri	05|042|Oprindelse	-
+174	er	VERB	11|011|Måle, regne	08|001|Opholdssted, beboet sted	07|001|Synlig
+175	det	PRON	-	-	-
+176	måske	ADV	11|020|Skepsis, mistro	11|021|Formodning, tro	-
+177	ikke	ADV	-	-	-
+178	så	ADV	11|014|Konkludere	11|042|Overraskelse	04|044|Høj grad
+179	underligt	ADJ	15|002|Fremmede, udlandet	-	-
+180	,	XPUNCT	-	-	-
+180	at	PART	12|025|Grammatik	-	-
+181	Trump-kampagnen	NOUN	-	-	-
+182	nu	ADV	09|036|Hast, hastværk	06|019|Nutid	-
+183	,	XPUNCT	-	-	-
+183	med	ADP	04|042|Tilhørende	09|067|Middel	05|014|Relation, sammenhæng
+184	små	ADV	-	-	-
+185	50	NUM	04|033|Tal	-	-
+186	dage	NOUN	11|011|Måle, regne	-	-
+187	til	ADP	08|023|Styre mod, retning	09|014|Hensigt, formål	13|005|Geometri, figur
+188	præsidentvalget	NOUN	18|009|Valghandling	-	-
+189	,	XPUNCT	-	-	-
+189	er	VERB	08|001|Opholdssted, beboet sted	11|011|Måle, regne	12|011|Betegnelse, ord
+190	i	ADP	13|004|Matematik	03|002|Beliggenhed, sted	03|003|Tilstedeværelse
+191	gang	NOUN	08|004|Bevægelse	08|011|Vej, gade, plads	08|020|Langsom bevægelse
+192	med	ADP	04|042|Tilhørende	09|067|Middel	13|004|Matematik
+193	at	PART	12|025|Grammatik	-	-
+194	skifte	VERB	17|028|Rejser, turisme	09|062|Ombytte	20|008|Besidde, eje
+195	hovedfokus	NOUN	-	-	-
+196	.	XPUNCT	-	-	-
+196	»Det	NOUN	-	-	-
+197	er	VERB	12|011|Betegnelse, ord	12|012|Betydning	07|001|Synlig
+198	et	DET	-	-	-
+199	fokus	NOUN	07|012|Optiske instrumenter	-	-
+200	på	ADP	09|067|Middel	-	-
+201	økonomien	NOUN	13|019|Samfundsvidenskab	18|002|Stat, nation	20|034|Privatøkonomi, forbrug
+202	som	ADP	-	-	-
+203	det	DET	-	-	-
+204	definerende	VERB	12|034|Gøre forståelig, forklare	-	-
+205	emne	NOUN	19|024|Råstoffer, materialer	-	-
+206	i	ADP	03|002|Beliggenhed, sted	03|003|Tilstedeværelse	19|008|Tøj, påklædning
+207	valgkampen«	NOUN	-	-	-
+208	,	XPUNCT	-	-	-
+208	siger	VERB	12|002|Fortælle	-	-
+209	en	DET	-	-	-
+210	medarbejder	NOUN	20|001|Stillingsbetegnelser	20|041|Virksomhed, ledelse	-
+211	fra	ADP	05|042|Oprindelse	09|026|Begynde	03|002|Beliggenhed, sted
+212	Trumps	PROPN	-	-	-
+213	valgkampagne	NOUN	18|009|Valghandling	-	-
+214	til	ADP	05|018|Ligne	09|014|Hensigt, formål	08|023|Styre mod, retning
+215	Fox	PROPN	-	-	-
+216	News	PROPN	-	-	-
+217	og	KONJ	04|028|Tilføje	-	-
+218	Reuters	PROPN	-	-	-
+219	.	XPUNCT	-	-	-
+219	Trump-lejren	NOUN	-	-	-
+220	har	VERB	04|042|Tilhørende	20|008|Besidde, eje	06|004|Klokkeslæt, dato
+221	derfor	ADV	11|014|Konkludere	-	-
+222	investeret	VERB	20|038|Værdipapirer	20|039|Økonomisk politik	-
+223	små	ADJ	04|004|Lille	04|007|Kort	04|013|Lav
+224	65	NUM	04|033|Tal	-	-
+225	millioner	NOUN	-	-	-
+226	kroner	NOUN	19|010|Pynt og smykker	20|024|Penge	14|007|Udsmykning
+227	ekstra	ADJ	-	-	-
+228	i	ADP	03|002|Beliggenhed, sted	03|003|Tilstedeværelse	06|004|Klokkeslæt, dato
+229	nye	ADJ	06|026|Ny	-	-
+230	amerikanske	ADJ	18|003|Verdens lande og hovedstæder	12|008|Sprog	-
+231	tv-reklamer	NOUN	20|043|Markedsføring	-	-
+232	,	XPUNCT	-	-	-
+232	som	PRON	-	-	-
+233	fra	ADP	03|002|Beliggenhed, sted	05|042|Oprindelse	09|026|Begynde
+234	i	ADP	03|002|Beliggenhed, sted	03|003|Tilstedeværelse	06|004|Klokkeslæt, dato
+235	dag	NOUN	11|011|Måle, regne	-	-
+236	tirsdag	NOUN	06|004|Klokkeslæt, dato	-	-
+237	skal	VERB	12|011|Betegnelse, ord	07|054|Løs	02|037|Sygdom
+238	hamre	VERB	05|038|Voldsom	07|034|Længerevarende og gentagne lyde	19|012|Værktøj, redskab
+239	budskabet	NOUN	12|006|Nyhed	22|001|Religiøsitet, tro	-
+240	fast	ADV	05|018|Ligne	-	-
+241	.	XPUNCT	-	-	-
+241	I	ADP	06|004|Klokkeslæt, dato	03|002|Beliggenhed, sted	03|003|Tilstedeværelse
+242	weekenden	NOUN	17|025|Fridag, mærkedag	-	-
+243	besøgte	VERB	17|026|Fornøjelser og fritidsaktiviteter	17|027|Selskabelighed, fest	-
+244	Trump	PROPN	-	-	-
+245	også	ADV	04|031|Forene, samle	12|015|Tale	12|037|Indvende, protestere
+246	Nevada	PROPN	-	-	-
+247	–	XPUNCT	-	-	-
+247	en	DET	-	-	-
+248	stat	NOUN	-	-	-
+249	,	XPUNCT	-	-	-
+249	der	PRON	-	-	-
+250	ikke	ADV	-	-	-
+251	har	VERB	20|008|Besidde, eje	12|011|Betegnelse, ord	06|004|Klokkeslæt, dato
+252	været	VERB	11|011|Måle, regne	08|001|Opholdssted, beboet sted	12|011|Betegnelse, ord
+253	et	DET	-	-	-
+254	brændpunkt	NOUN	18|020|Krig	03|027|Centrum	13|005|Geometri, figur
+255	for	ADP	03|025|Foran	20|025|Køb, handel	09|067|Middel
+256	raceuroligheder	NOUN	18|017|Protest, oprør	-	-
+257	eller	KONJ	-	-	-
+258	demonstrationer	NOUN	18|017|Protest, oprør	09|061|Hjælp	11|019|Mening, holdning
+259	,	XPUNCT	-	-	-
+259	men	KONJ	12|037|Indvende, protestere	-	-
+260	som	ADP	-	-	-
+261	til	ADP	08|023|Styre mod, retning	13|005|Geometri, figur	09|014|Hensigt, formål
+262	gengæld	NOUN	-	-	-
+263	er	VERB	08|001|Opholdssted, beboet sted	11|011|Måle, regne	12|011|Betegnelse, ord
+264	hårdest	ADV	-	-	-
+265	ramt	VERB	08|034|Mødes, støde sammen	19|026|Skydevåben	-
+266	i	ADP	13|004|Matematik	06|004|Klokkeslæt, dato	19|008|Tøj, påklædning
+267	hele	ADJ	06|004|Klokkeslæt, dato	13|004|Matematik	09|051|Kvalitet, perfekt
+268	USA	PROPN	-	-	-
+269	af	ADP	05|042|Oprindelse	-	-
+270	arbejdsløshed	NOUN	20|005|Arbejdsløshed	-	-
+271	på	ADP	09|067|Middel	-	-
+272	grund	NOUN	04|015|Lavvandet	03|015|Understøtte	14|005|Tegning, maleri
+273	af	ADP	05|042|Oprindelse	-	-
+274	coronakrisen	NOUN	-	-	-
+275	.	XPUNCT	-	-	-
+275	Her	ADV	03|003|Tilstedeværelse	20|016|Forære, forsørge	-
+276	slog	VERB	04|045|Højere grad	19|025|Simple våben	18|020|Krig
+277	Trump	PROPN	-	-	-
+278	på	ADP	09|067|Middel	-	-
+279	at	PART	12|025|Grammatik	-	-
+280	genrejse	VERB	19|002|Byggeri	09|052|Forbedre	-
+281	økonomien	NOUN	20|034|Privatøkonomi, forbrug	20|045|Overskud	18|002|Stat, nation
+282	.	XPUNCT	-	-	-
+282	»Jeg	PRON	-	-	-
+283	går	VERB	20|004|Fratrædelse	20|026|Salg, værdi	08|017|Flyvemaskine
+284	efter	ADP	03|034|Række	06|015|Efter, senere	-
+285	at	PART	12|025|Grammatik	-	-
+286	blive	VERB	12|011|Betegnelse, ord	11|011|Måle, regne	-
+287	genvalgt	ADJ	-	-	-
+288	for	ADP	03|025|Foran	09|067|Middel	20|025|Køb, handel
+289	at	PART	12|025|Grammatik	-	-
+290	for	ADP	09|067|Middel	03|025|Foran	20|025|Køb, handel
+291	at	PART	12|025|Grammatik	-	-
+292	genoprette	VERB	09|053|Reproducere	-	-
+293	den	DET	06|004|Klokkeslæt, dato	-	-
+294	fantastiske	ADJ	04|044|Høj grad	12|040|Overdrive	22|004|Overnaturlig
+295	velstand	NOUN	20|011|Fattigdom	-	-
+296	,	XPUNCT	-	-	-
+296	vi	PRON	15|057|Aristokrati	-	-
+297	har	VERB	04|042|Tilhørende	12|011|Betegnelse, ord	06|004|Klokkeslæt, dato
+298	oplevet«	NOUN	-	-	-
+299	,	XPUNCT	-	-	-
+299	sagde	VERB	12|002|Fortælle	-	-
+300	Trump	PROPN	-	-	-
+301	blandt	ADP	04|042|Tilhørende	08|039|Placere mellem	-
+302	andet	PRON	-	-	-
+303	ved	ADP	03|002|Beliggenhed, sted	03|007|Nær	-
+304	sit	DET	-	-	-
+305	vælgermøde	NOUN	18|009|Valghandling	-	-
+306	i	ADP	03|002|Beliggenhed, sted	03|003|Tilstedeværelse	06|004|Klokkeslæt, dato
+307	Las	PROPN	-	-	-
+308	Vegas	PROPN	-	-	-
+309	.	XPUNCT	-	-	-
