@@ -44,7 +44,6 @@ def jaccard_distance(context_tokens: list[str], category_tokens: list[str]):
         [float]: Value of jaccard distance
 
     Info:
-
         s1: The set of all words+POS ±5 from target word
         s2: The set of all words+POS from the top-level DDB category
 
@@ -197,7 +196,7 @@ class DDB_tagger:
         # Replace "-" with None
         output = output.fillna("-")
 
-        # If scores should not be in input
+        # If scores should not be in input only get the score
         if only_tagged_results == True:
             output["DDB1"] = output["DDB1"].str[0]
             output["DDB2"] = output["DDB2"].str[0]
@@ -251,7 +250,7 @@ class DDB_tagger:
 if __name__ == '__main__':
 
     # --- REQUIREMENT: PYTHON >= 3.6 ----
-    
+
     if sys.version_info[:2] < (3,6):
         sys.exit("[ERROR] Oops! You need Python 3.6+!")
     print("\n ================== \n")
