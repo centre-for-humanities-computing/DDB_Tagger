@@ -79,7 +79,7 @@ class DDB_tagger:
         # Load Danish language model
         if da_model == "spacy":
             import spacy
-            self.nlp = spacy.load("da_core_news_sm")
+            self.nlp = spacy.load("da_core_news_sm") # could be changed
 
         elif da_model == "dacy":
             import dacy
@@ -96,17 +96,19 @@ class DDB_tagger:
 
         # --- PREPARE TEXT ---     
 
+        # If input is file, load file
         if input_file == True:
             with open(input, 'r') as f:
                 text = f.read() 
                 f.close()
 
+        # If input is string, use it as text
         elif input_file == False:
             text = input
 
         # --- TOKENIZING AND POS TAGGING ---
 
-        # Tokenize and save with POS tags in tuple (nan POS tags?)
+        # Tokenize and save with POS tags in tuple (what happens with nan POS tags?)
         token_pos = pd.DataFrame([(token.text, token.pos_) for token in self.nlp(text)], columns = ["TOKEN", "POS"])
         # Remove rows with NAN
         token_pos.dropna(inplace=True) 
@@ -125,6 +127,7 @@ class DDB_tagger:
         tuples = token_pos.to_records(index=True)
         # Converting to a list of tuples with punctuation
         tuples_no_punc = [(original_idx, token, pos) for (original_idx, token, pos) in tuples if pos!="PUNCT"]
+        # Also saving dataframe with punctuation, to later concatenate again
         tuples_punc = [(original_idx, token, pos, "-") for (original_idx, token, pos) in tuples if pos=="PUNCT"]
 
         # --- TAGGING ---
@@ -158,19 +161,26 @@ class DDB_tagger:
             categories = [category for category, category_tokens in self.DDB_dict.items() if target in category_tokens]
             # sort? : keys.sort(key=lambda x: x[1], reverse=True)
             
-            # If token does not appear in any category, append -
+            # If token does not appear in any category, append "-""
             if len(categories) == 0:
                 tagged.append((original_idx, token, pos, "-"))
 
             # Otherwise calculate scores for category
             else: 
                 scores = []
+                # Iterate over possible top level categories
                 for cat in categories: 
+                    # Get the top level tag
                     top_level_tag = cat.split("|")[0] + "|"
+                    # Get all the tokens of the category
                     top_level_tokens = list(chain.from_iterable([category_tokens for category, category_tokens in self.DDB_dict.items() if top_level_tag in category]))
+                    # Calculate distance of context words and category tokens
                     score = jaccard_distance(context, top_level_tokens) 
+                    # Append tuple of category and score
                     scores.append((cat, score))
+                    # Sort by score
                     top_results = sorted(scores, key=lambda token: token[1])[:3]
+                # Append result for token to list of all tagged tokens
                 tagged.append([original_idx,token,pos,top_results])
 
         # --- PROCESS OUTPUT ---
@@ -236,12 +246,12 @@ class DDB_tagger:
         print("\n ================== \n")
 
 
-
 # --- RUN TAGGER FOR FILES IN DIRECTORY ---
 
 if __name__ == '__main__':
 
     # --- REQUIREMENT: PYTHON >= 3.6 ----
+    
     if sys.version_info[:2] < (3,6):
         sys.exit("[ERROR] Oops! You need Python 3.6+!")
     print("\n ================== \n")
