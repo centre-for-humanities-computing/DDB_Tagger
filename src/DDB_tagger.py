@@ -367,7 +367,6 @@ class DDB_tagger:
                 sub_tags_counts_ordered = sorted(sub_tags_counts, key=lambda x: x[1], reverse=True)
                 duplicates_disambiguated = [tag[0] for tag in sub_tags_counts_ordered]
 
-
                 # --- CATEGORY SIZE DISAMBIGUATION ---
 
             else:
