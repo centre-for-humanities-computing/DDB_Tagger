@@ -23,7 +23,7 @@ Both ways require that:
 
 # --- DEPENDENCIES ---
 
-import sys, argparse, glob
+import os, sys, argparse, glob
 from tqdm import tqdm
 import time
 import pickle
@@ -84,7 +84,7 @@ class DDB_tagger:
             import dacy
             self.nlp = dacy.load("medium") # could be changed
 
-    def tag_text(self, input: str, input_file: bool=False, only_tagged_results: bool=False):
+    def tag_text(self, input:str, input_file: bool=False, only_tagged_results: bool=False):
         """Processing and tagging a text using Den Danske Begrebsordbog.
 
         Args:
@@ -105,7 +105,7 @@ class DDB_tagger:
         elif input_file == False:
             text = input
 
-        # --- TOKENIZING AND POS TAGGING ---
+        # --- TOKENIZE AND POS TAGGING --- 
 
         # Tokenize and save with POS tags in tuple (what happens with nan POS tags?)
         token_pos = pd.DataFrame([(token.text, token.pos_) for token in self.nlp(text)], columns = ["TOKEN", "POS"])
@@ -122,78 +122,120 @@ class DDB_tagger:
 
         # Reset index to account for deleted SPACE tags
         token_pos = token_pos.reset_index(drop=True)
-        # Turning dataframe into tuples
-        tuples = token_pos.to_records(index=True)
-        # Converting to a list of tuples with punctuation
-        tuples_no_punc = [(original_idx, token, pos) for (original_idx, token, pos) in tuples if pos!="PUNCT"]
+        # Save index as column
+        token_pos.insert(loc=0, column='ORIGINAL_IDX', value=token_pos.index)
+        # Turning dataframe into dictionaries (with keys ORIGINAL_IDX, TOKEN, POS)
+        token_dicts = token_pos.to_dict("records")
+        # Converting to a list of dicts without punctuation
+        dicts_no_punc = [token_d for token_d in token_dicts if token_d["POS"] !="PUNCT"]
         # Also saving dataframe with punctuation, to later concatenate again
-        tuples_punc = [(original_idx, token, pos, "-") for (original_idx, token, pos) in tuples if pos=="PUNCT"]
-
-        # --- TAGGING ---
+        dicts_punc = [dict(token_d, **{'DDB_TAGS': "-", "DDB_TAGS_DISAMBIGUATED": "-"}) for token_d in token_dicts if token_d["POS"] == "PUNCT"]
+        
+        # --- INITIAL TAGGING ---
 
         tagged = []
-        for idx, (original_idx, token, pos) in enumerate(tuples_no_punc):
+        for idx, token_d in enumerate(dicts_no_punc):
 
-            # PREPARE WORD 
-            target = token.lower() + "_" + pos
-
-            # PREPARE CONTEXT 
-            # First 5 words
-            if idx <= 5:
-                pre_target = tuples_no_punc[:idx]
-                post_target = tuples_no_punc[idx+1:idx+6]
-
-            # Last 5 words
-            elif idx >= len(tuples_no_punc)-5:
-                pre_target = tuples_no_punc[idx-5:idx]
-                post_target = tuples_no_punc[idx:]
-
-            # All other words
-            else: 
-                pre_target = tuples_no_punc[idx-5:idx]
-                post_target = tuples_no_punc[idx+1:idx+6]
-
-            # Prepare context words with POS tags
-            context = [token.lower() + "_" + pos for (_, token, pos) in pre_target + post_target]
-
-            # FIND CATEGORIES CONTAINING THE TARGET
-            categories = [category for category, category_tokens in self.DDB_dict.items() if target in category_tokens]
-            # sort? : keys.sort(key=lambda x: x[1], reverse=True)
+            # Prepare target token
+            target = token_d["TOKEN"].lower() + "_" + token_d["POS"]
+            # Find DDB tags in which the target occurs
+            target_tags = [tag for tag, tag_tokens in self.DDB_dict.items() if target in tag_tokens]
             
-            # If token does not appear in any category, append "-""
-            if len(categories) == 0:
-                tagged.append((original_idx, token, pos, "-"))
+            # If token does not appear in any category, append "-"
+            if len(target_tags) == 0:
+                target_tagged_scores = "-"
 
-            # Otherwise calculate scores for category
+            # Otherwise calculate scores for categories
             else: 
-                scores = []
-                # Iterate over possible top level categories
-                for cat in categories: 
+                # Get the context tokens of the target
+                context_dicts = self.get_context(dicts_no_punc, idx)
+                context = [token_d["TOKEN"].lower() + "_" + token_d["POS"] for token_d in context_dicts]
+
+                # Calculate scores for possible categories based on context
+                target_tags_scores = []
+                for tag in target_tags: 
                     # Get the top level tag
-                    top_level_tag = cat.split("|")[0] + "|"
+                    top_level_tag = tag.split("|")[0] + "|"
                     # Get all the tokens of the category
-                    top_level_tokens = list(chain.from_iterable([category_tokens for category, category_tokens in self.DDB_dict.items() if top_level_tag in category]))
+                    top_level_tokens = list(chain.from_iterable([tag_tokens for tag, tag_tokens in self.DDB_dict.items() if top_level_tag in tag]))
                     # Calculate distance of context words and category tokens
                     score = jaccard_distance(context, top_level_tokens) 
                     # Append tuple of category and score
-                    scores.append((cat, score))
-                    # Sort by score
-                    top_results = sorted(scores, key=lambda token: token[1])[:3]
-                # Append result for token to list of all tagged tokens
-                tagged.append([original_idx,token,pos,top_results])
+                    target_tags_scores.append((tag, score))
+                    # Sort possibel tags by score
+                    target_tags_scores = sorted(target_tags_scores, key=lambda x: x[1])
 
-        # --- PROCESS OUTPUT ---
+            # Add results to dict 
+            target_tagged_dict = dict(token_d, **{'DDB_TAGS': target_tags_scores})
+            # Append result for token to list of all tagged tokens
+            tagged.append(target_tagged_dict)
 
-        # Put tagged punct and no punct into dataframes
-        df_tagged = pd.DataFrame(tagged, columns=['INDEX', 'WORD', 'POS', 'DDB_TAG'])
-        df_punc = pd.DataFrame(tuples_punc, columns = ['INDEX', 'WORD', 'POS', 'DDB_TAG'])
-        # Join punct and no punct dataframes
-        output = pd.concat([df_tagged, df_punc]).sort_values("INDEX").reset_index(drop=True)
-        # Split top three categories
-        output[["DDB1", "DDB2", "DDB3"]] = pd.DataFrame(output["DDB_TAG"].values.tolist())
-        # Drop DDB_TAG column
-        del output["DDB_TAG"]
-        # Replace "-" with None
+        # --- DISAMBIGUATION OF IDENTICAL SCORES ---
+
+        # Prepare file to save information about disambiguation
+        filepath = "out/disambiguation_info.txt"
+        if os.path.exists(filepath):
+            os.remove(filepath)
+
+        # Loop through tagged tokens
+        tagged_disambiguated = []
+        for idx, token_tagged_d in enumerate(tagged):
+            
+            # Get the possible tags for the given token
+            tags_scores = token_tagged_d["DDB_TAGS"]
+            # Get only the scores of the possible tags
+            scores = [ts[1] for ts in tags_scores if tags_scores != "-"]
+            # Get duplicate scores (if there are any in the first 4 scores)
+            duplicate_scores = list(set([s for s in scores[:4] if scores[:4].count(s) > 1]))
+
+            # If there are any duplicate scores
+            if len(duplicate_scores) >= 1:
+
+                # Get the idx and the tags of those with duplicate scores
+                duplicate_idxs = [tags_scores.index(ts) for ts in tags_scores if ts[1] == duplicate_scores[0]]
+                duplicate_tags_scores = [tags_scores[idx] for idx in duplicate_idxs]
+
+                # Get the dictionaries of the context tokens
+                context_tagged = self.get_context(tagged, idx)
+                # Get the tags of the context tokens (only if they should not be disambiguated themselves)
+                tags_context = []
+                for token in context_tagged:
+                    # Get the tags of the token
+                    tags_token = token["DDB_TAGS"]
+                    # Add the top1 tag, but only if it should not also be disambiguated
+                    if (len(tags_token) == 1 and tags_token != "-") or (len(tags_token) > 1 and tags_token[0][1] != tags_token[1][1]):
+                        # Add the tag of the first level tag to the tags_context list
+                        tags_context.append(token["DDB_TAGS"][0][0])
+
+                # Disambiguate the tags of the target based on the context (or size of the tag entry in DDB)
+                duplicates_disambiguated = self.disambiguate_duplicates(token_tagged_d, duplicate_tags_scores, tags_context, filepath)
+                # Fix order of the duplicates, together with the non-duplicates
+                tags_disambiguated = tags_scores.copy()
+                for idx, duplicate in enumerate(duplicates_disambiguated):
+                    new_idx = duplicate_idxs[idx]
+                    tags_disambiguated[new_idx] = duplicate
+            
+            # If no duplicates, the ordered is just the same as the original
+            else:
+                tags_disambiguated = tags_scores
+
+            # Save results (top 3 tags) in a copy of the dictionary, to prevent overwriting and append
+            token_disambiguated_d = token_tagged_d.copy()
+            token_disambiguated_d["DDB_TAGS"] = tags_scores[:3]
+            token_disambiguated_d["DDB_TAGS_DISAMBIGUATED"] = tags_disambiguated[:3]
+            tagged_disambiguated.append(token_disambiguated_d)
+
+        # --- PREPARE OUTPUT ---
+
+        # Put tagged punct and no punct into dataframes and join
+        column_names = ['ORIGINAL_IDX', 'TOKEN', 'POS', 'DDB_TAGS', 'DDB_TAGS_DISAMBIGUATED']
+        df_tagged = pd.DataFrame(tagged_disambiguated, columns=column_names) 
+        df_punc = pd.DataFrame(dicts_punc, columns=column_names)
+        output = pd.concat([df_tagged, df_punc]).sort_values("ORIGINAL_IDX").reset_index(drop=True)
+        
+        # Split top three categories, drops unnecessary rows and replace NAs
+        output[["DDB1", "DDB2", "DDB3"]] = pd.DataFrame(output["DDB_TAGS_DISAMBIGUATED"].values.tolist())
+        output = output.drop(["DDB_TAGS", "DDB_TAGS_DISAMBIGUATED"], axis=1)
         output = output.fillna("-")
 
         # If scores should not be in input only get the score
@@ -243,6 +285,97 @@ class DDB_tagger:
         # Print timings
         print(f"[INFO] {len(filenames)} files tagged in {round(time.time()-start, 2)} seconds!")
         print("\n ================== \n")
+
+    def get_context(self, input_list:list, target_idx:int):
+        """Helper function to get 5 entries before and after a target in list.
+
+        Args:
+            input_list (list): List of elements, from which to extract context of a target.
+            target_idx (int): Index of the target
+
+        Returns:
+            context (list): List of context entries from list
+        """
+
+        # For the first 5 words
+        if target_idx <= 5:
+            pre_target = input_list[:target_idx]
+            post_target = input_list[target_idx+1:target_idx+6]
+
+        # Last 5 words
+        elif target_idx >= len(input_list)-5:
+            pre_target = input_list[target_idx-5:target_idx]
+            post_target = input_list[target_idx:]
+
+        # All other words
+        else: 
+            pre_target = input_list[target_idx-5:target_idx]
+            post_target = input_list[target_idx+1:target_idx+6]
+
+        # Join context before and after
+        context = pre_target + post_target
+
+        return context
+    
+    def disambiguate_duplicates(self, token_tagged_d:dict, duplicate_tags_scores:list[tuple], tags_context:list[str], filepath:str):
+        """Helper function to disambiguate between tags with duplicate scores.
+
+        Args:
+            token_tagged_d (dict): dictionary of target token, for which scores are duplicate (only for info file)
+            duplicate_tags_scores (list[tuple]): list of tuples (tag, score) of tags with duplicate scores
+            tags_context (list[str]): list of str for the tags from the context
+            filepath (str): filepath to save disambiguation info
+
+        Returns:
+            duplicates_disambiguated (list[tuple]): list of tuples disambiguated by necessary sorting algorithm
+        """
+
+        # --- SAVE BASIC INFORMATION ---
+        
+        f = open(filepath, "a")
+        f.write("\n----------------------------------------------\n")
+        f.write(f"TARGET INFO: {token_tagged_d['ORIGINAL_IDX'], token_tagged_d['TOKEN']}\n")
+        f.write(f"TARGET ALL TAGS: {token_tagged_d['DDB_TAGS']}\n")
+        f.write(f"TARGET DUPLICATE TAGS: {duplicate_tags_scores}\n")
+        f.write(f"TAGS CONTEXT: {tags_context}\n")
+            
+        # --- HIGH LEVEL DISAMBIGUATION ---
+
+        # Get high level tags of the context
+        top_tags_context = [tag.split("|")[0] + "|" for tag in tags_context]
+
+        # Count how many context words have each of the possible tags
+        top_tags_counts = [(tag, top_tags_context.count(tag[0].split("|")[0] + "|")) for tag in duplicate_tags_scores]
+        top_counts = [tag_count[1] for tag_count in top_tags_counts]
+        f.write(f"TOP LEVEL TAG COUNTS: {top_tags_counts}\n")
+        
+        # If that was successful in disambiguating
+        if len(top_counts) == len(set(top_counts)): 
+            top_tags_counts_ordered = sorted(top_tags_counts, key=lambda x: x[1], reverse=True)
+            duplicates_disambiguated = [tag[0] for tag in top_tags_counts_ordered]
+
+        # --- LOW LEVEL DISAMBIGUATION ---
+        
+        else: 
+            # Count how many context words have each of the possible tags
+            sub_tags_counts = [(tag, tags_context.count(tag[0])) for tag in duplicate_tags_scores]
+            sub_counts = [tag_count[1] for tag_count in sub_tags_counts]
+            f.write(f"SUB LEVEL TAGS COUNTS: {sub_counts}\n")
+            
+            # If that was successful in disambiguating
+            if len(sub_counts) == len(set(sub_counts)):
+                sub_tags_counts_ordered = sorted(sub_tags_counts, key=lambda x: x[1], reverse=True)
+                duplicates_disambiguated = [tag[0] for tag in sub_tags_counts_ordered]
+
+
+        # --- CATEGORY SIZE DISAMBIGUATION ---
+
+            else:
+                # Return sorted by size of low level category
+                f.write(f"TAG SIZE DISAMBIGUATION: {[(x, len(self.DDB_dict[x[0]])) for x in duplicate_tags_scores]}\n")
+                duplicates_disambiguated = sorted(duplicate_tags_scores, key=lambda x: len(self.DDB_dict[x[0]]), reverse=True)
+
+        return duplicates_disambiguated
 
 
 # --- RUN TAGGER FOR FILES IN DIRECTORY ---

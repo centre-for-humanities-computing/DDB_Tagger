@@ -1,29 +1,29 @@
-INDEX	WORD	POS	DDB1	DDB2	DDB3
+ORIGINAL_IDX	TOKEN	POS	DDB1	DDB2	DDB3
 0	Da	KONJ	('11|013|Begrundelse', 0.9999725591350639)	('06|017|Straks', 1.0)	-
 1	demonstrationerne	NOUN	('18|017|Protest, oprør', 0.9999722553616514)	('11|019|Mening, holdning', 0.9999725598880443)	('09|061|Hjælp', 0.99997933500031)
 2	mod	ADP	('08|023|Styre mod, retning', 0.999949847033452)	('05|024|Modsætning', 0.9999509395084138)	('15|039|Modstand', 0.9999791818465702)
 3	politivold	NOUN	('21|025|Politi', 1.0)	-	-
 4	og	KONJ	('04|028|Tilføje', 0.9999154155212518)	-	-
-5	racisme	NOUN	('18|004|Ideologi, styreform', 0.9999722584403695)	('18|019|Ligestilling', 0.9999722584403695)	-
+5	racisme	NOUN	('18|019|Ligestilling', 0.9999722584403695)	('18|004|Ideologi, styreform', 0.9999722584403695)	-
 6	eksploderede	VERB	('08|035|Sprede', 0.999899696582161)	('05|038|Voldsom', 0.9999018886436105)	('13|007|Fysik', 0.9999715456407922)
 7	overalt	ADV	('08|035|Sprede', 0.999899696582161)	-	-
 8	i	ADP	('06|004|Klokkeslæt, dato', 0.999933728751781)	('13|004|Matematik', 0.9999430896622371)	('19|008|Tøj, påklædning', 0.9999712660191943)
-9	USA	PROPN	-	-	-
+9	USA	PROPN	('06|004|Klokkeslæt, dato', 0.999933728751781)	('13|004|Matematik', 0.9999430896622371)	('19|008|Tøj, påklædning', 0.9999712660191943)
 10	først	ADV	('08|025|Gå foran', 0.999899696582161)	('06|014|Før, tidligere', 0.999933728751781)	('05|010|Væsentlig', 0.9999509467281468)
 11	på	ADP	('09|067|Middel', 0.9999380075630773)	-	-
 12	sommeren	NOUN	('10|020|Begejstring, glæde, lykke', 0.9999706063901708)	('01|006|Klart vejr, godt vejr', 1.0)	-
 13	,	PUNCT	-	-	-
 14	greb	NOUN	('09|022|Metode', 0.9999173417093734)	('20|008|Besidde, eje', 0.9999715472600011)	('17|018|Kampsport', 0.9999740663900415)
-15	Donald	PROPN	-	-	-
-16	Trump	PROPN	-	-	-
+15	Donald	PROPN	('09|022|Metode', 0.9999173417093734)	('20|008|Besidde, eje', 0.9999715472600011)	('17|018|Kampsport', 0.9999740663900415)
+16	Trump	PROPN	('09|022|Metode', 0.9999173417093734)	('20|008|Besidde, eje', 0.9999715472600011)	('17|018|Kampsport', 0.9999740663900415)
 17	straks	ADV	('09|036|Hast, hastværk', 0.9998966750015499)	('06|005|Tidligt tidspunkt', 0.9999668654738237)	('06|017|Straks', 0.9999668654738237)
 18	chancen	NOUN	('05|047|Skæbne, tilfælde', 0.9998528257456829)	('11|039|Forvente', 1.0)	-
 19	for	ADP	('09|067|Middel', 0.9998966750015499)	('20|025|Køb, handel', 0.9999715472600011)	('03|025|Foran', 1.0)
-20	at	KONJ	-	-	-
+20	at	KONJ	('09|067|Middel', 0.9998966750015499)	('20|025|Køb, handel', 0.9999715472600011)	('03|025|Foran', 1.0)
 21	gøre	VERB	('05|040|Tilblivelse, opståen', 0.9998037580336555)	('09|020|Handle, agere', 0.9999173417093734)	('02|033|Afføring, kropsvæsker', 1.0)
 22	præsidentvalget	NOUN	('18|009|Valghandling', 0.9999722584403695)	-	-
 23	til	ADP	('05|018|Ligne', 0.9998528257456829)	('09|014|Hensigt, formål', 0.9999380075630773)	('13|005|Geometri, figur', 0.9999715456407922)
-24	et	DET	-	-	-
+24	et	DET	('05|018|Ligne', 0.9998528257456829)	('09|014|Hensigt, formål', 0.9999380075630773)	('13|005|Geometri, figur', 0.9999715456407922)
 25	spørgsmål	NOUN	('11|020|Skepsis, mistro', 0.9999725628995528)	('12|028|Retorik, billedsprog', 1.0)	-
 26	om	ADP	('11|005|Tema', 0.9999451242934753)	-	-
 27	lov	NOUN	('13|002|Forskning, videnskab', 0.9999146320641967)	('22|010|Bøn, fromhed', 0.999948809828513)	('21|017|Lov', 0.9999648691375373)
@@ -38,69 +38,69 @@ INDEX	WORD	POS	DDB1	DDB2	DDB3
 36	demokratiske	ADJ	('18|005|Politiske holdninger', 1.0)	('18|010|Regere', 1.0)	('18|015|Demokrati', 1.0)
 37	borgmestre	NOUN	('20|001|Stillingsbetegnelser', 0.9999857738323873)	-	-
 38	i	ADP	('03|002|Beliggenhed, sted', 0.9999629066360028)	('03|003|Tilstedeværelse', 0.9999629066360028)	('13|004|Matematik', 0.9999715456407922)
-39	uroplagede	VERB	-	-	-
-40	byer	NOUN	-	-	-
-41	som	ADP	-	-	-
-42	Chicago	NOUN	-	-	-
+39	uroplagede	VERB	('03|002|Beliggenhed, sted', 0.9999629066360028)	('03|003|Tilstedeværelse', 0.9999629066360028)	('13|004|Matematik', 0.9999715456407922)
+40	byer	NOUN	('03|002|Beliggenhed, sted', 0.9999629066360028)	('03|003|Tilstedeværelse', 0.9999629066360028)	('13|004|Matematik', 0.9999715456407922)
+41	som	ADP	('03|002|Beliggenhed, sted', 0.9999629066360028)	('03|003|Tilstedeværelse', 0.9999629066360028)	('13|004|Matematik', 0.9999715456407922)
+42	Chicago	NOUN	('03|002|Beliggenhed, sted', 0.9999629066360028)	('03|003|Tilstedeværelse', 0.9999629066360028)	('13|004|Matematik', 0.9999715456407922)
 43	,	PUNCT	-	-	-
-44	Portland	PROPN	-	-	-
+44	Portland	PROPN	('03|002|Beliggenhed, sted', 0.9999629066360028)	('03|003|Tilstedeværelse', 0.9999629066360028)	('13|004|Matematik', 0.9999715456407922)
 45	og	KONJ	('04|028|Tilføje', 1.0)	-	-
-46	Seattle	PROPN	-	-	-
-47	–	PROPN	-	-	-
+46	Seattle	PROPN	('04|028|Tilføje', 1.0)	-	-
+47	–	PROPN	('04|028|Tilføje', 1.0)	-	-
 48	hvis	KONJ	('05|034|Betingelse, forudsætning', 0.9999509467281468)	-	-
 49	han	PRON	('02|013|Menneske', 0.9999859345110836)	-	-
 50	da	ADV	('05|011|Omstændighed, forhold', 0.9999509467281468)	('12|037|Indvende, protestere', 0.9999528290761575)	('06|020|Fortid', 0.9999668654738237)
-51	ikke	ADV	-	-	-
-52	bare	ADV	('04|025|For lidt', 0.9999577113375904)	('04|034|En', 0.9999577113375904)	('09|049|Let, enkel', 1.0)
+51	ikke	ADV	('05|011|Omstændighed, forhold', 0.9999509467281468)	('12|037|Indvende, protestere', 0.9999528290761575)	('06|020|Fortid', 0.9999668654738237)
+52	bare	ADV	('04|034|En', 0.9999577113375904)	('04|025|For lidt', 0.9999577113375904)	('09|049|Let, enkel', 1.0)
 53	har	VERB	('04|042|Tilhørende', 0.9999154190983676)	('12|011|Betegnelse, ord', 0.9999528290761575)	('20|008|Besidde, eje', 0.9999573202828242)
 54	tweetet	VERB	('19|020|Internet', 0.9999856332160046)	-	-
 55	ordene	NOUN	('22|013|Religionsudøvelse', 0.999948809828513)	('12|014|Sætning', 0.9999528290761575)	-
-56	’	PROPN	-	-	-
+56	’	PROPN	('22|013|Religionsudøvelse', 0.999948809828513)	('12|014|Sætning', 0.9999528290761575)	-
 57	LOV	NOUN	('13|002|Forskning, videnskab', 0.9999430896622371)	('22|010|Bøn, fromhed', 0.999948809828513)	('21|017|Lov', 1.0)
 58	OG	KONJ	('04|028|Tilføje', 0.9999154190983676)	-	-
-59	ORDEN	PROPN	-	-	-
-60	’	VERB	-	-	-
+59	ORDEN	PROPN	('04|028|Tilføje', 0.9999154190983676)	-	-
+60	’	VERB	('04|028|Tilføje', 0.9999154190983676)	-	-
 61	med	ADP	('04|042|Tilhørende', 0.9999154190983676)	('13|004|Matematik', 0.9999715456407922)	('15|009|Gruppe', 0.9999791831466756)
-62	versaler	NOUN	-	-	-
+62	versaler	NOUN	('04|042|Tilhørende', 0.9999154190983676)	('13|004|Matematik', 0.9999715456407922)	('15|009|Gruppe', 0.9999791831466756)
 63	.	PUNCT	-	-	-
 64	Desværre	ADV	('15|025|Høflighed, hilsen', 0.9999583654266503)	('11|043|Ærgrelse', 0.9999725628995528)	('10|026|Utilfreds', 1.0)
 65	for	ADP	('09|067|Middel', 0.9999586725627144)	('20|025|Køb, handel', 0.9999715472600011)	('03|025|Foran', 1.0)
-66	Trump	PROPN	-	-	-
+66	Trump	PROPN	('09|067|Middel', 0.9999586725627144)	('20|025|Køb, handel', 0.9999715472600011)	('03|025|Foran', 1.0)
 67	har	VERB	('04|042|Tilhørende', 0.9999577113375904)	('20|008|Besidde, eje', 0.9999715472600011)	('02|037|Sygdom', 0.9999859345110836)
-68	strategien	NOUN	('18|020|Krig', 0.9999445153415081)	('09|015|Plan', 0.9999586725627144)	('09|022|Metode', 0.9999586725627144)
-69	ikke	ADV	-	-	-
+68	strategien	NOUN	('18|020|Krig', 0.9999445153415081)	('09|022|Metode', 0.9999586725627144)	('09|015|Plan', 0.9999586725627144)
+69	ikke	ADV	('18|020|Krig', 0.9999445153415081)	('09|022|Metode', 0.9999586725627144)	('09|015|Plan', 0.9999586725627144)
 70	virket	VERB	('11|002|Tanke, indskydelse', 0.9999725628995528)	('19|011|Teknik', 1.0)	-
 71	.	PUNCT	-	-	-
-72	Hans	DET	-	-	-
+72	Hans	DET	('11|002|Tanke, indskydelse', 0.9999725628995528)	('19|011|Teknik', 1.0)	-
 73	demokratiske	ADJ	('18|005|Politiske holdninger', 0.9999445153415081)	('18|010|Regere', 0.9999445153415081)	('18|015|Demokrati', 0.9999445153415081)
 74	modkandidat	NOUN	('18|009|Valghandling', 0.9999445153415081)	-	-
-75	Joe	PROPN	-	-	-
-76	Biden	PROPN	-	-	-
-77	fører	VERB	('05|033|Årsag', 0.9999509467281468)	('08|006|Godstrafik, forsendelse', 0.9999749260317938)	('08|011|Vej, gade, plads', 0.9999749260317938)
+75	Joe	PROPN	('18|009|Valghandling', 0.9999445153415081)	-	-
+76	Biden	PROPN	('18|009|Valghandling', 0.9999445153415081)	-	-
+77	fører	VERB	('05|033|Årsag', 0.9999509467281468)	('08|011|Vej, gade, plads', 0.9999749260317938)	('08|006|Godstrafik, forsendelse', 0.9999749260317938)
 78	stadig	ADV	('06|019|Nutid', 0.999933728751781)	-	-
-79	solidt	ADV	-	-	-
-80	i	ADP	('06|004|Klokkeslæt, dato', 0.9999005898336537)	('19|008|Tøj, påklædning', 0.9999856332160046)	('03|002|Beliggenhed, sted', 1.0)
+79	solidt	ADV	('06|019|Nutid', 0.999933728751781)	-	-
+80	i	ADP	('06|004|Klokkeslæt, dato', 0.9999005898336537)	('19|008|Tøj, påklædning', 0.9999856332160046)	('13|004|Matematik', 1.0)
 81	meningsmålingerne	NOUN	('18|009|Valghandling', 0.9999167707032875)	-	-
 82	.	PUNCT	-	-	-
-83	Trumps	NOUN	-	-	-
-84	republikanske	ADJ	('18|004|Ideologi, styreform', 0.9999167707032875)	('18|005|Politiske holdninger', 0.9999167707032875)	-
+83	Trumps	NOUN	('18|009|Valghandling', 0.9999167707032875)	-	-
+84	republikanske	ADJ	('18|005|Politiske holdninger', 0.9999167707032875)	('18|004|Ideologi, styreform', 0.9999167707032875)	-
 85	kernevælgere	NOUN	('18|009|Valghandling', 0.9999167707032875)	-	-
 86	har	VERB	('04|042|Tilhørende', 0.9999154190983676)	('02|037|Sygdom', 0.9999578023461896)	('06|004|Klokkeslæt, dato', 0.9999668654738237)
 87	godt	ADV	('09|051|Kvalitet, perfekt', 0.9999380075630773)	('11|005|Tema', 0.9999451242934753)	('05|018|Ligne', 0.9999509467281468)
 88	nok	ADV	('15|025|Høflighed, hilsen', 0.9999583654266503)	('10|015|Velbehag, tilfredshed', 0.9999706063901708)	-
 89	taget	VERB	('11|034|Uddannelse', 0.9999451242934753)	('15|042|Magtudøvelse', 0.9999583654266503)	('09|011|Valg', 0.9999586725627144)
-90	imod	ADP	-	-	-
+90	imod	ADP	('11|034|Uddannelse', 0.9999451242934753)	('15|042|Magtudøvelse', 0.9999583654266503)	('09|011|Valg', 0.9999586725627144)
 91	lov	NOUN	('22|010|Bøn, fromhed', 0.999948809828513)	('21|017|Lov', 0.9999648691375373)	('21|020|Rettighed', 0.9999648691375373)
 92	og	KONJ	('04|028|Tilføje', 0.9999154190983676)	-	-
-93	orden-budskabet	NOUN	-	-	-
-94	–	NOUN	-	-	-
+93	orden-budskabet	NOUN	('04|028|Tilføje', 0.9999154190983676)	-	-
+94	–	NOUN	('04|028|Tilføje', 0.9999154190983676)	-	-
 95	i	ADP	('13|004|Matematik', 0.9999430896622371)	('03|002|Beliggenhed, sted', 0.9999629066360028)	('03|003|Tilstedeværelse', 0.9999629066360028)
-96	en	DET	-	-	-
-97	grad	NOUN	('04|002|Stor', 0.9998308238876671)	('13|004|Matematik', 0.9999430896622371)	('13|005|Geometri, figur', 0.9999430896622371)
+96	en	DET	('13|004|Matematik', 0.9999430896622371)	('03|002|Beliggenhed, sted', 0.9999629066360028)	('03|003|Tilstedeværelse', 0.9999629066360028)
+97	grad	NOUN	('04|002|Stor', 0.9998308238876671)	('13|007|Fysik', 0.9999430896622371)	('13|004|Matematik', 0.9999430896622371)
 98	,	PUNCT	-	-	-
-99	så	ADV	('04|044|Høj grad', 0.9998731232818778)	('06|015|Efter, senere', 0.9999668654738237)	('11|014|Konkludere', 1.0)
+99	så	ADV	('04|044|Høj grad', 0.9998731232818778)	('06|015|Efter, senere', 0.9999668654738237)	('11|042|Overraskelse', 1.0)
 100	hardcore	ADJ	('15|031|Seksuel frigjorthed', 0.9999583654266503)	('10|009|Godt kunne lide, føle lyst til', 0.9999706063901708)	-
-101	Trump-tilhængere	NOUN	-	-	-
+101	Trump-tilhængere	NOUN	('15|031|Seksuel frigjorthed', 0.9999583654266503)	('10|009|Godt kunne lide, føle lyst til', 0.9999706063901708)	-
 102	går	VERB	('08|017|Flyvemaskine', 0.9999247743229689)	('14|010|Film og biograf', 0.9999460072350305)	('17|026|Fornøjelser og fritidsaktiviteter', 0.9999740663900415)
 103	til	ADP	('08|023|Styre mod, retning', 0.999899696582161)	('05|018|Ligne', 0.9999018886436105)	('13|005|Geometri, figur', 0.9999430896622371)
 104	modangreb	NOUN	('12|020|Svar', 0.9999764150943397)	-	-
@@ -111,99 +111,99 @@ INDEX	WORD	POS	DDB1	DDB2	DDB3
 109	.	PUNCT	-	-	-
 110	Men	KONJ	('12|037|Indvende, protestere', 0.9999764150943397)	-	-
 111	flest	ADJ	('04|020|Mange, meget', 0.9999577095491838)	('11|009|Sammenligne', 0.9999725621467377)	-
-112	amerikanere	NOUN	('18|003|Verdens lande og hovedstæder', 0.9999445138021917)	('15|002|Fremmede, udlandet', 1.0)	('16|006|Mad og madretter', 1.0)
+112	amerikanere	NOUN	('18|003|Verdens lande og hovedstæder', 0.9999445138021917)	('16|006|Mad og madretter', 1.0)	('15|002|Fremmede, udlandet', 1.0)
 113	svarer	VERB	('20|022|Betale tilbage', 0.9999857736300005)	-	-
-114	rent	ADV	-	-	-
-115	faktisk	ADV	-	-	-
+114	rent	ADV	('20|022|Betale tilbage', 0.9999857736300005)	-	-
+115	faktisk	ADV	('20|022|Betale tilbage', 0.9999857736300005)	-	-
 116	i	ADP	('03|002|Beliggenhed, sted', 0.9999258105200682)	('03|003|Tilstedeværelse', 0.9999258105200682)	('06|004|Klokkeslæt, dato', 0.9999668654738237)
 117	undersøgelser	NOUN	('13|003|Eksperiment, forsøg', 0.9999715456407922)	('18|014|Offentlig forvaltning, tilsyn', 0.9999722584403695)	-
 118	,	PUNCT	-	-	-
-119	at	KONJ	-	-	-
-120	de	PRON	-	-	-
+119	at	KONJ	('13|003|Eksperiment, forsøg', 0.9999715456407922)	('18|014|Offentlig forvaltning, tilsyn', 0.9999722584403695)	-
+120	de	PRON	('13|003|Eksperiment, forsøg', 0.9999715456407922)	('18|014|Offentlig forvaltning, tilsyn', 0.9999722584403695)	-
 121	mener	VERB	('11|019|Mening, holdning', 0.9999451242934753)	('11|026|Antagelse', 0.9999451242934753)	('09|014|Hensigt, formål', 0.9999586725627144)
 122	,	PUNCT	-	-	-
-123	Joe	PROPN	-	-	-
-124	Biden	PROPN	-	-	-
-125	er	VERB	('11|011|Måle, regne', 0.9999176819229503)	('08|001|Opholdssted, beboet sted', 0.999949849548646)	('07|001|Synlig', 1.0)
-126	bedre	ADJ	('11|009|Sammenligne', 0.9999176841816436)	('04|020|Mange, meget', 0.9999577113375904)	('09|047|Dygtighed, behændighed', 0.9999586725627144)
+123	Joe	PROPN	('11|019|Mening, holdning', 0.9999451242934753)	('11|026|Antagelse', 0.9999451242934753)	('09|014|Hensigt, formål', 0.9999586725627144)
+124	Biden	PROPN	('11|019|Mening, holdning', 0.9999451242934753)	('11|026|Antagelse', 0.9999451242934753)	('09|014|Hensigt, formål', 0.9999586725627144)
+125	er	VERB	('11|011|Måle, regne', 0.9999176819229503)	('08|001|Opholdssted, beboet sted', 0.999949849548646)	('12|011|Betegnelse, ord', 1.0)
+126	bedre	ADJ	('11|009|Sammenligne', 0.9999176841816436)	('04|020|Mange, meget', 0.9999577113375904)	('09|051|Kvalitet, perfekt', 0.9999586725627144)
 127	til	ADP	('09|014|Hensigt, formål', 0.9999380075630773)	('13|005|Geometri, figur', 0.9999430896622371)	('08|023|Styre mod, retning', 0.9999498508061483)
-128	at	KONJ	-	-	-
-129	skabe	VERB	('11|018|Udtænke, opfinde', 0.9999451242934753)	('14|001|Kunst, kulturliv', 0.9999460072350305)	('05|001|Eksistens', 0.9999509467281468)
+128	at	KONJ	('09|014|Hensigt, formål', 0.9999380075630773)	('13|005|Geometri, figur', 0.9999430896622371)	('08|023|Styre mod, retning', 0.9999498508061483)
+129	skabe	VERB	('11|018|Udtænke, opfinde', 0.9999451242934753)	('14|001|Kunst, kulturliv', 0.9999460072350305)	('05|008|Beskaffenhed, art', 0.9999509467281468)
 130	lov	NOUN	('13|002|Forskning, videnskab', 0.9999146320641967)	('22|010|Bøn, fromhed', 0.999948809828513)	('21|017|Lov', 0.9999648691375373)
 131	og	KONJ	('04|028|Tilføje', 0.9999154190983676)	-	-
 132	orden	NOUN	('13|016|Biologi', 0.9999146320641967)	('22|014|Præst', 0.999948809828513)	('03|034|Række', 0.9999629066360028)
-133	end	ADP	-	-	-
-134	Trump	PROPN	-	-	-
+133	end	ADP	('13|016|Biologi', 0.9999146320641967)	('22|014|Præst', 0.999948809828513)	('03|034|Række', 0.9999629066360028)
+134	Trump	PROPN	('13|016|Biologi', 0.9999146320641967)	('22|014|Præst', 0.999948809828513)	('03|034|Række', 0.9999629066360028)
 135	.	PUNCT	-	-	-
 136	I	ADP	('13|004|Matematik', 0.9999146320641967)	('03|002|Beliggenhed, sted', 0.9999258105200682)	('03|003|Tilstedeværelse', 0.9999258105200682)
-137	en	DET	-	-	-
+137	en	DET	('13|004|Matematik', 0.9999146320641967)	('03|002|Beliggenhed, sted', 0.9999258105200682)	('03|003|Tilstedeværelse', 0.9999258105200682)
 138	måling	NOUN	('11|011|Måle, regne', 1.0)	-	-
 139	i	ADP	('03|002|Beliggenhed, sted', 0.9999629066360028)	('03|003|Tilstedeværelse', 0.9999629066360028)	('06|004|Klokkeslæt, dato', 0.9999668654738237)
-140	det	DET	-	-	-
-141	politiske	ADJ	('18|004|Ideologi, styreform', 0.999972257670754)	('18|010|Regere', 0.999972257670754)	-
-142	medie	PROPN	-	-	-
-143	The	PROPN	-	-	-
-144	Hill	PROPN	-	-	-
-145	viser	VERB	('18|006|International politik', 0.9999445153415081)	('03|017|Ydre, udvendig', 0.9999629066360028)	('07|001|Synlig', 1.0)
-146	54	NUM	-	-	-
+140	det	DET	('03|002|Beliggenhed, sted', 0.9999629066360028)	('03|003|Tilstedeværelse', 0.9999629066360028)	('06|004|Klokkeslæt, dato', 0.9999668654738237)
+141	politiske	ADJ	('18|010|Regere', 0.999972257670754)	('18|004|Ideologi, styreform', 0.999972257670754)	-
+142	medie	PROPN	('18|010|Regere', 0.999972257670754)	('18|004|Ideologi, styreform', 0.999972257670754)	-
+143	The	PROPN	('18|010|Regere', 0.999972257670754)	('18|004|Ideologi, styreform', 0.999972257670754)	-
+144	Hill	PROPN	('18|010|Regere', 0.999972257670754)	('18|004|Ideologi, styreform', 0.999972257670754)	-
+145	viser	VERB	('18|006|International politik', 0.9999445153415081)	('03|017|Ydre, udvendig', 0.9999629066360028)	('19|026|Skydevåben', 1.0)
+146	54	NUM	('18|006|International politik', 0.9999445153415081)	('03|017|Ydre, udvendig', 0.9999629066360028)	('19|026|Skydevåben', 1.0)
 147	procent	NOUN	('11|011|Måle, regne', 1.0)	('13|004|Matematik', 1.0)	-
 148	af	ADP	('05|042|Oprindelse', 0.9999509467281468)	-	-
 149	vælgerne	NOUN	('18|009|Valghandling', 0.9999445153415081)	-	-
 150	for	ADP	('09|067|Middel', 0.9999586725627144)	('03|025|Foran', 0.9999629066360028)	('20|025|Køb, handel', 1.0)
 151	eksempel	NOUN	('12|034|Gøre forståelig, forklare', 1.0)	-	-
-152	mest	ADV	-	-	-
+152	mest	ADV	('12|034|Gøre forståelig, forklare', 1.0)	-	-
 153	tillid	NOUN	('15|027|Venskab', 1.0)	-	-
 154	til	ADP	('09|014|Hensigt, formål', 0.9999586717087182)	('13|005|Geometri, figur', 0.9999715448311186)	('08|023|Styre mod, retning', 0.9999749254030742)
-155	Biden	PROPN	-	-	-
+155	Biden	PROPN	('09|014|Hensigt, formål', 0.9999586717087182)	('13|005|Geometri, figur', 0.9999715448311186)	('08|023|Styre mod, retning', 0.9999749254030742)
 156	i	ADP	('06|004|Klokkeslæt, dato', 0.9999337265557691)	('13|004|Matematik', 0.9999430880427977)	('03|002|Beliggenhed, sted', 0.9999629052600342)
 157	spørgsmålet	NOUN	('11|020|Skepsis, mistro', 0.9999725613938812)	('12|028|Retorik, billedsprog', 0.9999764139817916)	-
 158	.	PUNCT	-	-	-
-159	Joe	PROPN	-	-	-
-160	Biden	PROPN	-	-	-
-161	fører	VERB	('08|006|Godstrafik, forsendelse', 0.9999498482910805)	('08|011|Vej, gade, plads', 0.9999498482910805)	('05|033|Årsag', 0.9999509419152276)
+159	Joe	PROPN	('11|020|Skepsis, mistro', 0.9999725613938812)	('12|028|Retorik, billedsprog', 0.9999764139817916)	-
+160	Biden	PROPN	('11|020|Skepsis, mistro', 0.9999725613938812)	('12|028|Retorik, billedsprog', 0.9999764139817916)	-
+161	fører	VERB	('08|011|Vej, gade, plads', 0.9999498482910805)	('08|006|Godstrafik, forsendelse', 0.9999498482910805)	('05|033|Årsag', 0.9999509419152276)
 162	i	ADP	('06|004|Klokkeslæt, dato', 0.9998674487192233)	('03|002|Beliggenhed, sted', 0.9999258105200682)	('03|003|Tilstedeværelse', 0.9999258105200682)
 163	øjeblikket	NOUN	('06|012|Kortvarig, forgængelig', 0.9999005898336537)	-	-
 164	over	ADP	('06|004|Klokkeslæt, dato', 0.9999005898336537)	('08|040|Hen over, overskride', 0.9999498508061483)	('15|058|Ledelse, chef', 0.9999583654266503)
-165	Donald	PROPN	-	-	-
-166	Trump	PROPN	-	-	-
+165	Donald	PROPN	('06|004|Klokkeslæt, dato', 0.9999005898336537)	('08|040|Hen over, overskride', 0.9999498508061483)	('15|058|Ledelse, chef', 0.9999583654266503)
+166	Trump	PROPN	('06|004|Klokkeslæt, dato', 0.9999005898336537)	('08|040|Hen over, overskride', 0.9999498508061483)	('15|058|Ledelse, chef', 0.9999583654266503)
 167	med	ADP	('04|042|Tilhørende', 0.9998731179157503)	('05|014|Relation, sammenhæng', 0.9999509443218052)	('13|004|Matematik', 0.9999715448311186)
-168	cirka	ADV	-	-	-
+168	cirka	ADV	('04|042|Tilhørende', 0.9998731179157503)	('05|014|Relation, sammenhæng', 0.9999509443218052)	('13|004|Matematik', 0.9999715448311186)
 169	7	NUM	('04|037|Fire osv.', 0.9998731232818778)	-	-
-170	procentpoint	ADV	-	-	-
-171	i	ADP	('13|004|Matematik', 0.9999430896622371)	('06|004|Klokkeslæt, dato', 0.9999668654738237)	('03|002|Beliggenhed, sted', 1.0)
-172	et	DET	-	-	-
+170	procentpoint	ADV	('04|037|Fire osv.', 0.9998731232818778)	-	-
+171	i	ADP	('13|004|Matematik', 0.9999430896622371)	('06|004|Klokkeslæt, dato', 0.9999668654738237)	('19|008|Tøj, påklædning', 1.0)
+172	et	DET	('13|004|Matematik', 0.9999430896622371)	('06|004|Klokkeslæt, dato', 0.9999668654738237)	('19|008|Tøj, påklædning', 1.0)
 173	vægtet	VERB	('09|041|Vigtig', 0.9999793367083376)	('11|011|Måle, regne', 1.0)	('15|021|Bedømmelse', 1.0)
 174	gennemsnit	NOUN	('13|006|Statistik', 0.9999430896622371)	-	-
 175	af	ADP	('05|042|Oprindelse', 0.9999509467281468)	-	-
-176	de	DET	-	-	-
-177	nationale	ADJ	-	-	-
+176	de	DET	('05|042|Oprindelse', 0.9999509467281468)	-	-
+177	nationale	ADJ	('05|042|Oprindelse', 0.9999509467281468)	-	-
 178	meningsmålinger	NOUN	('18|009|Valghandling', 1.0)	-	-
 179	,	PUNCT	-	-	-
 180	udregnet	VERB	('13|004|Matematik', 0.9999430880427977)	('11|012|Logisk tænkning', 1.0)	-
 181	af	ADP	('05|042|Oprindelse', 0.9999509467281468)	-	-
-182	det	DET	-	-	-
+182	det	DET	('05|042|Oprindelse', 0.9999509467281468)	-	-
 183	statistiske	ADJ	('13|006|Statistik', 0.9999715456407922)	-	-
-184	medie	PROPN	-	-	-
-185	Fivethirtyeight	PROPN	-	-	-
+184	medie	PROPN	('13|006|Statistik', 0.9999715456407922)	-	-
+185	Fivethirtyeight	PROPN	('13|006|Statistik', 0.9999715456407922)	-	-
 186	.	PUNCT	-	-	-
 187	Vis	NOUN	('22|015|Helligdom, kultsted', 1.0)	-	-
-188	mere	ADV	-	-	-
+188	mere	ADV	('22|015|Helligdom, kultsted', 1.0)	-	-
 189	På	ADP	('09|067|Middel', 1.0)	-	-
 190	den	DET	('06|004|Klokkeslæt, dato', 1.0)	-	-
 191	baggrund	NOUN	('14|005|Tegning, maleri', 0.9999730043463002)	('05|042|Oprindelse', 1.0)	-
-192	er	VERB	('11|011|Måle, regne', 0.9999451242934753)	('07|001|Synlig', 1.0)	('08|001|Opholdssted, beboet sted', 1.0)
-193	det	PRON	-	-	-
+192	er	VERB	('11|011|Måle, regne', 0.9999451242934753)	('12|011|Betegnelse, ord', 1.0)	('08|001|Opholdssted, beboet sted', 1.0)
+193	det	PRON	('11|011|Måle, regne', 0.9999451242934753)	('12|011|Betegnelse, ord', 1.0)	('08|001|Opholdssted, beboet sted', 1.0)
 194	måske	ADV	('11|020|Skepsis, mistro', 0.9999451242934753)	('11|021|Formodning, tro', 0.9999451242934753)	-
-195	ikke	ADV	-	-	-
-196	så	ADV	('11|014|Konkludere', 0.9999451242934753)	('11|042|Overraskelse', 0.9999451242934753)	('04|044|Høj grad', 0.9999577113375904)
+195	ikke	ADV	('11|020|Skepsis, mistro', 0.9999451242934753)	('11|021|Formodning, tro', 0.9999451242934753)	-
+196	så	ADV	('11|042|Overraskelse', 0.9999451242934753)	('11|014|Konkludere', 0.9999451242934753)	('04|044|Høj grad', 0.9999577113375904)
 197	underligt	ADJ	('15|002|Fremmede, udlandet', 0.9999583654266503)	-	-
 198	,	PUNCT	-	-	-
-199	at	KONJ	-	-	-
-200	Trump-kampagnen	NOUN	-	-	-
+199	at	KONJ	('15|002|Fremmede, udlandet', 0.9999583654266503)	-	-
+200	Trump-kampagnen	NOUN	('15|002|Fremmede, udlandet', 0.9999583654266503)	-	-
 201	nu	ADV	('09|036|Hast, hastværk', 0.9999586725627144)	('06|019|Nutid', 0.9999668654738237)	-
 202	,	PUNCT	-	-	-
 203	med	ADP	('04|042|Tilhørende', 0.9999154190983676)	('09|067|Middel', 0.9999380075630773)	('05|014|Relation, sammenhæng', 0.9999509467281468)
-204	små	ADV	-	-	-
+204	små	ADV	('04|042|Tilhørende', 0.9999154190983676)	('09|067|Middel', 0.9999380075630773)	('05|014|Relation, sammenhæng', 0.9999509467281468)
 205	50	NUM	('04|033|Tal', 0.9999154190983676)	-	-
 206	dage	NOUN	('11|011|Måle, regne', 0.9999451242934753)	-	-
 207	til	ADP	('08|023|Styre mod, retning', 0.9999247724366208)	('09|014|Hensigt, formål', 0.9999380062820301)	('13|005|Geometri, figur', 0.9999430880427977)
@@ -211,54 +211,54 @@ INDEX	WORD	POS	DDB1	DDB2	DDB3
 209	,	PUNCT	-	-	-
 210	er	VERB	('08|001|Opholdssted, beboet sted', 0.999899696582161)	('11|011|Måle, regne', 0.9999451242934753)	('12|011|Betegnelse, ord', 0.9999764150943397)
 211	i	ADP	('13|004|Matematik', 0.9999430896622371)	('03|002|Beliggenhed, sted', 0.9999629066360028)	('03|003|Tilstedeværelse', 0.9999629066360028)
-212	gang	NOUN	('08|004|Bevægelse', 0.999899696582161)	('08|011|Vej, gade, plads', 0.999899696582161)	('08|020|Langsom bevægelse', 0.999899696582161)
+212	gang	NOUN	('08|011|Vej, gade, plads', 0.999899696582161)	('08|004|Bevægelse', 0.999899696582161)	('08|020|Langsom bevægelse', 0.999899696582161)
 213	med	ADP	('04|042|Tilhørende', 0.9999154155212518)	('09|067|Middel', 0.9999380062820301)	('13|004|Matematik', 0.9999430880427977)
-214	at	KONJ	-	-	-
+214	at	KONJ	('04|042|Tilhørende', 0.9999154155212518)	('09|067|Middel', 0.9999380062820301)	('13|004|Matematik', 0.9999430880427977)
 215	skifte	VERB	('17|028|Rejser, turisme', 0.9999740657174719)	('09|062|Ombytte', 0.9999793362813572)	('20|008|Besidde, eje', 0.9999857736300005)
-216	hovedfokus	ADV	-	-	-
+216	hovedfokus	ADV	('17|028|Rejser, turisme', 0.9999740657174719)	('09|062|Ombytte', 0.9999793362813572)	('20|008|Besidde, eje', 0.9999857736300005)
 217	.	PUNCT	-	-	-
 218	»	PUNCT	-	-	-
-219	Det	PRON	-	-	-
+219	Det	PRON	('17|028|Rejser, turisme', 0.9999740657174719)	('09|062|Ombytte', 0.9999793362813572)	('20|008|Besidde, eje', 0.9999857736300005)
 220	er	VERB	('12|011|Betegnelse, ord', 0.9999528290761575)	('12|012|Betydning', 0.9999528290761575)	('07|001|Synlig', 0.9999662879681759)
-221	et	DET	-	-	-
+221	et	DET	('12|011|Betegnelse, ord', 0.9999528290761575)	('12|012|Betydning', 0.9999528290761575)	('07|001|Synlig', 0.9999662879681759)
 222	fokus	NOUN	('07|012|Optiske instrumenter', 0.9999662879681759)	-	-
 223	på	ADP	('09|067|Middel', 1.0)	-	-
 224	økonomien	NOUN	('13|019|Samfundsvidenskab', 0.9999715456407922)	('18|002|Stat, nation', 1.0)	('20|034|Privatøkonomi, forbrug', 1.0)
-225	som	ADP	-	-	-
-226	det	DET	-	-	-
+225	som	ADP	('13|019|Samfundsvidenskab', 0.9999715456407922)	('18|002|Stat, nation', 1.0)	('20|034|Privatøkonomi, forbrug', 1.0)
+226	det	DET	('13|019|Samfundsvidenskab', 0.9999715456407922)	('18|002|Stat, nation', 1.0)	('20|034|Privatøkonomi, forbrug', 1.0)
 227	definerende	VERB	('12|034|Gøre forståelig, forklare', 0.9999528290761575)	-	-
 228	emne	NOUN	('19|024|Råstoffer, materialer', 0.9999712660191943)	-	-
 229	i	ADP	('19|008|Tøj, påklædning', 0.9999712660191943)	('13|004|Matematik', 0.9999715456407922)	('03|002|Beliggenhed, sted', 1.0)
 230	valgkampen	NOUN	('18|009|Valghandling', 1.0)	-	-
-231	«	NOUN	-	-	-
+231	«	NOUN	('18|009|Valghandling', 1.0)	-	-
 232	,	PUNCT	-	-	-
 233	siger	VERB	('12|002|Fortælle', 0.9999764150943397)	-	-
-234	en	DET	-	-	-
+234	en	DET	('12|002|Fortælle', 0.9999764150943397)	-	-
 235	medarbejder	NOUN	('20|001|Stillingsbetegnelser', 1.0)	('20|041|Virksomhed, ledelse', 1.0)	-
 236	fra	ADP	('09|026|Begynde', 0.9999380075630773)	('05|042|Oprindelse', 0.9999509467281468)	('03|002|Beliggenhed, sted', 1.0)
-237	Trumps	PROPN	-	-	-
+237	Trumps	PROPN	('09|026|Begynde', 0.9999380075630773)	('05|042|Oprindelse', 0.9999509467281468)	('03|002|Beliggenhed, sted', 1.0)
 238	valgkampagne	NOUN	('18|009|Valghandling', 0.9999722584403695)	-	-
-239	til	ADP	('05|018|Ligne', 0.9999509467281468)	('09|014|Hensigt, formål', 0.9999586725627144)	('08|023|Styre mod, retning', 1.0)
-240	Fox	PROPN	-	-	-
-241	News	PROPN	-	-	-
+239	til	ADP	('05|018|Ligne', 0.9999509467281468)	('09|014|Hensigt, formål', 0.9999586725627144)	('13|005|Geometri, figur', 1.0)
+240	Fox	PROPN	('05|018|Ligne', 0.9999509467281468)	('09|014|Hensigt, formål', 0.9999586725627144)	('13|005|Geometri, figur', 1.0)
+241	News	PROPN	('05|018|Ligne', 0.9999509467281468)	('09|014|Hensigt, formål', 0.9999586725627144)	('13|005|Geometri, figur', 1.0)
 242	og	KONJ	('04|028|Tilføje', 0.9999577113375904)	-	-
-243	Reuters	PROPN	-	-	-
+243	Reuters	PROPN	('04|028|Tilføje', 0.9999577113375904)	-	-
 244	.	PUNCT	-	-	-
-245	Trump-lejren	NOUN	-	-	-
+245	Trump-lejren	NOUN	('04|028|Tilføje', 0.9999577113375904)	-	-
 246	har	VERB	('04|042|Tilhørende', 0.9998731232818778)	('20|008|Besidde, eje', 0.9999857738323873)	('02|037|Sygdom', 1.0)
 247	derfor	ADV	('11|014|Konkludere', 0.9999725628995528)	-	-
 248	investeret	VERB	('20|038|Værdipapirer', 0.9999715472600011)	('20|039|Økonomisk politik', 0.9999715472600011)	-
-249	små	ADJ	('04|004|Lille', 0.9998731232818778)	('04|007|Kort', 0.9998731232818778)	('04|013|Lav', 0.9998731232818778)
+249	små	ADJ	('04|004|Lille', 0.9998731232818778)	('04|013|Lav', 0.9998731232818778)	('04|046|Mindre grad', 0.9998731232818778)
 250	65	NUM	('04|033|Tal', 0.9998731232818778)	-	-
-251	millioner	NOUN	-	-	-
+251	millioner	NOUN	('04|033|Tal', 0.9998731232818778)	-	-
 252	kroner	NOUN	('19|010|Pynt og smykker', 0.9999712660191943)	('20|024|Penge', 0.9999715472600011)	('14|007|Udsmykning', 0.9999730043463002)
-253	ekstra	ADJ	-	-	-
+253	ekstra	ADJ	('19|010|Pynt og smykker', 0.9999712660191943)	('20|024|Penge', 0.9999715472600011)	('14|007|Udsmykning', 0.9999730043463002)
 254	i	ADP	('03|002|Beliggenhed, sted', 0.9998887116518901)	('03|003|Tilstedeværelse', 0.9998887116518901)	('06|004|Klokkeslæt, dato', 0.9999668654738237)
 255	nye	ADJ	('06|026|Ny', 0.9999668643758906)	-	-
-256	amerikanske	ADJ	('12|008|Sprog', 1.0)	('18|003|Verdens lande og hovedstæder', 1.0)	-
+256	amerikanske	ADJ	('18|003|Verdens lande og hovedstæder', 1.0)	('12|008|Sprog', 1.0)	-
 257	tv-reklamer	NOUN	('20|043|Markedsføring', 0.9999857736300005)	-	-
 258	,	PUNCT	-	-	-
-259	som	PRON	-	-	-
+259	som	PRON	('20|043|Markedsføring', 0.9999857736300005)	-	-
 260	fra	ADP	('03|002|Beliggenhed, sted', 0.9998887075233714)	('05|042|Oprindelse', 0.9999509443218052)	('09|026|Begynde', 0.9999793362813572)
 261	i	ADP	('03|002|Beliggenhed, sted', 0.9998887116518901)	('03|003|Tilstedeværelse', 0.9998887116518901)	('06|004|Klokkeslæt, dato', 0.9999005898336537)
 262	dag	NOUN	('11|011|Måle, regne', 0.9999725628995528)	-	-
@@ -271,60 +271,60 @@ INDEX	WORD	POS	DDB1	DDB2	DDB3
 269	I	ADP	('06|004|Klokkeslæt, dato', 0.999933728751781)	('03|002|Beliggenhed, sted', 0.9999629066360028)	('03|003|Tilstedeværelse', 0.9999629066360028)
 270	weekenden	NOUN	('17|025|Fridag, mærkedag', 0.9999740663900415)	-	-
 271	besøgte	VERB	('17|026|Fornøjelser og fritidsaktiviteter', 0.9999740663900415)	('17|027|Selskabelighed, fest', 0.9999740663900415)	-
-272	Trump	PROPN	-	-	-
-273	også	ADV	('04|031|Forene, samle', 0.9999577113375904)	('10|029|Forundret', 1.0)	('12|015|Tale', 1.0)
-274	Nevada	PROPN	-	-	-
-275	–	PROPN	-	-	-
-276	en	DET	-	-	-
-277	stat	NOUN	-	-	-
+272	Trump	PROPN	('17|026|Fornøjelser og fritidsaktiviteter', 0.9999740663900415)	('17|027|Selskabelighed, fest', 0.9999740663900415)	-
+273	også	ADV	('04|031|Forene, samle', 0.9999577113375904)	('12|015|Tale', 1.0)	('12|037|Indvende, protestere', 1.0)
+274	Nevada	PROPN	('04|031|Forene, samle', 0.9999577113375904)	('12|015|Tale', 1.0)	('12|037|Indvende, protestere', 1.0)
+275	–	PROPN	('04|031|Forene, samle', 0.9999577113375904)	('12|015|Tale', 1.0)	('12|037|Indvende, protestere', 1.0)
+276	en	DET	('04|031|Forene, samle', 0.9999577113375904)	('12|015|Tale', 1.0)	('12|037|Indvende, protestere', 1.0)
+277	stat	NOUN	('04|031|Forene, samle', 0.9999577113375904)	('12|015|Tale', 1.0)	('12|037|Indvende, protestere', 1.0)
 278	,	PUNCT	-	-	-
-279	der	PRON	-	-	-
-280	ikke	ADV	-	-	-
+279	der	PRON	('04|031|Forene, samle', 0.9999577113375904)	('12|015|Tale', 1.0)	('12|037|Indvende, protestere', 1.0)
+280	ikke	ADV	('04|031|Forene, samle', 0.9999577113375904)	('12|015|Tale', 1.0)	('12|037|Indvende, protestere', 1.0)
 281	har	VERB	('20|008|Besidde, eje', 0.9999715472600011)	('12|011|Betegnelse, ord', 0.9999764150943397)	('02|037|Sygdom', 1.0)
 282	været	VERB	('11|011|Måle, regne', 0.9999725628995528)	('08|001|Opholdssted, beboet sted', 0.9999749260317938)	('12|011|Betegnelse, ord', 0.9999764150943397)
-283	et	DET	-	-	-
+283	et	DET	('11|011|Måle, regne', 0.9999725628995528)	('08|001|Opholdssted, beboet sted', 0.9999749260317938)	('12|011|Betegnelse, ord', 0.9999764150943397)
 284	brændpunkt	NOUN	('18|020|Krig', 0.9999445153415081)	('03|027|Centrum', 0.9999629066360028)	('13|005|Geometri, figur', 1.0)
 285	for	ADP	('03|025|Foran', 0.9999629066360028)	('20|025|Køb, handel', 0.9999715472600011)	('09|067|Middel', 0.9999793367083376)
 286	raceuroligheder	NOUN	('18|017|Protest, oprør', 0.9999167707032875)	-	-
-287	eller	KONJ	-	-	-
+287	eller	KONJ	('18|017|Protest, oprør', 0.9999167707032875)	-	-
 288	demonstrationer	NOUN	('18|017|Protest, oprør', 0.9999167707032875)	('09|061|Hjælp', 0.9999586725627144)	('11|019|Mening, holdning', 0.9999725628995528)
 289	,	PUNCT	-	-	-
 290	men	KONJ	('12|037|Indvende, protestere', 0.9999764150943397)	-	-
-291	som	ADP	-	-	-
+291	som	ADP	('12|037|Indvende, protestere', 0.9999764150943397)	-	-
 292	til	ADP	('08|023|Styre mod, retning', 0.9999247743229689)	('13|005|Geometri, figur', 0.9999715456407922)	('09|014|Hensigt, formål', 0.9999793367083376)
-293	gengæld	NOUN	-	-	-
+293	gengæld	NOUN	('08|023|Styre mod, retning', 0.9999247743229689)	('13|005|Geometri, figur', 0.9999715456407922)	('09|014|Hensigt, formål', 0.9999793367083376)
 294	er	VERB	('08|001|Opholdssted, beboet sted', 0.9999247743229689)	('11|011|Måle, regne', 0.9999725628995528)	('12|011|Betegnelse, ord', 0.9999764150943397)
-295	hårdest	ADV	-	-	-
+295	hårdest	ADV	('08|001|Opholdssted, beboet sted', 0.9999247743229689)	('11|011|Måle, regne', 0.9999725628995528)	('12|011|Betegnelse, ord', 0.9999764150943397)
 296	ramt	VERB	('08|034|Mødes, støde sammen', 0.9999247743229689)	('19|026|Skydevåben', 0.9999856332160046)	-
 297	i	ADP	('13|004|Matematik', 0.9999430896622371)	('06|004|Klokkeslæt, dato', 0.9999668654738237)	('19|008|Tøj, påklædning', 0.9999856332160046)
 298	hele	ADJ	('06|004|Klokkeslæt, dato', 0.9999668654738237)	('13|004|Matematik', 0.9999715456407922)	('09|051|Kvalitet, perfekt', 0.9999793367083376)
-299	USA	PROPN	-	-	-
+299	USA	PROPN	('06|004|Klokkeslæt, dato', 0.9999668654738237)	('13|004|Matematik', 0.9999715456407922)	('09|051|Kvalitet, perfekt', 0.9999793367083376)
 300	af	ADP	('05|042|Oprindelse', 0.9998528257456829)	-	-
 301	arbejdsløshed	NOUN	('20|005|Arbejdsløshed', 0.9999857736300005)	-	-
 302	på	ADP	('09|067|Middel', 0.9999793362813572)	-	-
-303	grund	NOUN	('04|015|Lavvandet', 0.9999154155212518)	('03|015|Understøtte', 0.9999629052600342)	('01|016|Jordstykke', 1.0)
+303	grund	NOUN	('04|015|Lavvandet', 0.9999154155212518)	('03|015|Understøtte', 0.9999629052600342)	('14|005|Tegning, maleri', 1.0)
 304	af	ADP	('05|042|Oprindelse', 0.9998528185252417)	-	-
-305	coronakrisen	NOUN	-	-	-
+305	coronakrisen	NOUN	('05|042|Oprindelse', 0.9998528185252417)	-	-
 306	.	PUNCT	-	-	-
 307	Her	ADV	('03|003|Tilstedeværelse', 0.9999629052600342)	('20|016|Forære, forsørge', 0.9999715468552162)	-
 308	slog	VERB	('04|045|Højere grad', 0.9999577095491838)	('19|025|Simple våben', 0.9999712656063675)	('18|020|Krig', 0.999972257670754)
-309	Trump	PROPN	-	-	-
+309	Trump	PROPN	('04|045|Højere grad', 0.9999577095491838)	('19|025|Simple våben', 0.9999712656063675)	('18|020|Krig', 0.999972257670754)
 310	på	ADP	('09|067|Middel', 0.9999793367083376)	-	-
-311	at	KONJ	-	-	-
+311	at	KONJ	('09|067|Middel', 0.9999793367083376)	-	-
 312	genrejse	VERB	('19|002|Byggeri', 0.9999712656063675)	('09|052|Forbedre', 0.9999793362813572)	-
 313	økonomien	NOUN	('20|034|Privatøkonomi, forbrug', 0.9999715468552162)	('20|045|Overskud', 0.9999715468552162)	('18|002|Stat, nation', 0.999972257670754)
 314	.	PUNCT	-	-	-
 315	»	PUNCT	-	-	-
-316	Jeg	PRON	-	-	-
-317	går	VERB	('20|004|Fratrædelse', 0.9999715468552162)	('20|026|Salg, værdi', 0.9999715468552162)	('08|017|Flyvemaskine', 1.0)
+316	Jeg	PRON	('20|034|Privatøkonomi, forbrug', 0.9999715468552162)	('20|045|Overskud', 0.9999715468552162)	('18|002|Stat, nation', 0.999972257670754)
+317	går	VERB	('20|026|Salg, værdi', 0.9999715468552162)	('20|004|Fratrædelse', 0.9999715468552162)	('08|017|Flyvemaskine', 1.0)
 318	efter	ADP	('03|034|Række', 0.9999629038839634)	('06|015|Efter, senere', 1.0)	-
-319	at	KONJ	-	-	-
+319	at	KONJ	('03|034|Række', 0.9999629038839634)	('06|015|Efter, senere', 1.0)	-
 320	blive	VERB	('11|011|Måle, regne', 1.0)	('12|011|Betegnelse, ord', 1.0)	-
 321	genvalgt	VERB	('18|009|Valghandling', 1.0)	-	-
 322	for	ADP	('03|025|Foran', 0.9999258050155809)	('09|067|Middel', 0.9999380050009299)	('20|025|Køb, handel', 0.9999715464504196)
-323	at	KONJ	-	-	-
+323	at	KONJ	('03|025|Foran', 0.9999258050155809)	('09|067|Middel', 0.9999380050009299)	('20|025|Køb, handel', 0.9999715464504196)
 324	for	ADP	('09|067|Middel', 0.9999380050009299)	('03|025|Foran', 0.9999629038839634)	('20|025|Køb, handel', 0.9999715464504196)
-325	at	KONJ	-	-	-
+325	at	KONJ	('09|067|Middel', 0.9999380050009299)	('03|025|Foran', 0.9999629038839634)	('20|025|Køb, handel', 0.9999715464504196)
 326	genoprette	VERB	('09|053|Reproducere', 0.9999586708546867)	-	-
 327	den	DET	('06|004|Klokkeslæt, dato', 0.9999668632778845)	-	-
 328	fantastiske	ADJ	('04|044|Høj grad', 0.9999154155212518)	('10|010|Begejstre, glæde', 0.9999706055261611)	('12|040|Overdrive', 0.9999764145380787)
@@ -333,16 +333,16 @@ INDEX	WORD	POS	DDB1	DDB2	DDB3
 331	vi	PRON	('15|057|Aristokrati', 1.0)	-	-
 332	har	VERB	('04|042|Tilhørende', 0.9998731232818778)	('12|011|Betegnelse, ord', 0.9999528290761575)	('06|004|Klokkeslæt, dato', 0.9999668654738237)
 333	oplevet	VERB	('11|041|Realitet', 0.9999451242934753)	('10|017|Smag, kunstnerisk sans', 0.9999706063901708)	-
-334	«	NOUN	-	-	-
+334	«	NOUN	('11|041|Realitet', 0.9999451242934753)	('10|017|Smag, kunstnerisk sans', 0.9999706063901708)	-
 335	,	PUNCT	-	-	-
 336	sagde	VERB	('12|002|Fortælle', 0.9999764150943397)	-	-
-337	Trump	PROPN	-	-	-
+337	Trump	PROPN	('12|002|Fortælle', 0.9999764150943397)	-	-
 338	blandt	ADP	('04|042|Tilhørende', 0.9999154190983676)	('08|039|Placere mellem', 0.9999498508061483)	-
-339	andet	PRON	-	-	-
+339	andet	PRON	('04|042|Tilhørende', 0.9999154190983676)	('08|039|Placere mellem', 0.9999498508061483)	-
 340	ved	ADP	('03|002|Beliggenhed, sted', 0.9999629066360028)	('03|007|Nær', 0.9999629066360028)	-
-341	sit	DET	-	-	-
+341	sit	DET	('03|002|Beliggenhed, sted', 0.9999629066360028)	('03|007|Nær', 0.9999629066360028)	-
 342	vælgermøde	NOUN	('18|009|Valghandling', 0.999972257670754)	-	-
 343	i	ADP	('03|002|Beliggenhed, sted', 0.9999258050155809)	('03|003|Tilstedeværelse', 0.9999258050155809)	('06|004|Klokkeslæt, dato', 0.9999668632778845)
-344	Las	PROPN	-	-	-
-345	Vegas	PROPN	-	-	-
+344	Las	PROPN	('03|002|Beliggenhed, sted', 0.9999258050155809)	('03|003|Tilstedeværelse', 0.9999258050155809)	('06|004|Klokkeslæt, dato', 0.9999668632778845)
+345	Vegas	PROPN	('03|002|Beliggenhed, sted', 0.9999258050155809)	('03|003|Tilstedeværelse', 0.9999258050155809)	('06|004|Klokkeslæt, dato', 0.9999668632778845)
 346	.	PUNCT	-	-	-
