@@ -354,7 +354,7 @@ class DDB_tagger:
             top_tags_counts_ordered = sorted(top_tags_counts, key=lambda x: x[1], reverse=True)
             duplicates_disambiguated = [tag[0] for tag in top_tags_counts_ordered]
 
-        # --- LOW LEVEL DISAMBIGUATION ---
+            # --- LOW LEVEL DISAMBIGUATION ---
         
         else: 
             # Count how many context words have each of the possible tags
@@ -368,7 +368,7 @@ class DDB_tagger:
                 duplicates_disambiguated = [tag[0] for tag in sub_tags_counts_ordered]
 
 
-        # --- CATEGORY SIZE DISAMBIGUATION ---
+                # --- CATEGORY SIZE DISAMBIGUATION ---
 
             else:
                 # Return sorted by size of low level category
