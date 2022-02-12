@@ -360,7 +360,7 @@ class DDB_tagger:
             # Count how many context words have each of the possible tags
             sub_tags_counts = [(tag, tags_context.count(tag[0])) for tag in duplicate_tags_scores]
             sub_counts = [tag_count[1] for tag_count in sub_tags_counts]
-            f.write(f"SUB LEVEL TAGS COUNTS: {sub_counts}\n")
+            f.write(f"SUB LEVEL TAGS COUNTS: {sub_tags_counts}\n")
             
             # If that was successful in disambiguating
             if len(sub_counts) == len(set(sub_counts)):
