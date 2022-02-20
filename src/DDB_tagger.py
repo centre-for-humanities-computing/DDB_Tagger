@@ -28,6 +28,7 @@ from tqdm import tqdm
 import time
 import pickle
 import pandas as pd
+import numpy as np
 from itertools import chain
 
 
@@ -72,8 +73,11 @@ class DDB_tagger:
             da_model (str, optional): Danish Language Model to use, "spacy" or "dacy". Defaults to "spacy".
         """        
 
+        # Save the base path of the file to keep paths relative
+        self.base_path = os.path.dirname(__file__)
+
         # Load DDB dictionary
-        self.DDB_dict = pickle.load(open(dict, "rb"))
+        self.DDB_dict = pickle.load(open(os.path.join(self.base_path, "..", dict), "rb"))
 
         # Load Danish language model
         if da_model == "spacy":
@@ -84,12 +88,14 @@ class DDB_tagger:
             import dacy
             self.nlp = dacy.load("medium") # could be changed
 
-    def tag_text(self, input:str, input_file: bool=False, only_tagged_results: bool=False):
+
+    def tag_text(self, input:str, input_file: bool=False, only_top3_results: bool=True, only_tagged_results: bool=False):
         """Processing and tagging a text using Den Danske Begrebsordbog.
 
         Args:
             input (str): String of input text or path to input file. 
             input_file (bool, optional): Defines whether input is path (True) to input file or string of text (False). Defaults to False.
+            only_top3_results (bool, optional): Defines whether only the top3 tags or all should be in the results. Defaults to True.
             only_tagged_results (bool, optional): Defines whether results should only contain tags (True), or also scores (False). Defaults to False.
         """   
 
@@ -143,7 +149,7 @@ class DDB_tagger:
             
             # If token does not appear in any category, append "-"
             if len(target_tags) == 0:
-                target_tagged_scores = "-"
+                target_tags_scores = "-"
 
             # Otherwise calculate scores for categories
             else: 
@@ -173,7 +179,7 @@ class DDB_tagger:
         # --- DISAMBIGUATION OF IDENTICAL SCORES ---
 
         # Prepare file to save information about disambiguation
-        filepath = "out/disambiguation_info.txt"
+        filepath = os.path.join(self.base_path, "..", "out", "disambiguation_info.txt")
         if os.path.exists(filepath):
             os.remove(filepath)
 
@@ -190,39 +196,49 @@ class DDB_tagger:
 
             # If there are any duplicate scores
             if len(duplicate_scores) >= 1:
-
-                # Get the idx and the tags of those with duplicate scores
-                duplicate_idxs = [tags_scores.index(ts) for ts in tags_scores if ts[1] == duplicate_scores[0]]
-                duplicate_tags_scores = [tags_scores[idx] for idx in duplicate_idxs]
-
-                # Get the dictionaries of the context tokens
-                context_tagged = self.get_context(tagged, idx)
-                # Get the tags of the context tokens (only if they should not be disambiguated themselves)
-                tags_context = []
-                for token in context_tagged:
-                    # Get the tags of the token
-                    tags_token = token["DDB_TAGS"]
-                    # Add the top1 tag, but only if it should not also be disambiguated
-                    if (len(tags_token) == 1 and tags_token != "-") or (len(tags_token) > 1 and tags_token[0][1] != tags_token[1][1]):
-                        # Add the tag of the first level tag to the tags_context list
-                        tags_context.append(token["DDB_TAGS"][0][0])
-
-                # Disambiguate the tags of the target based on the context (or size of the tag entry in DDB)
-                duplicates_disambiguated = self.disambiguate_duplicates(token_tagged_d, duplicate_tags_scores, tags_context, filepath)
-                # Fix order of the duplicates, together with the non-duplicates
+                # Make a copy of the tags and scores to change the order
                 tags_disambiguated = tags_scores.copy()
-                for idx, duplicate in enumerate(duplicates_disambiguated):
-                    new_idx = duplicate_idxs[idx]
-                    tags_disambiguated[new_idx] = duplicate
+
+                # Loop over duplicate scores and disambiguate tags
+                for score in duplicate_scores:
+                    duplicate_idxs = [tags_scores.index(ts) for ts in tags_scores if ts[1] == score]
+                    duplicate_tags_scores = [tags_scores[idx] for idx in duplicate_idxs]
+
+                    # Get the dictionaries of the context tokens
+                    context_tagged = self.get_context(tagged, idx)
+                    # Get the tags of the context tokens (only if they should not be disambiguated themselves)
+                    tags_context = []
+                    for token in context_tagged:
+                        # Get the tags of the token
+                        tags_token = token["DDB_TAGS"]
+                        # Add the top1 tag, but only if it should not also be disambiguated
+                        if (len(tags_token) == 1 and tags_token != "-") or (len(tags_token) > 1 and tags_token[0][1] != tags_token[1][1]):
+                            # Add the tag of the first level tag to the tags_context list
+                            tags_context.append(token["DDB_TAGS"][0][0])
+
+                    # Disambiguate the tags of the target based on the context (or size of the tag entry in DDB)
+                    duplicates_disambiguated = self.disambiguate_duplicates(token_tagged_d, duplicate_tags_scores, tags_context, filepath)
+
+                    # Fix the order while keeping the non-duplicates
+                    for idx, duplicate in enumerate(duplicates_disambiguated):
+                        new_idx = duplicate_idxs[idx]
+                        tags_disambiguated[new_idx] = duplicate
             
             # If no duplicates, the ordered is just the same as the original
             else:
                 tags_disambiguated = tags_scores
 
-            # Save results (top 3 tags) in a copy of the dictionary, to prevent overwriting and append
+            # Save results in a copy of the dictionary, to prevent overwriting and append
             token_disambiguated_d = token_tagged_d.copy()
-            token_disambiguated_d["DDB_TAGS"] = tags_scores[:3]
-            token_disambiguated_d["DDB_TAGS_DISAMBIGUATED"] = tags_disambiguated[:3]
+
+            if only_tagged_results == False:
+                token_disambiguated_d["DDB_TAGS"] = tags_scores
+                token_disambiguated_d["DDB_TAGS_DISAMBIGUATED"] = tags_disambiguated
+
+            elif only_tagged_results == True:
+                token_disambiguated_d["DDB_TAGS"] = [ts[0] for ts in tags_scores]
+                token_disambiguated_d["DDB_TAGS_DISAMBIGUATED"] = [ts[0] for ts in tags_disambiguated]
+
             tagged_disambiguated.append(token_disambiguated_d)
 
         # --- PREPARE OUTPUT ---
@@ -232,27 +248,29 @@ class DDB_tagger:
         df_tagged = pd.DataFrame(tagged_disambiguated, columns=column_names) 
         df_punc = pd.DataFrame(dicts_punc, columns=column_names)
         output = pd.concat([df_tagged, df_punc]).sort_values("ORIGINAL_IDX").reset_index(drop=True)
-        
-        # Split top three categories, drops unnecessary rows and replace NAs
-        output[["DDB1", "DDB2", "DDB3"]] = pd.DataFrame(output["DDB_TAGS_DISAMBIGUATED"].values.tolist())
+
+        # Split tags into separate columns
+        output['DDB1'] = output.apply(lambda row : row['DDB_TAGS_DISAMBIGUATED'][0], axis = 1)
+        output['DDB2'] = output.apply(lambda row : row['DDB_TAGS_DISAMBIGUATED'][1] if len(row['DDB_TAGS_DISAMBIGUATED']) > 1 else np.nan, axis = 1)
+        output['DDB3'] = output.apply(lambda row : row['DDB_TAGS_DISAMBIGUATED'][2] if len(row['DDB_TAGS_DISAMBIGUATED']) > 2 else np.nan, axis = 1)
+        output['DDB4+'] = output.apply(lambda row : row['DDB_TAGS_DISAMBIGUATED'][3:] if len(row['DDB_TAGS_DISAMBIGUATED']) > 3 else np.nan, axis = 1)
         output = output.drop(["DDB_TAGS", "DDB_TAGS_DISAMBIGUATED"], axis=1)
         output = output.fillna("-")
 
-        # If scores should not be in input only get the score
-        if only_tagged_results == True:
-            output["DDB1"] = output["DDB1"].str[0]
-            output["DDB2"] = output["DDB2"].str[0]
-            output["DDB3"] = output["DDB3"].str[0]
+        # If only top three tags, drop the fourth column:
+        if only_top3_results == True:
+            output = output.drop(["DDB4+"], axis=1)
         
         # Return output
         return output
 
-    def tag_directory(self, input_directory: str="in/", output_directory: str="out/", only_tagged_results: bool=False):
+    def tag_directory(self, input_directory: str="in/", output_directory: str="out/", only_top3_results: bool=True, only_tagged_results: bool=False):
         """Tagging all texts (.txt files) in a directory using the tag_text function.
 
         Args:
             input_directory (str, optional): Input directory containing .txt files. Defaults to "in/".
             output_directory (str, optional): Output directory to save results. Defaults to "out/".
+            only_top3_results (bool, optional): Defines whether only the top3 tags or all should be in the results. Defaults to True.
             only_tagged_results (bool, optional): Defines whether results should only contain tags (True), or also scores (False). Defaults to False.
         """        
         
@@ -275,12 +293,13 @@ class DDB_tagger:
 
         # Loop tagger over files
         for filename in tqdm(filenames):
-            output = self.tag_text(input=filename, input_file=True, only_tagged_results=only_tagged_results)
-            output_filename = output_directory + ("only_" if only_tagged_results == True else "scores_") + "tagged_" + filename.split("/")[1].replace(".txt", ".csv")
-            output.to_csv(output_filename, index=False, sep="\t", encoding="utf-8")
+            output = self.tag_text(input=filename, input_file=True, only_top3_results=only_top3_results, only_tagged_results=only_tagged_results)
+            output_directory_path = os.path.join(self.base_path, "..", output_directory)
+            output_path = output_directory_path + ("only_" if only_tagged_results == True else "scores_") + "tagged_" + filename.split("/")[1].replace(".txt", ".csv")
+            output.to_csv(output_path, index=False, sep="\t", encoding="utf-8")
         
         # Print done and results
-        print(f"[INFO] ...done! Results saved in {output_directory}")
+        print(f"[INFO] ...done! Results saved in {output_path}")
 
         # Print timings
         print(f"[INFO] {len(filenames)} files tagged in {round(time.time()-start, 2)} seconds!")
@@ -402,10 +421,14 @@ if __name__ == '__main__':
     parser.add_argument('--da_model', type=str, required=False,
                         default="spacy",
                         help="Danish language model to use, 'spacy' or 'dacy'.")
+    
+    parser.add_argument('--only_top3_results', required=False,
+                        action="store_true", default=True,
+                        help="Use argument if results should contain all possible tags, by default only contains the top3.")
 
     parser.add_argument('--only_tagged_results', required=False,
                         action="store_true", default=False,
-                        help="Use argument if results should only contain, by default also contain scores.")
+                        help="Use argument if results should only contain tags, by default also contain scores.")
 
     parser.add_argument('--output_directory', type=str, required=False,
                         default="out/",
@@ -422,6 +445,7 @@ if __name__ == '__main__':
     # Run tagger for directory 
     Tagger.tag_directory(input_directory=args.input_directory, 
                          output_directory=args.output_directory, 
+                         only_top3_results=args.only_top3_results,
                          only_tagged_results=args.only_tagged_results)
 
     
