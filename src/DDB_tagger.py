@@ -178,10 +178,13 @@ class DDB_tagger:
 
         # --- DISAMBIGUATION OF IDENTICAL SCORES ---
 
-        # Prepare file to save information about disambiguation
-        filepath = os.path.join(self.base_path, "..", "out", "disambiguation_info.txt")
-        if os.path.exists(filepath):
-            os.remove(filepath)
+        # Prepare file path to save disambiguation information (only saved if input was a file)
+        if input_file == True:
+            disambiguation_filepath = os.path.join(self.base_path, "..", "out", f"disambiguation_info-{input.split('/')[1]}")
+            if os.path.exists(disambiguation_filepath):
+                os.remove(disambiguation_filepath)
+        elif input_file == False:
+            disambiguation_filepath = None
 
         # Loop through tagged tokens
         tagged_disambiguated = []
@@ -217,7 +220,7 @@ class DDB_tagger:
                             tags_context.append(token["DDB_TAGS"][0][0])
 
                     # Disambiguate the tags of the target based on the context (or size of the tag entry in DDB)
-                    duplicates_disambiguated = self.disambiguate_duplicates(token_tagged_d, duplicate_tags_scores, tags_context, filepath)
+                    duplicates_disambiguated = self.disambiguate_duplicates(token_tagged_d, duplicate_tags_scores, tags_context, disambiguation_filepath)
 
                     # Fix the order while keeping the non-duplicates
                     for idx, duplicate in enumerate(duplicates_disambiguated):
@@ -340,23 +343,14 @@ class DDB_tagger:
         """Helper function to disambiguate between tags with duplicate scores.
 
         Args:
-            token_tagged_d (dict): dictionary of target token, for which scores are duplicate (only for info file)
-            duplicate_tags_scores (list[tuple]): list of tuples (tag, score) of tags with duplicate scores
-            tags_context (list[str]): list of str for the tags from the context
-            filepath (str): filepath to save disambiguation info
+            token_tagged_d (dict): dictionary of target token, for which scores are duplicate (only for info file).
+            duplicate_tags_scores (list[tuple]): list of tuples (tag, score) of tags with duplicate scores.
+            tags_context (list[str]): list of str for the tags from the context.
+            filepath (str): filepath to save disambiguation info, if None nothing is saved.
 
         Returns:
             duplicates_disambiguated (list[tuple]): list of tuples disambiguated by necessary sorting algorithm
         """
-
-        # --- SAVE BASIC INFORMATION ---
-        
-        f = open(filepath, "a")
-        f.write("\n----------------------------------------------\n")
-        f.write(f"TARGET INFO: {token_tagged_d['ORIGINAL_IDX'], token_tagged_d['TOKEN']}\n")
-        f.write(f"TARGET ALL TAGS: {token_tagged_d['DDB_TAGS']}\n")
-        f.write(f"TARGET DUPLICATE TAGS: {duplicate_tags_scores}\n")
-        f.write(f"TAGS CONTEXT: {tags_context}\n")
             
         # --- HIGH LEVEL DISAMBIGUATION ---
 
@@ -366,10 +360,10 @@ class DDB_tagger:
         # Count how many context words have each of the possible tags
         top_tags_counts = [(tag, top_tags_context.count(tag[0].split("|")[0] + "|")) for tag in duplicate_tags_scores]
         top_counts = [tag_count[1] for tag_count in top_tags_counts]
-        f.write(f"TOP LEVEL TAG COUNTS: {top_tags_counts}\n")
         
         # If that was successful in disambiguating
         if len(top_counts) == len(set(top_counts)): 
+            disambiguation_method = "HIGH-LEVEL"
             top_tags_counts_ordered = sorted(top_tags_counts, key=lambda x: x[1], reverse=True)
             duplicates_disambiguated = [tag[0] for tag in top_tags_counts_ordered]
 
@@ -379,10 +373,10 @@ class DDB_tagger:
             # Count how many context words have each of the possible tags
             sub_tags_counts = [(tag, tags_context.count(tag[0])) for tag in duplicate_tags_scores]
             sub_counts = [tag_count[1] for tag_count in sub_tags_counts]
-            f.write(f"SUB LEVEL TAGS COUNTS: {sub_tags_counts}\n")
             
             # If that was successful in disambiguating
             if len(sub_counts) == len(set(sub_counts)):
+                disambiguation_method = "LOW-LEVEL"
                 sub_tags_counts_ordered = sorted(sub_tags_counts, key=lambda x: x[1], reverse=True)
                 duplicates_disambiguated = [tag[0] for tag in sub_tags_counts_ordered]
 
@@ -390,8 +384,22 @@ class DDB_tagger:
 
             else:
                 # Return sorted by size of low level category
-                f.write(f"TAG SIZE DISAMBIGUATION: {[(x, len(self.DDB_dict[x[0]])) for x in duplicate_tags_scores]}\n")
+                disambiguation_method = "CATEGORY-SIZE"
                 duplicates_disambiguated = sorted(duplicate_tags_scores, key=lambda x: len(self.DDB_dict[x[0]]), reverse=True)
+
+        # --- SAVE INFO ---
+        if filepath is not None:
+            f = open(filepath, "a")
+            f.write("\n----------------------------------------------\n")
+            f.write(f"TARGET INFO: {token_tagged_d['ORIGINAL_IDX'], token_tagged_d['TOKEN']}\n")
+            f.write(f"TARGET ALL TAGS: {token_tagged_d['DDB_TAGS']}\n")
+            f.write(f"TARGET DUPLICATE TAGS: {duplicate_tags_scores}\n")
+            f.write(f"TAGS CONTEXT: {tags_context}\n")
+            f.write(f"TOP LEVEL TAG COUNTS: {top_tags_counts}\n")
+            if disambiguation_method == "LOW-LEVEL" or disambiguation_method == "CATEGORY-SIZE":
+                f.write(f"SUB LEVEL TAGS COUNTS: {sub_tags_counts}\n")
+            if disambiguation_method == "CATEGORY-SIZE":
+                f.write(f"TAG SIZE DISAMBIGUATION: {[(x, len(self.DDB_dict[x[0]])) for x in duplicate_tags_scores]}\n")
 
         return duplicates_disambiguated
 
