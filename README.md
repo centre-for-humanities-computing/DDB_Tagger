@@ -53,7 +53,7 @@ For some words, the possible tags may have identical Jaccard Distance scores. Th
  
 1. High-Level Disambiguation: Check the surrounding context of the word to see how many of the context words were assigned a tag belonging to each of the top-level categories. For instance, if a word is assigned `3.1 Studium, universitet` and `8.14 Vogn` with duplicate Jaccard Distance scores, the number of context words assigned a tag belonging to the high-level category `3` or `8` are counted.
  
-2. Low-Level Disambiguation: Check the surrounding context of the word to see how many of the context words were assigned a tag belonging to each of the low-level categories. For instance, if a word is assigned `3.1 Studium, universitet` and `8.14 Vogn` with duplicate Jaccard Distance scores, the number of context words assigned a tag belonging to the low-level category `3.1 Studium, universitet` or `8.14 Vogn` are counted.
+2. Low-Level Disambiguation: Check the surrounding context of the word to see how many of the context words were assigned a tag belonging to each of the low-level categories. For instance, if a word is assigned `3.1 Studium, universitet` and `8.14 Vogn` with duplicate Jaccard Distance scores, the number of context words assigned the low-level category `3.1 Studium, universitet` or `8.14 Vogn` are counted.
  
 3. Category-Size Disambiguation: Order tags with duplicate scores based on size of the category. For instance, if a word is assigned `3.1 Studium, universitet` and `8.14 Vogn` with duplicate Jaccard Distance scores, the tags are ordered based on how many words the category contains in the _DDB_. (_REF?_)
 
