@@ -29,7 +29,7 @@ Note that DDB structure includes Danish part-of-speech tags (e.g. _sb._ or _subs
 
 ### NLP Framework
 
-At present, the tagger uses the _[UDPipe](http://ufal.mff.cuni.cz/udpipe)_ framework to annotate texts. There are a number of pragmatic reasons for choosing this framework over others (e.g. Stanza, spaCy, OpenNLP). Ultimately, UDPipe won out for the breadth of its linguistic annotations, its speed, and the fact that it ships with an easy-to-use REST server implementation. This allows us to make a tool that can be easily shared without copyright issues and which can easily be incorporated into a GUI or browser interface. (see _Issues and Further Work_ below).
+The tagger can either be used in combination with a the _[Danish spaCy framework](https://spacy.io/models/da)_ or the _[DaCy framework](https://github.com/centre-for-humanities-computing/DaCy)_.
 
 ### Disambiguating Polysemous Words
 
@@ -45,31 +45,71 @@ The disambiguatiom algorithm has the following steps:
 The algorithm uses the top-level category for disambigutation, rather than the sub-category. This is based on a linguistic intuition regarding the distribution of semantic categories. For any given word, it is unlikely that there will be many context words which belong to the exact same sub-category. However, sub-categories which belong to the same top-level category share a degree of semantic similarity. 
 
 Take for example, _13.005 Geometri, figur_ and _13.004 Matematik_. Both are clearly related and in fact both belong to the top-level category _13 Videnskab_. It thus seems likely to assume that the presence of these tags would likely be accompanied by more words from _13 Videnskab_, rather than from the specfic sub-categories. This allows the algorithm to infer tags based on a looser set of semantic relations.
-  
 
-## How to run the prototype
 
-(NB: For copyright reasons, the data from DBO cannot be included in this repository. These instructions assume you have the data, in a folder called _dict_)
+### Disamiguation of Tags with Duplicate Jaccard Distance Scores
 
-First, create a virtual environment to work in. Then you should activate the virtual environemnt and install the necessary requirements.
+For some words, the possible tags may have identical Jaccard Distance scores. Thus, an additional algorithm for disambiguating duplicates is implemented. The algorithm uses three different methods, in a hierarchical manner (if 1. could not disambiguate tags, try 2., ...):
+ 
+1. High-Level Disambiguation: Check the surrounding context of the word to see how many of the context words were assigned a tag belonging to each of the top-level categories. For instance, if a word is assigned `3.1 Studium, universitet` and `8.14 Vogn` with duplicate Jaccard Distance scores, the number of context words assigned a tag belonging to the high-level category `3` or `8` are counted.
+ 
+2. Low-Level Disambiguation: Check the surrounding context of the word to see how many of the context words were assigned a tag belonging to each of the low-level categories. For instance, if a word is assigned `3.1 Studium, universitet` and `8.14 Vogn` with duplicate Jaccard Distance scores, the number of context words assigned a tag belonging to the low-level category `3.1 Studium, universitet` or `8.14 Vogn` are counted.
+ 
+3. Category-Size Disambiguation: Order tags with duplicate scores based on size of the category. For instance, if a word is assigned `3.1 Studium, universitet` and `8.14 Vogn` with duplicate Jaccard Distance scores, the tags are ordered based on how many words the category contains in the _DDB_. (_REF?_)
 
-For example:
 
+## Usage
+
+(NB: For copyright reasons, the data from DBO cannot be included in this repository. These instructions assume you have the data, in a folder called _dict_).
+ 
+### Dependencies
+ 
+First, create a virtual environment to work in. The required packages are defined in `requirements.txt`. To install these requirements and also load the necessary Danish language models, you can use the `install_requirements.txt` script.
+ 
 ```
+# Example of installing environment
 python3 -m venv env
 source ./env/bin/activate
-pip3 install -r requirements.txt
+bash install_requirements.sh
 ```
-
-Next, save any data you want to tag as plain text (.txt) files in the folder called _*in*_. Then simply run the script from the root directory:
-
+ 
+### Running Script from Terminal
+ 
+One way to use the tagger is by running the script from the terminal to tag all files of text in a given directory. For this, you can save your data as plain text (`.txt`) files in an input folder (by default `/in`). Then, you can run the script from the root directory:
+ 
 ```
+# Example with default parameters
 python3 src/DDB_tagger.py
+ 
+# Example with parameters
+python3 src/DDB_tagger.py --input_directory other_in/ --only_tagged_results
 ```
-
-If things are working correctly, you should get some feedback in the terminal about the progress of the script. 
-
-And that's it! Your output files are saved in folder called _*out*_.
+ 
+When running the script, you can define the following parameters:
+ 
+- `--input_directory`: *str, optional, default:* `in/`\
+   Input directory to files to tag, will tag all files in directory. Path should be from root directory.
+  
+- `--dict`: *str, optional, default:* `dict/dict.pkl`\
+  Path to semantic dictionary.
+ 
+- `--da_model`: *str, optional, default:* `spacy`\
+ Danish language model to use, `spacy` or `dacy`.
+ 
+- `--only_top3_results`: *argument, optional, default:* `True`\
+  Use argument if results should contain all possible tags, by default only contains the top3.
+ 
+- `--only_tagged_results`: *argument, optional, default:* `False`\
+  Use argument if results should only contain tags, by default also contain scores.
+ 
+- `--output_directory`: *str, optional, default:* `out/`\
+   "Directory to save output files. Path should be from root directory, and directory should be existing. "
+ 
+If things are working correctly, you should get some feedback in the terminal about the progress of the script. And that's it! Your output files are saved in folder called _*out*_ (unless you defined a different output path).
+ 
+### Running Script from Notebook
+ 
+Another way to use the tagger is by importing it in a Jupyter notebook. Here, you can either tag a string of text, or you can also use it to tag all files in a directory (same as calling it from the terminal, described above). Examples of how to import and use the tagger from a notebook are provided in the `DDB_demo.ipynb` file.
 
 
 ## Issues and Future Work
