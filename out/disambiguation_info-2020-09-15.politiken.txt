@@ -1,0 +1,610 @@
+
+----------------------------------------------
+TARGET INFO: (5, 'racisme')
+TARGET ALL TAGS: [('18|004|Ideologi, styreform', 0.9999722584403695), ('18|019|Ligestilling', 0.9999722584403695)]
+TARGET DUPLICATE TAGS: [('18|004|Ideologi, styreform', 0.9999722584403695), ('18|019|Ligestilling', 0.9999722584403695)]
+TAGS CONTEXT: ['11|013|Begrundelse', '18|017|Protest, oprør', '08|023|Styre mod, retning', '21|025|Politi', '04|028|Tilføje', '08|035|Sprede', '08|035|Sprede', '06|004|Klokkeslæt, dato', '08|025|Gå foran']
+TOP LEVEL TAG COUNTS: [(('18|004|Ideologi, styreform', 0.9999722584403695), 1), (('18|019|Ligestilling', 0.9999722584403695), 1)]
+SUB LEVEL TAGS COUNTS: [(('18|004|Ideologi, styreform', 0.9999722584403695), 0), (('18|019|Ligestilling', 0.9999722584403695), 0)]
+TAG SIZE DISAMBIGUATION: [(('18|004|Ideologi, styreform', 0.9999722584403695), 552), (('18|019|Ligestilling', 0.9999722584403695), 555)]
+
+----------------------------------------------
+TARGET INFO: (17, 'straks')
+TARGET ALL TAGS: [('09|036|Hast, hastværk', 0.9998966750015499), ('06|005|Tidligt tidspunkt', 0.9999668654738237), ('06|017|Straks', 0.9999668654738237), ('06|024|Nær fremtid', 0.9999668654738237)]
+TARGET DUPLICATE TAGS: [('06|005|Tidligt tidspunkt', 0.9999668654738237), ('06|017|Straks', 0.9999668654738237), ('06|024|Nær fremtid', 0.9999668654738237)]
+TAGS CONTEXT: ['09|067|Middel', '10|020|Begejstring, glæde, lykke', '09|022|Metode', '05|047|Skæbne, tilfælde', '09|067|Middel', '05|040|Tilblivelse, opståen', '18|009|Valghandling']
+TOP LEVEL TAG COUNTS: [(('06|005|Tidligt tidspunkt', 0.9999668654738237), 0), (('06|017|Straks', 0.9999668654738237), 0), (('06|024|Nær fremtid', 0.9999668654738237), 0)]
+SUB LEVEL TAGS COUNTS: [(('06|005|Tidligt tidspunkt', 0.9999668654738237), 0), (('06|017|Straks', 0.9999668654738237), 0), (('06|024|Nær fremtid', 0.9999668654738237), 0)]
+TAG SIZE DISAMBIGUATION: [(('06|005|Tidligt tidspunkt', 0.9999668654738237), 108), (('06|017|Straks', 0.9999668654738237), 43), (('06|024|Nær fremtid', 0.9999668654738237), 33)]
+
+----------------------------------------------
+TARGET INFO: (21, 'gøre')
+TARGET ALL TAGS: [('05|040|Tilblivelse, opståen', 0.9998037580336555), ('09|020|Handle, agere', 0.9999173417093734), ('02|033|Afføring, kropsvæsker', 1.0), ('15|016|Udføre, lystre', 1.0)]
+TARGET DUPLICATE TAGS: [('02|033|Afføring, kropsvæsker', 1.0), ('15|016|Udføre, lystre', 1.0)]
+TAGS CONTEXT: ['09|036|Hast, hastværk', '05|047|Skæbne, tilfælde', '09|067|Middel', '18|009|Valghandling', '05|018|Ligne', '11|020|Skepsis, mistro', '11|005|Tema']
+TOP LEVEL TAG COUNTS: [(('02|033|Afføring, kropsvæsker', 1.0), 0), (('15|016|Udføre, lystre', 1.0), 0)]
+SUB LEVEL TAGS COUNTS: [(('02|033|Afføring, kropsvæsker', 1.0), 0), (('15|016|Udføre, lystre', 1.0), 0)]
+TAG SIZE DISAMBIGUATION: [(('02|033|Afføring, kropsvæsker', 1.0), 615), (('15|016|Udføre, lystre', 1.0), 309)]
+
+----------------------------------------------
+TARGET INFO: (27, 'lov')
+TARGET ALL TAGS: [('13|002|Forskning, videnskab', 0.9999146320641967), ('22|010|Bøn, fromhed', 0.999948809828513), ('21|017|Lov', 0.9999648691375373), ('21|020|Rettighed', 0.9999648691375373)]
+TARGET DUPLICATE TAGS: [('21|017|Lov', 0.9999648691375373), ('21|020|Rettighed', 0.9999648691375373)]
+TAGS CONTEXT: ['18|009|Valghandling', '05|018|Ligne', '11|020|Skepsis, mistro', '11|005|Tema', '04|028|Tilføje', '13|016|Biologi', '04|042|Tilhørende', '02|013|Menneske']
+TOP LEVEL TAG COUNTS: [(('21|017|Lov', 0.9999648691375373), 0), (('21|020|Rettighed', 0.9999648691375373), 0)]
+SUB LEVEL TAGS COUNTS: [(('21|017|Lov', 0.9999648691375373), 0), (('21|020|Rettighed', 0.9999648691375373), 0)]
+TAG SIZE DISAMBIGUATION: [(('21|017|Lov', 0.9999648691375373), 983), (('21|020|Rettighed', 0.9999648691375373), 909)]
+
+----------------------------------------------
+TARGET INFO: (29, 'orden')
+TARGET ALL TAGS: [('13|016|Biologi', 0.9999430896622371), ('22|014|Præst', 0.999948809828513), ('15|010|Forening', 0.9999583654266503), ('15|019|Anerkendelse', 0.9999583654266503), ('09|039|Omhu', 0.9999586725627144), ('03|034|Række', 0.9999629066360028), ('21|017|Lov', 0.9999648691375373)]
+TARGET DUPLICATE TAGS: [('15|010|Forening', 0.9999583654266503), ('15|019|Anerkendelse', 0.9999583654266503)]
+TAGS CONTEXT: ['11|020|Skepsis, mistro', '11|005|Tema', '13|002|Forskning, videnskab', '04|028|Tilføje', '04|042|Tilhørende', '02|013|Menneske', '05|038|Voldsom', '05|024|Modsætning']
+TOP LEVEL TAG COUNTS: [(('15|010|Forening', 0.9999583654266503), 0), (('15|019|Anerkendelse', 0.9999583654266503), 0)]
+SUB LEVEL TAGS COUNTS: [(('15|010|Forening', 0.9999583654266503), 0), (('15|019|Anerkendelse', 0.9999583654266503), 0)]
+TAG SIZE DISAMBIGUATION: [(('15|010|Forening', 0.9999583654266503), 1257), (('15|019|Anerkendelse', 0.9999583654266503), 992)]
+
+----------------------------------------------
+TARGET INFO: (31, 'Siden')
+TARGET ALL TAGS: [('06|015|Efter, senere', 0.9999668654738237), ('06|023|Fremtid', 0.9999668654738237)]
+TARGET DUPLICATE TAGS: [('06|015|Efter, senere', 0.9999668654738237), ('06|023|Fremtid', 0.9999668654738237)]
+TAGS CONTEXT: ['11|020|Skepsis, mistro', '11|005|Tema', '13|002|Forskning, videnskab', '04|028|Tilføje', '13|016|Biologi', '04|042|Tilhørende', '02|013|Menneske', '05|038|Voldsom', '05|024|Modsætning']
+TOP LEVEL TAG COUNTS: [(('06|015|Efter, senere', 0.9999668654738237), 0), (('06|023|Fremtid', 0.9999668654738237), 0)]
+SUB LEVEL TAGS COUNTS: [(('06|015|Efter, senere', 0.9999668654738237), 0), (('06|023|Fremtid', 0.9999668654738237), 0)]
+TAG SIZE DISAMBIGUATION: [(('06|015|Efter, senere', 0.9999668654738237), 405), (('06|023|Fremtid', 0.9999668654738237), 214)]
+
+----------------------------------------------
+TARGET INFO: (36, 'demokratiske')
+TARGET ALL TAGS: [('18|005|Politiske holdninger', 1.0), ('18|010|Regere', 1.0), ('18|015|Demokrati', 1.0)]
+TARGET DUPLICATE TAGS: [('18|005|Politiske holdninger', 1.0), ('18|010|Regere', 1.0), ('18|015|Demokrati', 1.0)]
+TAGS CONTEXT: ['04|042|Tilhørende', '02|013|Menneske', '05|038|Voldsom', '05|024|Modsætning', '20|001|Stillingsbetegnelser']
+TOP LEVEL TAG COUNTS: [(('18|005|Politiske holdninger', 1.0), 0), (('18|010|Regere', 1.0), 0), (('18|015|Demokrati', 1.0), 0)]
+SUB LEVEL TAGS COUNTS: [(('18|005|Politiske holdninger', 1.0), 0), (('18|010|Regere', 1.0), 0), (('18|015|Demokrati', 1.0), 0)]
+TAG SIZE DISAMBIGUATION: [(('18|005|Politiske holdninger', 1.0), 1605), (('18|010|Regere', 1.0), 1449), (('18|015|Demokrati', 1.0), 526)]
+
+----------------------------------------------
+TARGET INFO: (38, 'i')
+TARGET ALL TAGS: [('03|002|Beliggenhed, sted', 0.9999629066360028), ('03|003|Tilstedeværelse', 0.9999629066360028), ('13|004|Matematik', 0.9999715456407922), ('19|008|Tøj, påklædning', 0.9999856332160046), ('06|004|Klokkeslæt, dato', 1.0)]
+TARGET DUPLICATE TAGS: [('03|002|Beliggenhed, sted', 0.9999629066360028), ('03|003|Tilstedeværelse', 0.9999629066360028)]
+TAGS CONTEXT: ['02|013|Menneske', '05|038|Voldsom', '05|024|Modsætning', '20|001|Stillingsbetegnelser']
+TOP LEVEL TAG COUNTS: [(('03|002|Beliggenhed, sted', 0.9999629066360028), 0), (('03|003|Tilstedeværelse', 0.9999629066360028), 0)]
+SUB LEVEL TAGS COUNTS: [(('03|002|Beliggenhed, sted', 0.9999629066360028), 0), (('03|003|Tilstedeværelse', 0.9999629066360028), 0)]
+TAG SIZE DISAMBIGUATION: [(('03|002|Beliggenhed, sted', 0.9999629066360028), 569), (('03|003|Tilstedeværelse', 0.9999629066360028), 77)]
+
+----------------------------------------------
+TARGET INFO: (52, 'bare')
+TARGET ALL TAGS: [('04|025|For lidt', 0.9999577113375904), ('04|034|En', 0.9999577113375904), ('09|049|Let, enkel', 1.0), ('15|025|Høflighed, hilsen', 1.0)]
+TARGET DUPLICATE TAGS: [('04|025|For lidt', 0.9999577113375904), ('04|034|En', 0.9999577113375904)]
+TAGS CONTEXT: ['05|034|Betingelse, forudsætning', '02|013|Menneske', '05|011|Omstændighed, forhold', '04|042|Tilhørende', '19|020|Internet', '22|013|Religionsudøvelse', '13|002|Forskning, videnskab']
+TOP LEVEL TAG COUNTS: [(('04|025|For lidt', 0.9999577113375904), 1), (('04|034|En', 0.9999577113375904), 1)]
+SUB LEVEL TAGS COUNTS: [(('04|025|For lidt', 0.9999577113375904), 0), (('04|034|En', 0.9999577113375904), 0)]
+TAG SIZE DISAMBIGUATION: [(('04|025|For lidt', 0.9999577113375904), 156), (('04|034|En', 0.9999577113375904), 282)]
+
+----------------------------------------------
+TARGET INFO: (52, 'bare')
+TARGET ALL TAGS: [('04|025|For lidt', 0.9999577113375904), ('04|034|En', 0.9999577113375904), ('09|049|Let, enkel', 1.0), ('15|025|Høflighed, hilsen', 1.0)]
+TARGET DUPLICATE TAGS: [('09|049|Let, enkel', 1.0), ('15|025|Høflighed, hilsen', 1.0)]
+TAGS CONTEXT: ['11|013|Begrundelse', '08|023|Styre mod, retning', '21|025|Politi', '04|028|Tilføje', '08|035|Sprede']
+TOP LEVEL TAG COUNTS: [(('09|049|Let, enkel', 1.0), 0), (('15|025|Høflighed, hilsen', 1.0), 0)]
+SUB LEVEL TAGS COUNTS: [(('09|049|Let, enkel', 1.0), 0), (('15|025|Høflighed, hilsen', 1.0), 0)]
+TAG SIZE DISAMBIGUATION: [(('09|049|Let, enkel', 1.0), 217), (('15|025|Høflighed, hilsen', 1.0), 693)]
+
+----------------------------------------------
+TARGET INFO: (57, 'LOV')
+TARGET ALL TAGS: [('13|002|Forskning, videnskab', 0.9999430896622371), ('22|010|Bøn, fromhed', 0.999948809828513), ('21|017|Lov', 1.0), ('21|020|Rettighed', 1.0)]
+TARGET DUPLICATE TAGS: [('21|017|Lov', 1.0), ('21|020|Rettighed', 1.0)]
+TAGS CONTEXT: ['04|042|Tilhørende', '19|020|Internet', '22|013|Religionsudøvelse', '04|028|Tilføje', '04|042|Tilhørende']
+TOP LEVEL TAG COUNTS: [(('21|017|Lov', 1.0), 0), (('21|020|Rettighed', 1.0), 0)]
+SUB LEVEL TAGS COUNTS: [(('21|017|Lov', 1.0), 0), (('21|020|Rettighed', 1.0), 0)]
+TAG SIZE DISAMBIGUATION: [(('21|017|Lov', 1.0), 983), (('21|020|Rettighed', 1.0), 909)]
+
+----------------------------------------------
+TARGET INFO: (68, 'strategien')
+TARGET ALL TAGS: [('18|020|Krig', 0.9999445153415081), ('09|015|Plan', 0.9999586725627144), ('09|022|Metode', 0.9999586725627144)]
+TARGET DUPLICATE TAGS: [('09|015|Plan', 0.9999586725627144), ('09|022|Metode', 0.9999586725627144)]
+TAGS CONTEXT: ['15|025|Høflighed, hilsen', '09|067|Middel', '04|042|Tilhørende', '11|002|Tanke, indskydelse', '18|009|Valghandling']
+TOP LEVEL TAG COUNTS: [(('09|015|Plan', 0.9999586725627144), 1), (('09|022|Metode', 0.9999586725627144), 1)]
+SUB LEVEL TAGS COUNTS: [(('09|015|Plan', 0.9999586725627144), 0), (('09|022|Metode', 0.9999586725627144), 0)]
+TAG SIZE DISAMBIGUATION: [(('09|015|Plan', 0.9999586725627144), 384), (('09|022|Metode', 0.9999586725627144), 417)]
+
+----------------------------------------------
+TARGET INFO: (73, 'demokratiske')
+TARGET ALL TAGS: [('18|005|Politiske holdninger', 0.9999445153415081), ('18|010|Regere', 0.9999445153415081), ('18|015|Demokrati', 0.9999445153415081)]
+TARGET DUPLICATE TAGS: [('18|005|Politiske holdninger', 0.9999445153415081), ('18|010|Regere', 0.9999445153415081), ('18|015|Demokrati', 0.9999445153415081)]
+TAGS CONTEXT: ['04|042|Tilhørende', '18|020|Krig', '11|002|Tanke, indskydelse', '18|009|Valghandling', '05|033|Årsag', '06|019|Nutid']
+TOP LEVEL TAG COUNTS: [(('18|005|Politiske holdninger', 0.9999445153415081), 2), (('18|010|Regere', 0.9999445153415081), 2), (('18|015|Demokrati', 0.9999445153415081), 2)]
+SUB LEVEL TAGS COUNTS: [(('18|005|Politiske holdninger', 0.9999445153415081), 0), (('18|010|Regere', 0.9999445153415081), 0), (('18|015|Demokrati', 0.9999445153415081), 0)]
+TAG SIZE DISAMBIGUATION: [(('18|005|Politiske holdninger', 0.9999445153415081), 1605), (('18|010|Regere', 0.9999445153415081), 1449), (('18|015|Demokrati', 0.9999445153415081), 526)]
+
+----------------------------------------------
+TARGET INFO: (77, 'fører')
+TARGET ALL TAGS: [('05|033|Årsag', 0.9999509467281468), ('08|006|Godstrafik, forsendelse', 0.9999749260317938), ('08|011|Vej, gade, plads', 0.9999749260317938), ('15|058|Ledelse, chef', 0.9999791831466756), ('17|001|Sport', 1.0), ('20|031|Butik', 1.0)]
+TARGET DUPLICATE TAGS: [('08|006|Godstrafik, forsendelse', 0.9999749260317938), ('08|011|Vej, gade, plads', 0.9999749260317938)]
+TAGS CONTEXT: ['18|009|Valghandling', '06|019|Nutid', '06|004|Klokkeslæt, dato', '18|009|Valghandling']
+TOP LEVEL TAG COUNTS: [(('08|006|Godstrafik, forsendelse', 0.9999749260317938), 0), (('08|011|Vej, gade, plads', 0.9999749260317938), 0)]
+SUB LEVEL TAGS COUNTS: [(('08|006|Godstrafik, forsendelse', 0.9999749260317938), 0), (('08|011|Vej, gade, plads', 0.9999749260317938), 0)]
+TAG SIZE DISAMBIGUATION: [(('08|006|Godstrafik, forsendelse', 0.9999749260317938), 477), (('08|011|Vej, gade, plads', 0.9999749260317938), 1994)]
+
+----------------------------------------------
+TARGET INFO: (80, 'i')
+TARGET ALL TAGS: [('06|004|Klokkeslæt, dato', 0.9999005898336537), ('19|008|Tøj, påklædning', 0.9999856332160046), ('03|002|Beliggenhed, sted', 1.0), ('03|003|Tilstedeværelse', 1.0), ('13|004|Matematik', 1.0)]
+TARGET DUPLICATE TAGS: [('03|002|Beliggenhed, sted', 1.0), ('03|003|Tilstedeværelse', 1.0), ('13|004|Matematik', 1.0)]
+TAGS CONTEXT: ['05|033|Årsag', '06|019|Nutid', '18|009|Valghandling', '18|009|Valghandling', '04|042|Tilhørende']
+TOP LEVEL TAG COUNTS: [(('03|002|Beliggenhed, sted', 1.0), 0), (('03|003|Tilstedeværelse', 1.0), 0), (('13|004|Matematik', 1.0), 0)]
+SUB LEVEL TAGS COUNTS: [(('03|002|Beliggenhed, sted', 1.0), 0), (('03|003|Tilstedeværelse', 1.0), 0), (('13|004|Matematik', 1.0), 0)]
+TAG SIZE DISAMBIGUATION: [(('03|002|Beliggenhed, sted', 1.0), 569), (('03|003|Tilstedeværelse', 1.0), 77), (('13|004|Matematik', 1.0), 1601)]
+
+----------------------------------------------
+TARGET INFO: (84, 'republikanske')
+TARGET ALL TAGS: [('18|004|Ideologi, styreform', 0.9999167707032875), ('18|005|Politiske holdninger', 0.9999167707032875)]
+TARGET DUPLICATE TAGS: [('18|004|Ideologi, styreform', 0.9999167707032875), ('18|005|Politiske holdninger', 0.9999167707032875)]
+TAGS CONTEXT: ['06|019|Nutid', '06|004|Klokkeslæt, dato', '18|009|Valghandling', '18|009|Valghandling', '04|042|Tilhørende', '09|051|Kvalitet, perfekt', '15|025|Høflighed, hilsen', '11|034|Uddannelse']
+TOP LEVEL TAG COUNTS: [(('18|004|Ideologi, styreform', 0.9999167707032875), 2), (('18|005|Politiske holdninger', 0.9999167707032875), 2)]
+SUB LEVEL TAGS COUNTS: [(('18|004|Ideologi, styreform', 0.9999167707032875), 0), (('18|005|Politiske holdninger', 0.9999167707032875), 0)]
+TAG SIZE DISAMBIGUATION: [(('18|004|Ideologi, styreform', 0.9999167707032875), 552), (('18|005|Politiske holdninger', 0.9999167707032875), 1605)]
+
+----------------------------------------------
+TARGET INFO: (91, 'lov')
+TARGET ALL TAGS: [('22|010|Bøn, fromhed', 0.999948809828513), ('21|017|Lov', 0.9999648691375373), ('21|020|Rettighed', 0.9999648691375373), ('13|002|Forskning, videnskab', 0.9999715456407922)]
+TARGET DUPLICATE TAGS: [('21|017|Lov', 0.9999648691375373), ('21|020|Rettighed', 0.9999648691375373)]
+TAGS CONTEXT: ['04|042|Tilhørende', '09|051|Kvalitet, perfekt', '15|025|Høflighed, hilsen', '11|034|Uddannelse', '04|028|Tilføje', '13|004|Matematik']
+TOP LEVEL TAG COUNTS: [(('21|017|Lov', 0.9999648691375373), 0), (('21|020|Rettighed', 0.9999648691375373), 0)]
+SUB LEVEL TAGS COUNTS: [(('21|017|Lov', 0.9999648691375373), 0), (('21|020|Rettighed', 0.9999648691375373), 0)]
+TAG SIZE DISAMBIGUATION: [(('21|017|Lov', 0.9999648691375373), 983), (('21|020|Rettighed', 0.9999648691375373), 909)]
+
+----------------------------------------------
+TARGET INFO: (95, 'i')
+TARGET ALL TAGS: [('13|004|Matematik', 0.9999430896622371), ('03|002|Beliggenhed, sted', 0.9999629066360028), ('03|003|Tilstedeværelse', 0.9999629066360028), ('06|004|Klokkeslæt, dato', 0.9999668654738237), ('19|008|Tøj, påklædning', 1.0)]
+TARGET DUPLICATE TAGS: [('03|002|Beliggenhed, sted', 0.9999629066360028), ('03|003|Tilstedeværelse', 0.9999629066360028)]
+TAGS CONTEXT: ['22|010|Bøn, fromhed', '04|028|Tilføje', '04|002|Stor', '04|044|Høj grad', '15|031|Seksuel frigjorthed']
+TOP LEVEL TAG COUNTS: [(('03|002|Beliggenhed, sted', 0.9999629066360028), 0), (('03|003|Tilstedeværelse', 0.9999629066360028), 0)]
+SUB LEVEL TAGS COUNTS: [(('03|002|Beliggenhed, sted', 0.9999629066360028), 0), (('03|003|Tilstedeværelse', 0.9999629066360028), 0)]
+TAG SIZE DISAMBIGUATION: [(('03|002|Beliggenhed, sted', 0.9999629066360028), 569), (('03|003|Tilstedeværelse', 0.9999629066360028), 77)]
+
+----------------------------------------------
+TARGET INFO: (97, 'grad')
+TARGET ALL TAGS: [('04|002|Stor', 0.9998308238876671), ('13|004|Matematik', 0.9999430896622371), ('13|005|Geometri, figur', 0.9999430896622371), ('13|007|Fysik', 0.9999430896622371), ('01|003|Jorden', 1.0), ('12|025|Grammatik', 1.0)]
+TARGET DUPLICATE TAGS: [('13|004|Matematik', 0.9999430896622371), ('13|005|Geometri, figur', 0.9999430896622371), ('13|007|Fysik', 0.9999430896622371)]
+TAGS CONTEXT: ['04|028|Tilføje', '13|004|Matematik', '04|044|Høj grad', '15|031|Seksuel frigjorthed', '08|017|Flyvemaskine', '08|023|Styre mod, retning']
+TOP LEVEL TAG COUNTS: [(('13|004|Matematik', 0.9999430896622371), 1), (('13|005|Geometri, figur', 0.9999430896622371), 1), (('13|007|Fysik', 0.9999430896622371), 1)]
+SUB LEVEL TAGS COUNTS: [(('13|004|Matematik', 0.9999430896622371), 1), (('13|005|Geometri, figur', 0.9999430896622371), 0), (('13|007|Fysik', 0.9999430896622371), 0)]
+TAG SIZE DISAMBIGUATION: [(('13|004|Matematik', 0.9999430896622371), 1601), (('13|005|Geometri, figur', 0.9999430896622371), 1172), (('13|007|Fysik', 0.9999430896622371), 2309)]
+
+----------------------------------------------
+TARGET INFO: (99, 'så')
+TARGET ALL TAGS: [('04|044|Høj grad', 0.9998731232818778), ('06|015|Efter, senere', 0.9999668654738237), ('11|014|Konkludere', 1.0), ('11|042|Overraskelse', 1.0)]
+TARGET DUPLICATE TAGS: [('11|014|Konkludere', 1.0), ('11|042|Overraskelse', 1.0)]
+TAGS CONTEXT: ['13|004|Matematik', '04|002|Stor', '15|031|Seksuel frigjorthed', '08|017|Flyvemaskine', '08|023|Styre mod, retning', '12|020|Svar']
+TOP LEVEL TAG COUNTS: [(('11|014|Konkludere', 1.0), 0), (('11|042|Overraskelse', 1.0), 0)]
+SUB LEVEL TAGS COUNTS: [(('11|014|Konkludere', 1.0), 0), (('11|042|Overraskelse', 1.0), 0)]
+TAG SIZE DISAMBIGUATION: [(('11|014|Konkludere', 1.0), 215), (('11|042|Overraskelse', 1.0), 306)]
+
+----------------------------------------------
+TARGET INFO: (107, 'i')
+TARGET ALL TAGS: [('03|002|Beliggenhed, sted', 0.9999258105200682), ('03|003|Tilstedeværelse', 0.9999258105200682), ('06|004|Klokkeslæt, dato', 0.9999668654738237), ('13|004|Matematik', 0.9999715456407922), ('19|008|Tøj, påklædning', 1.0)]
+TARGET DUPLICATE TAGS: [('03|002|Beliggenhed, sted', 0.9999258105200682), ('03|003|Tilstedeværelse', 0.9999258105200682)]
+TAGS CONTEXT: ['08|017|Flyvemaskine', '08|023|Styre mod, retning', '12|020|Svar', '08|023|Styre mod, retning', '18|017|Protest, oprør', '08|011|Vej, gade, plads', '12|037|Indvende, protestere', '04|020|Mange, meget', '18|003|Verdens lande og hovedstæder', '20|022|Betale tilbage']
+TOP LEVEL TAG COUNTS: [(('03|002|Beliggenhed, sted', 0.9999258105200682), 0), (('03|003|Tilstedeværelse', 0.9999258105200682), 0)]
+SUB LEVEL TAGS COUNTS: [(('03|002|Beliggenhed, sted', 0.9999258105200682), 0), (('03|003|Tilstedeværelse', 0.9999258105200682), 0)]
+TAG SIZE DISAMBIGUATION: [(('03|002|Beliggenhed, sted', 0.9999258105200682), 569), (('03|003|Tilstedeværelse', 0.9999258105200682), 77)]
+
+----------------------------------------------
+TARGET INFO: (112, 'amerikanere')
+TARGET ALL TAGS: [('18|003|Verdens lande og hovedstæder', 0.9999445138021917), ('15|002|Fremmede, udlandet', 1.0), ('16|006|Mad og madretter', 1.0)]
+TARGET DUPLICATE TAGS: [('15|002|Fremmede, udlandet', 1.0), ('16|006|Mad og madretter', 1.0)]
+TAGS CONTEXT: ['18|017|Protest, oprør', '08|011|Vej, gade, plads', '12|037|Indvende, protestere', '04|020|Mange, meget', '20|022|Betale tilbage', '13|003|Eksperiment, forsøg']
+TOP LEVEL TAG COUNTS: [(('15|002|Fremmede, udlandet', 1.0), 0), (('16|006|Mad og madretter', 1.0), 0)]
+SUB LEVEL TAGS COUNTS: [(('15|002|Fremmede, udlandet', 1.0), 0), (('16|006|Mad og madretter', 1.0), 0)]
+TAG SIZE DISAMBIGUATION: [(('15|002|Fremmede, udlandet', 1.0), 1318), (('16|006|Mad og madretter', 1.0), 11984)]
+
+----------------------------------------------
+TARGET INFO: (116, 'i')
+TARGET ALL TAGS: [('03|002|Beliggenhed, sted', 0.9999258105200682), ('03|003|Tilstedeværelse', 0.9999258105200682), ('06|004|Klokkeslæt, dato', 0.9999668654738237), ('13|004|Matematik', 0.9999715456407922), ('19|008|Tøj, påklædning', 0.9999856332160046)]
+TARGET DUPLICATE TAGS: [('03|002|Beliggenhed, sted', 0.9999258105200682), ('03|003|Tilstedeværelse', 0.9999258105200682)]
+TAGS CONTEXT: ['04|020|Mange, meget', '18|003|Verdens lande og hovedstæder', '20|022|Betale tilbage', '13|003|Eksperiment, forsøg']
+TOP LEVEL TAG COUNTS: [(('03|002|Beliggenhed, sted', 0.9999258105200682), 0), (('03|003|Tilstedeværelse', 0.9999258105200682), 0)]
+SUB LEVEL TAGS COUNTS: [(('03|002|Beliggenhed, sted', 0.9999258105200682), 0), (('03|003|Tilstedeværelse', 0.9999258105200682), 0)]
+TAG SIZE DISAMBIGUATION: [(('03|002|Beliggenhed, sted', 0.9999258105200682), 569), (('03|003|Tilstedeværelse', 0.9999258105200682), 77)]
+
+----------------------------------------------
+TARGET INFO: (121, 'mener')
+TARGET ALL TAGS: [('11|019|Mening, holdning', 0.9999451242934753), ('11|026|Antagelse', 0.9999451242934753), ('09|014|Hensigt, formål', 0.9999586725627144)]
+TARGET DUPLICATE TAGS: [('11|019|Mening, holdning', 0.9999451242934753), ('11|026|Antagelse', 0.9999451242934753)]
+TAGS CONTEXT: ['13|003|Eksperiment, forsøg', '11|011|Måle, regne', '11|009|Sammenligne', '09|014|Hensigt, formål']
+TOP LEVEL TAG COUNTS: [(('11|019|Mening, holdning', 0.9999451242934753), 2), (('11|026|Antagelse', 0.9999451242934753), 2)]
+SUB LEVEL TAGS COUNTS: [(('11|019|Mening, holdning', 0.9999451242934753), 0), (('11|026|Antagelse', 0.9999451242934753), 0)]
+TAG SIZE DISAMBIGUATION: [(('11|019|Mening, holdning', 0.9999451242934753), 598), (('11|026|Antagelse', 0.9999451242934753), 155)]
+
+----------------------------------------------
+TARGET INFO: (125, 'er')
+TARGET ALL TAGS: [('11|011|Måle, regne', 0.9999176819229503), ('08|001|Opholdssted, beboet sted', 0.999949849548646), ('07|001|Synlig', 1.0), ('12|011|Betegnelse, ord', 1.0), ('12|012|Betydning', 1.0)]
+TARGET DUPLICATE TAGS: [('07|001|Synlig', 1.0), ('12|011|Betegnelse, ord', 1.0), ('12|012|Betydning', 1.0)]
+TAGS CONTEXT: ['11|009|Sammenligne', '09|014|Hensigt, formål', '11|018|Udtænke, opfinde', '13|002|Forskning, videnskab']
+TOP LEVEL TAG COUNTS: [(('07|001|Synlig', 1.0), 0), (('12|011|Betegnelse, ord', 1.0), 0), (('12|012|Betydning', 1.0), 0)]
+SUB LEVEL TAGS COUNTS: [(('07|001|Synlig', 1.0), 0), (('12|011|Betegnelse, ord', 1.0), 0), (('12|012|Betydning', 1.0), 0)]
+TAG SIZE DISAMBIGUATION: [(('07|001|Synlig', 1.0), 324), (('12|011|Betegnelse, ord', 1.0), 1110), (('12|012|Betydning', 1.0), 476)]
+
+----------------------------------------------
+TARGET INFO: (126, 'bedre')
+TARGET ALL TAGS: [('11|009|Sammenligne', 0.9999176841816436), ('04|020|Mange, meget', 0.9999577113375904), ('09|047|Dygtighed, behændighed', 0.9999586725627144), ('09|049|Let, enkel', 0.9999586725627144), ('09|051|Kvalitet, perfekt', 0.9999586725627144), ('10|015|Velbehag, tilfredshed', 0.9999706063901708), ('17|017|Ketsjersport', 0.9999740663900415), ('17|023|Spil', 0.9999740663900415), ('20|028|Billig', 0.9999857738323873), ('02|035|Bedring', 0.9999859345110836), ('15|025|Høflighed, hilsen', 1.0)]
+TARGET DUPLICATE TAGS: [('09|047|Dygtighed, behændighed', 0.9999586725627144), ('09|049|Let, enkel', 0.9999586725627144), ('09|051|Kvalitet, perfekt', 0.9999586725627144)]
+TAGS CONTEXT: ['11|011|Måle, regne', '09|014|Hensigt, formål', '11|018|Udtænke, opfinde', '13|002|Forskning, videnskab', '04|028|Tilføje']
+TOP LEVEL TAG COUNTS: [(('09|047|Dygtighed, behændighed', 0.9999586725627144), 1), (('09|049|Let, enkel', 0.9999586725627144), 1), (('09|051|Kvalitet, perfekt', 0.9999586725627144), 1)]
+SUB LEVEL TAGS COUNTS: [(('09|047|Dygtighed, behændighed', 0.9999586725627144), 0), (('09|049|Let, enkel', 0.9999586725627144), 0), (('09|051|Kvalitet, perfekt', 0.9999586725627144), 0)]
+TAG SIZE DISAMBIGUATION: [(('09|047|Dygtighed, behændighed', 0.9999586725627144), 553), (('09|049|Let, enkel', 0.9999586725627144), 217), (('09|051|Kvalitet, perfekt', 0.9999586725627144), 663)]
+
+----------------------------------------------
+TARGET INFO: (129, 'skabe')
+TARGET ALL TAGS: [('11|018|Udtænke, opfinde', 0.9999451242934753), ('14|001|Kunst, kulturliv', 0.9999460072350305), ('05|001|Eksistens', 0.9999509467281468), ('05|008|Beskaffenhed, art', 0.9999509467281468)]
+TARGET DUPLICATE TAGS: [('05|001|Eksistens', 0.9999509467281468), ('05|008|Beskaffenhed, art', 0.9999509467281468)]
+TAGS CONTEXT: ['11|011|Måle, regne', '11|009|Sammenligne', '09|014|Hensigt, formål', '13|002|Forskning, videnskab', '04|028|Tilføje', '13|016|Biologi']
+TOP LEVEL TAG COUNTS: [(('05|001|Eksistens', 0.9999509467281468), 0), (('05|008|Beskaffenhed, art', 0.9999509467281468), 0)]
+SUB LEVEL TAGS COUNTS: [(('05|001|Eksistens', 0.9999509467281468), 0), (('05|008|Beskaffenhed, art', 0.9999509467281468), 0)]
+TAG SIZE DISAMBIGUATION: [(('05|001|Eksistens', 0.9999509467281468), 238), (('05|008|Beskaffenhed, art', 0.9999509467281468), 362)]
+
+----------------------------------------------
+TARGET INFO: (130, 'lov')
+TARGET ALL TAGS: [('13|002|Forskning, videnskab', 0.9999146320641967), ('22|010|Bøn, fromhed', 0.999948809828513), ('21|017|Lov', 0.9999648691375373), ('21|020|Rettighed', 0.9999648691375373)]
+TARGET DUPLICATE TAGS: [('21|017|Lov', 0.9999648691375373), ('21|020|Rettighed', 0.9999648691375373)]
+TAGS CONTEXT: ['11|011|Måle, regne', '11|009|Sammenligne', '09|014|Hensigt, formål', '11|018|Udtænke, opfinde', '04|028|Tilføje', '13|016|Biologi', '13|004|Matematik']
+TOP LEVEL TAG COUNTS: [(('21|017|Lov', 0.9999648691375373), 0), (('21|020|Rettighed', 0.9999648691375373), 0)]
+SUB LEVEL TAGS COUNTS: [(('21|017|Lov', 0.9999648691375373), 0), (('21|020|Rettighed', 0.9999648691375373), 0)]
+TAG SIZE DISAMBIGUATION: [(('21|017|Lov', 0.9999648691375373), 983), (('21|020|Rettighed', 0.9999648691375373), 909)]
+
+----------------------------------------------
+TARGET INFO: (136, 'I')
+TARGET ALL TAGS: [('13|004|Matematik', 0.9999146320641967), ('03|002|Beliggenhed, sted', 0.9999258105200682), ('03|003|Tilstedeværelse', 0.9999258105200682), ('06|004|Klokkeslæt, dato', 0.9999668654738237), ('19|008|Tøj, påklædning', 0.9999712660191943)]
+TARGET DUPLICATE TAGS: [('03|002|Beliggenhed, sted', 0.9999258105200682), ('03|003|Tilstedeværelse', 0.9999258105200682)]
+TAGS CONTEXT: ['13|002|Forskning, videnskab', '04|028|Tilføje', '13|016|Biologi', '11|011|Måle, regne']
+TOP LEVEL TAG COUNTS: [(('03|002|Beliggenhed, sted', 0.9999258105200682), 0), (('03|003|Tilstedeværelse', 0.9999258105200682), 0)]
+SUB LEVEL TAGS COUNTS: [(('03|002|Beliggenhed, sted', 0.9999258105200682), 0), (('03|003|Tilstedeværelse', 0.9999258105200682), 0)]
+TAG SIZE DISAMBIGUATION: [(('03|002|Beliggenhed, sted', 0.9999258105200682), 569), (('03|003|Tilstedeværelse', 0.9999258105200682), 77)]
+
+----------------------------------------------
+TARGET INFO: (139, 'i')
+TARGET ALL TAGS: [('03|002|Beliggenhed, sted', 0.9999629066360028), ('03|003|Tilstedeværelse', 0.9999629066360028), ('06|004|Klokkeslæt, dato', 0.9999668654738237), ('13|004|Matematik', 0.9999715456407922), ('19|008|Tøj, påklædning', 0.9999856332160046)]
+TARGET DUPLICATE TAGS: [('03|002|Beliggenhed, sted', 0.9999629066360028), ('03|003|Tilstedeværelse', 0.9999629066360028)]
+TAGS CONTEXT: ['13|004|Matematik', '11|011|Måle, regne']
+TOP LEVEL TAG COUNTS: [(('03|002|Beliggenhed, sted', 0.9999629066360028), 0), (('03|003|Tilstedeværelse', 0.9999629066360028), 0)]
+SUB LEVEL TAGS COUNTS: [(('03|002|Beliggenhed, sted', 0.9999629066360028), 0), (('03|003|Tilstedeværelse', 0.9999629066360028), 0)]
+TAG SIZE DISAMBIGUATION: [(('03|002|Beliggenhed, sted', 0.9999629066360028), 569), (('03|003|Tilstedeværelse', 0.9999629066360028), 77)]
+
+----------------------------------------------
+TARGET INFO: (141, 'politiske')
+TARGET ALL TAGS: [('18|004|Ideologi, styreform', 0.999972257670754), ('18|010|Regere', 0.999972257670754)]
+TARGET DUPLICATE TAGS: [('18|004|Ideologi, styreform', 0.999972257670754), ('18|010|Regere', 0.999972257670754)]
+TAGS CONTEXT: ['13|004|Matematik', '11|011|Måle, regne', '18|006|International politik']
+TOP LEVEL TAG COUNTS: [(('18|004|Ideologi, styreform', 0.999972257670754), 1), (('18|010|Regere', 0.999972257670754), 1)]
+SUB LEVEL TAGS COUNTS: [(('18|004|Ideologi, styreform', 0.999972257670754), 0), (('18|010|Regere', 0.999972257670754), 0)]
+TAG SIZE DISAMBIGUATION: [(('18|004|Ideologi, styreform', 0.999972257670754), 552), (('18|010|Regere', 0.999972257670754), 1449)]
+
+----------------------------------------------
+TARGET INFO: (145, 'viser')
+TARGET ALL TAGS: [('18|006|International politik', 0.9999445153415081), ('03|017|Ydre, udvendig', 0.9999629066360028), ('07|001|Synlig', 1.0), ('08|023|Styre mod, retning', 1.0), ('12|001|Tegn', 1.0), ('12|005|Fortale sig, sladre', 1.0), ('12|012|Betydning', 1.0), ('12|034|Gøre forståelig, forklare', 1.0), ('12|035|Argumentere, bevise', 1.0), ('19|026|Skydevåben', 1.0)]
+TARGET DUPLICATE TAGS: [('07|001|Synlig', 1.0), ('08|023|Styre mod, retning', 1.0), ('12|001|Tegn', 1.0), ('12|005|Fortale sig, sladre', 1.0), ('12|012|Betydning', 1.0), ('12|034|Gøre forståelig, forklare', 1.0), ('12|035|Argumentere, bevise', 1.0), ('19|026|Skydevåben', 1.0)]
+TAGS CONTEXT: ['05|042|Oprindelse', '18|009|Valghandling', '09|067|Middel']
+TOP LEVEL TAG COUNTS: [(('07|001|Synlig', 1.0), 0), (('08|023|Styre mod, retning', 1.0), 0), (('12|001|Tegn', 1.0), 0), (('12|005|Fortale sig, sladre', 1.0), 0), (('12|012|Betydning', 1.0), 0), (('12|034|Gøre forståelig, forklare', 1.0), 0), (('12|035|Argumentere, bevise', 1.0), 0), (('19|026|Skydevåben', 1.0), 0)]
+SUB LEVEL TAGS COUNTS: [(('07|001|Synlig', 1.0), 0), (('08|023|Styre mod, retning', 1.0), 0), (('12|001|Tegn', 1.0), 0), (('12|005|Fortale sig, sladre', 1.0), 0), (('12|012|Betydning', 1.0), 0), (('12|034|Gøre forståelig, forklare', 1.0), 0), (('12|035|Argumentere, bevise', 1.0), 0), (('19|026|Skydevåben', 1.0), 0)]
+TAG SIZE DISAMBIGUATION: [(('07|001|Synlig', 1.0), 324), (('08|023|Styre mod, retning', 1.0), 327), (('12|001|Tegn', 1.0), 958), (('12|005|Fortale sig, sladre', 1.0), 251), (('12|012|Betydning', 1.0), 476), (('12|034|Gøre forståelig, forklare', 1.0), 466), (('12|035|Argumentere, bevise', 1.0), 638), (('19|026|Skydevåben', 1.0), 1771)]
+
+----------------------------------------------
+TARGET INFO: (147, 'procent')
+TARGET ALL TAGS: [('11|011|Måle, regne', 1.0), ('13|004|Matematik', 1.0)]
+TARGET DUPLICATE TAGS: [('11|011|Måle, regne', 1.0), ('13|004|Matematik', 1.0)]
+TAGS CONTEXT: ['18|006|International politik', '05|042|Oprindelse', '18|009|Valghandling', '09|067|Middel', '12|034|Gøre forståelig, forklare']
+TOP LEVEL TAG COUNTS: [(('11|011|Måle, regne', 1.0), 0), (('13|004|Matematik', 1.0), 0)]
+SUB LEVEL TAGS COUNTS: [(('11|011|Måle, regne', 1.0), 0), (('13|004|Matematik', 1.0), 0)]
+TAG SIZE DISAMBIGUATION: [(('11|011|Måle, regne', 1.0), 2159), (('13|004|Matematik', 1.0), 1601)]
+
+----------------------------------------------
+TARGET INFO: (156, 'i')
+TARGET ALL TAGS: [('06|004|Klokkeslæt, dato', 0.9999337265557691), ('13|004|Matematik', 0.9999430880427977), ('03|002|Beliggenhed, sted', 0.9999629052600342), ('03|003|Tilstedeværelse', 0.9999629052600342), ('19|008|Tøj, påklædning', 0.9999856330095972)]
+TARGET DUPLICATE TAGS: [('03|002|Beliggenhed, sted', 0.9999629052600342), ('03|003|Tilstedeværelse', 0.9999629052600342)]
+TAGS CONTEXT: ['12|034|Gøre forståelig, forklare', '15|027|Venskab', '09|014|Hensigt, formål', '11|020|Skepsis, mistro', '06|004|Klokkeslæt, dato']
+TOP LEVEL TAG COUNTS: [(('03|002|Beliggenhed, sted', 0.9999629052600342), 0), (('03|003|Tilstedeværelse', 0.9999629052600342), 0)]
+SUB LEVEL TAGS COUNTS: [(('03|002|Beliggenhed, sted', 0.9999629052600342), 0), (('03|003|Tilstedeværelse', 0.9999629052600342), 0)]
+TAG SIZE DISAMBIGUATION: [(('03|002|Beliggenhed, sted', 0.9999629052600342), 569), (('03|003|Tilstedeværelse', 0.9999629052600342), 77)]
+
+----------------------------------------------
+TARGET INFO: (161, 'fører')
+TARGET ALL TAGS: [('08|006|Godstrafik, forsendelse', 0.9999498482910805), ('08|011|Vej, gade, plads', 0.9999498482910805), ('05|033|Årsag', 0.9999509419152276), ('15|058|Ledelse, chef', 0.9999791822799567), ('20|031|Butik', 0.9999857734276081), ('17|001|Sport', 1.0)]
+TARGET DUPLICATE TAGS: [('08|006|Godstrafik, forsendelse', 0.9999498482910805), ('08|011|Vej, gade, plads', 0.9999498482910805)]
+TAGS CONTEXT: ['06|004|Klokkeslæt, dato', '11|020|Skepsis, mistro', '06|004|Klokkeslæt, dato', '06|012|Kortvarig, forgængelig', '06|004|Klokkeslæt, dato']
+TOP LEVEL TAG COUNTS: [(('08|006|Godstrafik, forsendelse', 0.9999498482910805), 0), (('08|011|Vej, gade, plads', 0.9999498482910805), 0)]
+SUB LEVEL TAGS COUNTS: [(('08|006|Godstrafik, forsendelse', 0.9999498482910805), 0), (('08|011|Vej, gade, plads', 0.9999498482910805), 0)]
+TAG SIZE DISAMBIGUATION: [(('08|006|Godstrafik, forsendelse', 0.9999498482910805), 477), (('08|011|Vej, gade, plads', 0.9999498482910805), 1994)]
+
+----------------------------------------------
+TARGET INFO: (162, 'i')
+TARGET ALL TAGS: [('06|004|Klokkeslæt, dato', 0.9998674487192233), ('03|002|Beliggenhed, sted', 0.9999258105200682), ('03|003|Tilstedeværelse', 0.9999258105200682), ('13|004|Matematik', 0.9999430896622371), ('19|008|Tøj, påklædning', 0.9999856332160046)]
+TARGET DUPLICATE TAGS: [('03|002|Beliggenhed, sted', 0.9999258105200682), ('03|003|Tilstedeværelse', 0.9999258105200682)]
+TAGS CONTEXT: ['06|004|Klokkeslæt, dato', '11|020|Skepsis, mistro', '06|012|Kortvarig, forgængelig', '06|004|Klokkeslæt, dato', '04|042|Tilhørende']
+TOP LEVEL TAG COUNTS: [(('03|002|Beliggenhed, sted', 0.9999258105200682), 0), (('03|003|Tilstedeværelse', 0.9999258105200682), 0)]
+SUB LEVEL TAGS COUNTS: [(('03|002|Beliggenhed, sted', 0.9999258105200682), 0), (('03|003|Tilstedeværelse', 0.9999258105200682), 0)]
+TAG SIZE DISAMBIGUATION: [(('03|002|Beliggenhed, sted', 0.9999258105200682), 569), (('03|003|Tilstedeværelse', 0.9999258105200682), 77)]
+
+----------------------------------------------
+TARGET INFO: (171, 'i')
+TARGET ALL TAGS: [('13|004|Matematik', 0.9999430896622371), ('06|004|Klokkeslæt, dato', 0.9999668654738237), ('03|002|Beliggenhed, sted', 1.0), ('03|003|Tilstedeværelse', 1.0), ('19|008|Tøj, påklædning', 1.0)]
+TARGET DUPLICATE TAGS: [('03|002|Beliggenhed, sted', 1.0), ('03|003|Tilstedeværelse', 1.0), ('19|008|Tøj, påklædning', 1.0)]
+TAGS CONTEXT: ['04|042|Tilhørende', '04|037|Fire osv.', '09|041|Vigtig', '13|006|Statistik', '05|042|Oprindelse']
+TOP LEVEL TAG COUNTS: [(('03|002|Beliggenhed, sted', 1.0), 0), (('03|003|Tilstedeværelse', 1.0), 0), (('19|008|Tøj, påklædning', 1.0), 0)]
+SUB LEVEL TAGS COUNTS: [(('03|002|Beliggenhed, sted', 1.0), 0), (('03|003|Tilstedeværelse', 1.0), 0), (('19|008|Tøj, påklædning', 1.0), 0)]
+TAG SIZE DISAMBIGUATION: [(('03|002|Beliggenhed, sted', 1.0), 569), (('03|003|Tilstedeværelse', 1.0), 77), (('19|008|Tøj, påklædning', 1.0), 7118)]
+
+----------------------------------------------
+TARGET INFO: (173, 'vægtet')
+TARGET ALL TAGS: [('09|041|Vigtig', 0.9999793367083376), ('11|011|Måle, regne', 1.0), ('15|021|Bedømmelse', 1.0)]
+TARGET DUPLICATE TAGS: [('11|011|Måle, regne', 1.0), ('15|021|Bedømmelse', 1.0)]
+TAGS CONTEXT: ['04|037|Fire osv.', '13|004|Matematik', '13|006|Statistik', '05|042|Oprindelse', '18|009|Valghandling']
+TOP LEVEL TAG COUNTS: [(('11|011|Måle, regne', 1.0), 0), (('15|021|Bedømmelse', 1.0), 0)]
+SUB LEVEL TAGS COUNTS: [(('11|011|Måle, regne', 1.0), 0), (('15|021|Bedømmelse', 1.0), 0)]
+TAG SIZE DISAMBIGUATION: [(('11|011|Måle, regne', 1.0), 2159), (('15|021|Bedømmelse', 1.0), 547)]
+
+----------------------------------------------
+TARGET INFO: (192, 'er')
+TARGET ALL TAGS: [('11|011|Måle, regne', 0.9999451242934753), ('07|001|Synlig', 1.0), ('08|001|Opholdssted, beboet sted', 1.0), ('12|011|Betegnelse, ord', 1.0), ('12|012|Betydning', 1.0)]
+TARGET DUPLICATE TAGS: [('07|001|Synlig', 1.0), ('08|001|Opholdssted, beboet sted', 1.0), ('12|011|Betegnelse, ord', 1.0), ('12|012|Betydning', 1.0)]
+TAGS CONTEXT: ['22|015|Helligdom, kultsted', '09|067|Middel', '06|004|Klokkeslæt, dato', '14|005|Tegning, maleri', '15|002|Fremmede, udlandet']
+TOP LEVEL TAG COUNTS: [(('07|001|Synlig', 1.0), 0), (('08|001|Opholdssted, beboet sted', 1.0), 0), (('12|011|Betegnelse, ord', 1.0), 0), (('12|012|Betydning', 1.0), 0)]
+SUB LEVEL TAGS COUNTS: [(('07|001|Synlig', 1.0), 0), (('08|001|Opholdssted, beboet sted', 1.0), 0), (('12|011|Betegnelse, ord', 1.0), 0), (('12|012|Betydning', 1.0), 0)]
+TAG SIZE DISAMBIGUATION: [(('07|001|Synlig', 1.0), 324), (('08|001|Opholdssted, beboet sted', 1.0), 928), (('12|011|Betegnelse, ord', 1.0), 1110), (('12|012|Betydning', 1.0), 476)]
+
+----------------------------------------------
+TARGET INFO: (194, 'måske')
+TARGET ALL TAGS: [('11|020|Skepsis, mistro', 0.9999451242934753), ('11|021|Formodning, tro', 0.9999451242934753)]
+TARGET DUPLICATE TAGS: [('11|020|Skepsis, mistro', 0.9999451242934753), ('11|021|Formodning, tro', 0.9999451242934753)]
+TAGS CONTEXT: ['09|067|Middel', '06|004|Klokkeslæt, dato', '14|005|Tegning, maleri', '11|011|Måle, regne', '15|002|Fremmede, udlandet']
+TOP LEVEL TAG COUNTS: [(('11|020|Skepsis, mistro', 0.9999451242934753), 1), (('11|021|Formodning, tro', 0.9999451242934753), 1)]
+SUB LEVEL TAGS COUNTS: [(('11|020|Skepsis, mistro', 0.9999451242934753), 0), (('11|021|Formodning, tro', 0.9999451242934753), 0)]
+TAG SIZE DISAMBIGUATION: [(('11|020|Skepsis, mistro', 0.9999451242934753), 241), (('11|021|Formodning, tro', 0.9999451242934753), 165)]
+
+----------------------------------------------
+TARGET INFO: (196, 'så')
+TARGET ALL TAGS: [('11|014|Konkludere', 0.9999451242934753), ('11|042|Overraskelse', 0.9999451242934753), ('04|044|Høj grad', 0.9999577113375904), ('06|015|Efter, senere', 0.9999668654738237)]
+TARGET DUPLICATE TAGS: [('11|014|Konkludere', 0.9999451242934753), ('11|042|Overraskelse', 0.9999451242934753)]
+TAGS CONTEXT: ['14|005|Tegning, maleri', '11|011|Måle, regne', '15|002|Fremmede, udlandet', '09|036|Hast, hastværk', '04|042|Tilhørende']
+TOP LEVEL TAG COUNTS: [(('11|014|Konkludere', 0.9999451242934753), 1), (('11|042|Overraskelse', 0.9999451242934753), 1)]
+SUB LEVEL TAGS COUNTS: [(('11|014|Konkludere', 0.9999451242934753), 0), (('11|042|Overraskelse', 0.9999451242934753), 0)]
+TAG SIZE DISAMBIGUATION: [(('11|014|Konkludere', 0.9999451242934753), 215), (('11|042|Overraskelse', 0.9999451242934753), 306)]
+
+----------------------------------------------
+TARGET INFO: (210, 'er')
+TARGET ALL TAGS: [('08|001|Opholdssted, beboet sted', 0.999899696582161), ('11|011|Måle, regne', 0.9999451242934753), ('12|011|Betegnelse, ord', 0.9999764150943397), ('12|012|Betydning', 0.9999764150943397), ('07|001|Synlig', 1.0)]
+TARGET DUPLICATE TAGS: [('12|011|Betegnelse, ord', 0.9999764150943397), ('12|012|Betydning', 0.9999764150943397)]
+TAGS CONTEXT: ['04|033|Tal', '11|011|Måle, regne', '08|023|Styre mod, retning', '18|009|Valghandling', '13|004|Matematik', '04|042|Tilhørende', '17|028|Rejser, turisme']
+TOP LEVEL TAG COUNTS: [(('12|011|Betegnelse, ord', 0.9999764150943397), 0), (('12|012|Betydning', 0.9999764150943397), 0)]
+SUB LEVEL TAGS COUNTS: [(('12|011|Betegnelse, ord', 0.9999764150943397), 0), (('12|012|Betydning', 0.9999764150943397), 0)]
+TAG SIZE DISAMBIGUATION: [(('12|011|Betegnelse, ord', 0.9999764150943397), 1110), (('12|012|Betydning', 0.9999764150943397), 476)]
+
+----------------------------------------------
+TARGET INFO: (211, 'i')
+TARGET ALL TAGS: [('13|004|Matematik', 0.9999430896622371), ('03|002|Beliggenhed, sted', 0.9999629066360028), ('03|003|Tilstedeværelse', 0.9999629066360028), ('19|008|Tøj, påklædning', 0.9999856332160046), ('06|004|Klokkeslæt, dato', 1.0)]
+TARGET DUPLICATE TAGS: [('03|002|Beliggenhed, sted', 0.9999629066360028), ('03|003|Tilstedeværelse', 0.9999629066360028)]
+TAGS CONTEXT: ['04|033|Tal', '11|011|Måle, regne', '08|023|Styre mod, retning', '18|009|Valghandling', '08|001|Opholdssted, beboet sted', '04|042|Tilhørende', '17|028|Rejser, turisme']
+TOP LEVEL TAG COUNTS: [(('03|002|Beliggenhed, sted', 0.9999629066360028), 0), (('03|003|Tilstedeværelse', 0.9999629066360028), 0)]
+SUB LEVEL TAGS COUNTS: [(('03|002|Beliggenhed, sted', 0.9999629066360028), 0), (('03|003|Tilstedeværelse', 0.9999629066360028), 0)]
+TAG SIZE DISAMBIGUATION: [(('03|002|Beliggenhed, sted', 0.9999629066360028), 569), (('03|003|Tilstedeværelse', 0.9999629066360028), 77)]
+
+----------------------------------------------
+TARGET INFO: (212, 'gang')
+TARGET ALL TAGS: [('08|004|Bevægelse', 0.999899696582161), ('08|011|Vej, gade, plads', 0.999899696582161), ('08|020|Langsom bevægelse', 0.999899696582161), ('08|038|Igennem', 0.999899696582161), ('04|017|Mængde, antal', 0.9999154190983676), ('19|003|Bygningsdel', 0.9999856332160046), ('02|025|Menneskets krop', 0.9999859345110836)]
+TARGET DUPLICATE TAGS: [('08|004|Bevægelse', 0.999899696582161), ('08|011|Vej, gade, plads', 0.999899696582161), ('08|020|Langsom bevægelse', 0.999899696582161), ('08|038|Igennem', 0.999899696582161)]
+TAGS CONTEXT: ['11|011|Måle, regne', '08|023|Styre mod, retning', '18|009|Valghandling', '08|001|Opholdssted, beboet sted', '13|004|Matematik', '04|042|Tilhørende', '17|028|Rejser, turisme']
+TOP LEVEL TAG COUNTS: [(('08|004|Bevægelse', 0.999899696582161), 2), (('08|011|Vej, gade, plads', 0.999899696582161), 2), (('08|020|Langsom bevægelse', 0.999899696582161), 2), (('08|038|Igennem', 0.999899696582161), 2)]
+SUB LEVEL TAGS COUNTS: [(('08|004|Bevægelse', 0.999899696582161), 0), (('08|011|Vej, gade, plads', 0.999899696582161), 0), (('08|020|Langsom bevægelse', 0.999899696582161), 0), (('08|038|Igennem', 0.999899696582161), 0)]
+TAG SIZE DISAMBIGUATION: [(('08|004|Bevægelse', 0.999899696582161), 471), (('08|011|Vej, gade, plads', 0.999899696582161), 1994), (('08|020|Langsom bevægelse', 0.999899696582161), 327), (('08|038|Igennem', 0.999899696582161), 223)]
+
+----------------------------------------------
+TARGET INFO: (220, 'er')
+TARGET ALL TAGS: [('12|011|Betegnelse, ord', 0.9999528290761575), ('12|012|Betydning', 0.9999528290761575), ('07|001|Synlig', 0.9999662879681759), ('08|001|Opholdssted, beboet sted', 0.9999749260317938), ('11|011|Måle, regne', 1.0)]
+TARGET DUPLICATE TAGS: [('12|011|Betegnelse, ord', 0.9999528290761575), ('12|012|Betydning', 0.9999528290761575)]
+TAGS CONTEXT: ['04|042|Tilhørende', '17|028|Rejser, turisme', '07|012|Optiske instrumenter', '09|067|Middel', '13|019|Samfundsvidenskab']
+TOP LEVEL TAG COUNTS: [(('12|011|Betegnelse, ord', 0.9999528290761575), 0), (('12|012|Betydning', 0.9999528290761575), 0)]
+SUB LEVEL TAGS COUNTS: [(('12|011|Betegnelse, ord', 0.9999528290761575), 0), (('12|012|Betydning', 0.9999528290761575), 0)]
+TAG SIZE DISAMBIGUATION: [(('12|011|Betegnelse, ord', 0.9999528290761575), 1110), (('12|012|Betydning', 0.9999528290761575), 476)]
+
+----------------------------------------------
+TARGET INFO: (224, 'økonomien')
+TARGET ALL TAGS: [('13|019|Samfundsvidenskab', 0.9999715456407922), ('18|002|Stat, nation', 1.0), ('20|034|Privatøkonomi, forbrug', 1.0), ('20|045|Overskud', 1.0)]
+TARGET DUPLICATE TAGS: [('18|002|Stat, nation', 1.0), ('20|034|Privatøkonomi, forbrug', 1.0), ('20|045|Overskud', 1.0)]
+TAGS CONTEXT: ['07|012|Optiske instrumenter', '09|067|Middel', '12|034|Gøre forståelig, forklare', '19|024|Råstoffer, materialer', '19|008|Tøj, påklædning']
+TOP LEVEL TAG COUNTS: [(('18|002|Stat, nation', 1.0), 0), (('20|034|Privatøkonomi, forbrug', 1.0), 0), (('20|045|Overskud', 1.0), 0)]
+SUB LEVEL TAGS COUNTS: [(('18|002|Stat, nation', 1.0), 0), (('20|034|Privatøkonomi, forbrug', 1.0), 0), (('20|045|Overskud', 1.0), 0)]
+TAG SIZE DISAMBIGUATION: [(('18|002|Stat, nation', 1.0), 1331), (('20|034|Privatøkonomi, forbrug', 1.0), 1138), (('20|045|Overskud', 1.0), 685)]
+
+----------------------------------------------
+TARGET INFO: (229, 'i')
+TARGET ALL TAGS: [('19|008|Tøj, påklædning', 0.9999712660191943), ('13|004|Matematik', 0.9999715456407922), ('03|002|Beliggenhed, sted', 1.0), ('03|003|Tilstedeværelse', 1.0), ('06|004|Klokkeslæt, dato', 1.0)]
+TARGET DUPLICATE TAGS: [('03|002|Beliggenhed, sted', 1.0), ('03|003|Tilstedeværelse', 1.0), ('06|004|Klokkeslæt, dato', 1.0)]
+TAGS CONTEXT: ['13|019|Samfundsvidenskab', '12|034|Gøre forståelig, forklare', '19|024|Råstoffer, materialer', '18|009|Valghandling', '12|002|Fortælle']
+TOP LEVEL TAG COUNTS: [(('03|002|Beliggenhed, sted', 1.0), 0), (('03|003|Tilstedeværelse', 1.0), 0), (('06|004|Klokkeslæt, dato', 1.0), 0)]
+SUB LEVEL TAGS COUNTS: [(('03|002|Beliggenhed, sted', 1.0), 0), (('03|003|Tilstedeværelse', 1.0), 0), (('06|004|Klokkeslæt, dato', 1.0), 0)]
+TAG SIZE DISAMBIGUATION: [(('03|002|Beliggenhed, sted', 1.0), 569), (('03|003|Tilstedeværelse', 1.0), 77), (('06|004|Klokkeslæt, dato', 1.0), 470)]
+
+----------------------------------------------
+TARGET INFO: (235, 'medarbejder')
+TARGET ALL TAGS: [('20|001|Stillingsbetegnelser', 1.0), ('20|041|Virksomhed, ledelse', 1.0)]
+TARGET DUPLICATE TAGS: [('20|001|Stillingsbetegnelser', 1.0), ('20|041|Virksomhed, ledelse', 1.0)]
+TAGS CONTEXT: ['19|008|Tøj, påklædning', '18|009|Valghandling', '12|002|Fortælle', '09|026|Begynde', '18|009|Valghandling', '05|018|Ligne']
+TOP LEVEL TAG COUNTS: [(('20|001|Stillingsbetegnelser', 1.0), 0), (('20|041|Virksomhed, ledelse', 1.0), 0)]
+SUB LEVEL TAGS COUNTS: [(('20|001|Stillingsbetegnelser', 1.0), 0), (('20|041|Virksomhed, ledelse', 1.0), 0)]
+TAG SIZE DISAMBIGUATION: [(('20|001|Stillingsbetegnelser', 1.0), 12740), (('20|041|Virksomhed, ledelse', 1.0), 2497)]
+
+----------------------------------------------
+TARGET INFO: (239, 'til')
+TARGET ALL TAGS: [('05|018|Ligne', 0.9999509467281468), ('09|014|Hensigt, formål', 0.9999586725627144), ('08|023|Styre mod, retning', 1.0), ('13|005|Geometri, figur', 1.0)]
+TARGET DUPLICATE TAGS: [('08|023|Styre mod, retning', 1.0), ('13|005|Geometri, figur', 1.0)]
+TAGS CONTEXT: ['09|026|Begynde', '18|009|Valghandling', '04|028|Tilføje']
+TOP LEVEL TAG COUNTS: [(('08|023|Styre mod, retning', 1.0), 0), (('13|005|Geometri, figur', 1.0), 0)]
+SUB LEVEL TAGS COUNTS: [(('08|023|Styre mod, retning', 1.0), 0), (('13|005|Geometri, figur', 1.0), 0)]
+TAG SIZE DISAMBIGUATION: [(('08|023|Styre mod, retning', 1.0), 327), (('13|005|Geometri, figur', 1.0), 1172)]
+
+----------------------------------------------
+TARGET INFO: (246, 'har')
+TARGET ALL TAGS: [('04|042|Tilhørende', 0.9998731232818778), ('20|008|Besidde, eje', 0.9999857738323873), ('02|037|Sygdom', 1.0), ('06|004|Klokkeslæt, dato', 1.0), ('12|011|Betegnelse, ord', 1.0)]
+TARGET DUPLICATE TAGS: [('02|037|Sygdom', 1.0), ('06|004|Klokkeslæt, dato', 1.0), ('12|011|Betegnelse, ord', 1.0)]
+TAGS CONTEXT: ['04|028|Tilføje', '11|014|Konkludere', '04|033|Tal']
+TOP LEVEL TAG COUNTS: [(('02|037|Sygdom', 1.0), 0), (('06|004|Klokkeslæt, dato', 1.0), 0), (('12|011|Betegnelse, ord', 1.0), 0)]
+SUB LEVEL TAGS COUNTS: [(('02|037|Sygdom', 1.0), 0), (('06|004|Klokkeslæt, dato', 1.0), 0), (('12|011|Betegnelse, ord', 1.0), 0)]
+TAG SIZE DISAMBIGUATION: [(('02|037|Sygdom', 1.0), 4802), (('06|004|Klokkeslæt, dato', 1.0), 470), (('12|011|Betegnelse, ord', 1.0), 1110)]
+
+----------------------------------------------
+TARGET INFO: (248, 'investeret')
+TARGET ALL TAGS: [('20|038|Værdipapirer', 0.9999715472600011), ('20|039|Økonomisk politik', 0.9999715472600011)]
+TARGET DUPLICATE TAGS: [('20|038|Værdipapirer', 0.9999715472600011), ('20|039|Økonomisk politik', 0.9999715472600011)]
+TAGS CONTEXT: ['04|028|Tilføje', '04|042|Tilhørende', '11|014|Konkludere', '04|033|Tal', '19|010|Pynt og smykker']
+TOP LEVEL TAG COUNTS: [(('20|038|Værdipapirer', 0.9999715472600011), 0), (('20|039|Økonomisk politik', 0.9999715472600011), 0)]
+SUB LEVEL TAGS COUNTS: [(('20|038|Værdipapirer', 0.9999715472600011), 0), (('20|039|Økonomisk politik', 0.9999715472600011), 0)]
+TAG SIZE DISAMBIGUATION: [(('20|038|Værdipapirer', 0.9999715472600011), 1843), (('20|039|Økonomisk politik', 0.9999715472600011), 1409)]
+
+----------------------------------------------
+TARGET INFO: (249, 'små')
+TARGET ALL TAGS: [('04|004|Lille', 0.9998731232818778), ('04|007|Kort', 0.9998731232818778), ('04|013|Lav', 0.9998731232818778), ('04|046|Mindre grad', 0.9998731232818778), ('19|008|Tøj, påklædning', 0.9999712660191943), ('09|042|Uvigtig', 1.0)]
+TARGET DUPLICATE TAGS: [('04|004|Lille', 0.9998731232818778), ('04|007|Kort', 0.9998731232818778), ('04|013|Lav', 0.9998731232818778), ('04|046|Mindre grad', 0.9998731232818778)]
+TAGS CONTEXT: ['04|042|Tilhørende', '11|014|Konkludere', '04|033|Tal', '19|010|Pynt og smykker']
+TOP LEVEL TAG COUNTS: [(('04|004|Lille', 0.9998731232818778), 2), (('04|007|Kort', 0.9998731232818778), 2), (('04|013|Lav', 0.9998731232818778), 2), (('04|046|Mindre grad', 0.9998731232818778), 2)]
+SUB LEVEL TAGS COUNTS: [(('04|004|Lille', 0.9998731232818778), 0), (('04|007|Kort', 0.9998731232818778), 0), (('04|013|Lav', 0.9998731232818778), 0), (('04|046|Mindre grad', 0.9998731232818778), 0)]
+TAG SIZE DISAMBIGUATION: [(('04|004|Lille', 0.9998731232818778), 340), (('04|007|Kort', 0.9998731232818778), 58), (('04|013|Lav', 0.9998731232818778), 140), (('04|046|Mindre grad', 0.9998731232818778), 106)]
+
+----------------------------------------------
+TARGET INFO: (254, 'i')
+TARGET ALL TAGS: [('03|002|Beliggenhed, sted', 0.9998887116518901), ('03|003|Tilstedeværelse', 0.9998887116518901), ('06|004|Klokkeslæt, dato', 0.9999668654738237), ('19|008|Tøj, påklædning', 0.9999712660191943), ('13|004|Matematik', 0.9999715456407922)]
+TARGET DUPLICATE TAGS: [('03|002|Beliggenhed, sted', 0.9998887116518901), ('03|003|Tilstedeværelse', 0.9998887116518901)]
+TAGS CONTEXT: ['04|033|Tal', '19|010|Pynt og smykker', '06|026|Ny', '20|043|Markedsføring', '03|002|Beliggenhed, sted']
+TOP LEVEL TAG COUNTS: [(('03|002|Beliggenhed, sted', 0.9998887116518901), 1), (('03|003|Tilstedeværelse', 0.9998887116518901), 1)]
+SUB LEVEL TAGS COUNTS: [(('03|002|Beliggenhed, sted', 0.9998887116518901), 1), (('03|003|Tilstedeværelse', 0.9998887116518901), 0)]
+
+----------------------------------------------
+TARGET INFO: (256, 'amerikanske')
+TARGET ALL TAGS: [('12|008|Sprog', 1.0), ('18|003|Verdens lande og hovedstæder', 1.0)]
+TARGET DUPLICATE TAGS: [('12|008|Sprog', 1.0), ('18|003|Verdens lande og hovedstæder', 1.0)]
+TAGS CONTEXT: ['19|010|Pynt og smykker', '06|026|Ny', '20|043|Markedsføring', '03|002|Beliggenhed, sted', '11|011|Måle, regne']
+TOP LEVEL TAG COUNTS: [(('12|008|Sprog', 1.0), 0), (('18|003|Verdens lande og hovedstæder', 1.0), 0)]
+SUB LEVEL TAGS COUNTS: [(('12|008|Sprog', 1.0), 0), (('18|003|Verdens lande og hovedstæder', 1.0), 0)]
+TAG SIZE DISAMBIGUATION: [(('12|008|Sprog', 1.0), 1262), (('18|003|Verdens lande og hovedstæder', 1.0), 2598)]
+
+----------------------------------------------
+TARGET INFO: (261, 'i')
+TARGET ALL TAGS: [('03|002|Beliggenhed, sted', 0.9998887116518901), ('03|003|Tilstedeværelse', 0.9998887116518901), ('06|004|Klokkeslæt, dato', 0.9999005898336537), ('19|008|Tøj, påklædning', 0.9999856332160046), ('13|004|Matematik', 1.0)]
+TARGET DUPLICATE TAGS: [('03|002|Beliggenhed, sted', 0.9998887116518901), ('03|003|Tilstedeværelse', 0.9998887116518901)]
+TAGS CONTEXT: ['06|026|Ny', '20|043|Markedsføring', '03|002|Beliggenhed, sted', '11|011|Måle, regne', '06|004|Klokkeslæt, dato', '12|011|Betegnelse, ord', '05|038|Voldsom', '12|006|Nyhed']
+TOP LEVEL TAG COUNTS: [(('03|002|Beliggenhed, sted', 0.9998887116518901), 1), (('03|003|Tilstedeværelse', 0.9998887116518901), 1)]
+SUB LEVEL TAGS COUNTS: [(('03|002|Beliggenhed, sted', 0.9998887116518901), 1), (('03|003|Tilstedeværelse', 0.9998887116518901), 0)]
+
+----------------------------------------------
+TARGET INFO: (269, 'I')
+TARGET ALL TAGS: [('06|004|Klokkeslæt, dato', 0.999933728751781), ('03|002|Beliggenhed, sted', 0.9999629066360028), ('03|003|Tilstedeværelse', 0.9999629066360028), ('19|008|Tøj, påklædning', 0.9999856332160046), ('13|004|Matematik', 1.0)]
+TARGET DUPLICATE TAGS: [('03|002|Beliggenhed, sted', 0.9999629066360028), ('03|003|Tilstedeværelse', 0.9999629066360028)]
+TAGS CONTEXT: ['06|004|Klokkeslæt, dato', '12|011|Betegnelse, ord', '05|038|Voldsom', '12|006|Nyhed', '05|018|Ligne', '17|025|Fridag, mærkedag', '04|031|Forene, samle']
+TOP LEVEL TAG COUNTS: [(('03|002|Beliggenhed, sted', 0.9999629066360028), 0), (('03|003|Tilstedeværelse', 0.9999629066360028), 0)]
+SUB LEVEL TAGS COUNTS: [(('03|002|Beliggenhed, sted', 0.9999629066360028), 0), (('03|003|Tilstedeværelse', 0.9999629066360028), 0)]
+TAG SIZE DISAMBIGUATION: [(('03|002|Beliggenhed, sted', 0.9999629066360028), 569), (('03|003|Tilstedeværelse', 0.9999629066360028), 77)]
+
+----------------------------------------------
+TARGET INFO: (271, 'besøgte')
+TARGET ALL TAGS: [('17|026|Fornøjelser og fritidsaktiviteter', 0.9999740663900415), ('17|027|Selskabelighed, fest', 0.9999740663900415)]
+TARGET DUPLICATE TAGS: [('17|026|Fornøjelser og fritidsaktiviteter', 0.9999740663900415), ('17|027|Selskabelighed, fest', 0.9999740663900415)]
+TAGS CONTEXT: ['05|038|Voldsom', '12|006|Nyhed', '05|018|Ligne', '06|004|Klokkeslæt, dato', '17|025|Fridag, mærkedag', '04|031|Forene, samle']
+TOP LEVEL TAG COUNTS: [(('17|026|Fornøjelser og fritidsaktiviteter', 0.9999740663900415), 1), (('17|027|Selskabelighed, fest', 0.9999740663900415), 1)]
+SUB LEVEL TAGS COUNTS: [(('17|026|Fornøjelser og fritidsaktiviteter', 0.9999740663900415), 0), (('17|027|Selskabelighed, fest', 0.9999740663900415), 0)]
+TAG SIZE DISAMBIGUATION: [(('17|026|Fornøjelser og fritidsaktiviteter', 0.9999740663900415), 3085), (('17|027|Selskabelighed, fest', 0.9999740663900415), 1812)]
+
+----------------------------------------------
+TARGET INFO: (273, 'også')
+TARGET ALL TAGS: [('04|031|Forene, samle', 0.9999577113375904), ('10|029|Forundret', 1.0), ('12|015|Tale', 1.0), ('12|037|Indvende, protestere', 1.0)]
+TARGET DUPLICATE TAGS: [('10|029|Forundret', 1.0), ('12|015|Tale', 1.0), ('12|037|Indvende, protestere', 1.0)]
+TAGS CONTEXT: ['05|018|Ligne', '06|004|Klokkeslæt, dato', '17|025|Fridag, mærkedag']
+TOP LEVEL TAG COUNTS: [(('10|029|Forundret', 1.0), 0), (('12|015|Tale', 1.0), 0), (('12|037|Indvende, protestere', 1.0), 0)]
+SUB LEVEL TAGS COUNTS: [(('10|029|Forundret', 1.0), 0), (('12|015|Tale', 1.0), 0), (('12|037|Indvende, protestere', 1.0), 0)]
+TAG SIZE DISAMBIGUATION: [(('10|029|Forundret', 1.0), 161), (('12|015|Tale', 1.0), 443), (('12|037|Indvende, protestere', 1.0), 203)]
+
+----------------------------------------------
+TARGET INFO: (281, 'har')
+TARGET ALL TAGS: [('20|008|Besidde, eje', 0.9999715472600011), ('12|011|Betegnelse, ord', 0.9999764150943397), ('02|037|Sygdom', 1.0), ('04|042|Tilhørende', 1.0), ('06|004|Klokkeslæt, dato', 1.0)]
+TARGET DUPLICATE TAGS: [('02|037|Sygdom', 1.0), ('04|042|Tilhørende', 1.0), ('06|004|Klokkeslæt, dato', 1.0)]
+TAGS CONTEXT: ['11|011|Måle, regne', '18|020|Krig', '03|025|Foran', '18|017|Protest, oprør']
+TOP LEVEL TAG COUNTS: [(('02|037|Sygdom', 1.0), 0), (('04|042|Tilhørende', 1.0), 0), (('06|004|Klokkeslæt, dato', 1.0), 0)]
+SUB LEVEL TAGS COUNTS: [(('02|037|Sygdom', 1.0), 0), (('04|042|Tilhørende', 1.0), 0), (('06|004|Klokkeslæt, dato', 1.0), 0)]
+TAG SIZE DISAMBIGUATION: [(('02|037|Sygdom', 1.0), 4802), (('04|042|Tilhørende', 1.0), 287), (('06|004|Klokkeslæt, dato', 1.0), 470)]
+
+----------------------------------------------
+TARGET INFO: (282, 'været')
+TARGET ALL TAGS: [('11|011|Måle, regne', 0.9999725628995528), ('08|001|Opholdssted, beboet sted', 0.9999749260317938), ('12|011|Betegnelse, ord', 0.9999764150943397), ('12|012|Betydning', 0.9999764150943397), ('07|001|Synlig', 1.0)]
+TARGET DUPLICATE TAGS: [('12|011|Betegnelse, ord', 0.9999764150943397), ('12|012|Betydning', 0.9999764150943397)]
+TAGS CONTEXT: ['20|008|Besidde, eje', '18|020|Krig', '03|025|Foran', '18|017|Protest, oprør']
+TOP LEVEL TAG COUNTS: [(('12|011|Betegnelse, ord', 0.9999764150943397), 0), (('12|012|Betydning', 0.9999764150943397), 0)]
+SUB LEVEL TAGS COUNTS: [(('12|011|Betegnelse, ord', 0.9999764150943397), 0), (('12|012|Betydning', 0.9999764150943397), 0)]
+TAG SIZE DISAMBIGUATION: [(('12|011|Betegnelse, ord', 0.9999764150943397), 1110), (('12|012|Betydning', 0.9999764150943397), 476)]
+
+----------------------------------------------
+TARGET INFO: (294, 'er')
+TARGET ALL TAGS: [('08|001|Opholdssted, beboet sted', 0.9999247743229689), ('11|011|Måle, regne', 0.9999725628995528), ('12|011|Betegnelse, ord', 0.9999764150943397), ('12|012|Betydning', 0.9999764150943397), ('07|001|Synlig', 1.0)]
+TARGET DUPLICATE TAGS: [('12|011|Betegnelse, ord', 0.9999764150943397), ('12|012|Betydning', 0.9999764150943397)]
+TAGS CONTEXT: ['18|017|Protest, oprør', '12|037|Indvende, protestere', '08|023|Styre mod, retning', '08|034|Mødes, støde sammen', '13|004|Matematik', '06|004|Klokkeslæt, dato']
+TOP LEVEL TAG COUNTS: [(('12|011|Betegnelse, ord', 0.9999764150943397), 1), (('12|012|Betydning', 0.9999764150943397), 1)]
+SUB LEVEL TAGS COUNTS: [(('12|011|Betegnelse, ord', 0.9999764150943397), 0), (('12|012|Betydning', 0.9999764150943397), 0)]
+TAG SIZE DISAMBIGUATION: [(('12|011|Betegnelse, ord', 0.9999764150943397), 1110), (('12|012|Betydning', 0.9999764150943397), 476)]
+
+----------------------------------------------
+TARGET INFO: (303, 'grund')
+TARGET ALL TAGS: [('04|015|Lavvandet', 0.9999154155212518), ('03|015|Understøtte', 0.9999629052600342), ('01|016|Jordstykke', 1.0), ('11|015|Grundsætning, princip', 1.0), ('12|035|Argumentere, bevise', 1.0), ('14|005|Tegning, maleri', 1.0)]
+TARGET DUPLICATE TAGS: [('01|016|Jordstykke', 1.0), ('11|015|Grundsætning, princip', 1.0), ('12|035|Argumentere, bevise', 1.0), ('14|005|Tegning, maleri', 1.0)]
+TAGS CONTEXT: ['06|004|Klokkeslæt, dato', '05|042|Oprindelse', '20|005|Arbejdsløshed', '09|067|Middel', '05|042|Oprindelse', '03|003|Tilstedeværelse', '04|045|Højere grad']
+TOP LEVEL TAG COUNTS: [(('01|016|Jordstykke', 1.0), 0), (('11|015|Grundsætning, princip', 1.0), 0), (('12|035|Argumentere, bevise', 1.0), 0), (('14|005|Tegning, maleri', 1.0), 0)]
+SUB LEVEL TAGS COUNTS: [(('01|016|Jordstykke', 1.0), 0), (('11|015|Grundsætning, princip', 1.0), 0), (('12|035|Argumentere, bevise', 1.0), 0), (('14|005|Tegning, maleri', 1.0), 0)]
+TAG SIZE DISAMBIGUATION: [(('01|016|Jordstykke', 1.0), 689), (('11|015|Grundsætning, princip', 1.0), 511), (('12|035|Argumentere, bevise', 1.0), 638), (('14|005|Tegning, maleri', 1.0), 1146)]
+
+----------------------------------------------
+TARGET INFO: (313, 'økonomien')
+TARGET ALL TAGS: [('20|034|Privatøkonomi, forbrug', 0.9999715468552162), ('20|045|Overskud', 0.9999715468552162), ('18|002|Stat, nation', 0.999972257670754), ('13|019|Samfundsvidenskab', 1.0)]
+TARGET DUPLICATE TAGS: [('20|034|Privatøkonomi, forbrug', 0.9999715468552162), ('20|045|Overskud', 0.9999715468552162)]
+TAGS CONTEXT: ['04|045|Højere grad', '09|067|Middel', '19|002|Byggeri', '03|034|Række']
+TOP LEVEL TAG COUNTS: [(('20|034|Privatøkonomi, forbrug', 0.9999715468552162), 0), (('20|045|Overskud', 0.9999715468552162), 0)]
+SUB LEVEL TAGS COUNTS: [(('20|034|Privatøkonomi, forbrug', 0.9999715468552162), 0), (('20|045|Overskud', 0.9999715468552162), 0)]
+TAG SIZE DISAMBIGUATION: [(('20|034|Privatøkonomi, forbrug', 0.9999715468552162), 1138), (('20|045|Overskud', 0.9999715468552162), 685)]
+
+----------------------------------------------
+TARGET INFO: (317, 'går')
+TARGET ALL TAGS: [('20|004|Fratrædelse', 0.9999715468552162), ('20|026|Salg, værdi', 0.9999715468552162), ('08|017|Flyvemaskine', 1.0), ('14|010|Film og biograf', 1.0), ('17|026|Fornøjelser og fritidsaktiviteter', 1.0)]
+TARGET DUPLICATE TAGS: [('20|004|Fratrædelse', 0.9999715468552162), ('20|026|Salg, værdi', 0.9999715468552162)]
+TAGS CONTEXT: ['09|067|Middel', '19|002|Byggeri', '03|034|Række', '18|009|Valghandling', '03|025|Foran']
+TOP LEVEL TAG COUNTS: [(('20|004|Fratrædelse', 0.9999715468552162), 0), (('20|026|Salg, værdi', 0.9999715468552162), 0)]
+SUB LEVEL TAGS COUNTS: [(('20|004|Fratrædelse', 0.9999715468552162), 0), (('20|026|Salg, værdi', 0.9999715468552162), 0)]
+TAG SIZE DISAMBIGUATION: [(('20|004|Fratrædelse', 0.9999715468552162), 301), (('20|026|Salg, værdi', 0.9999715468552162), 2260)]
+
+----------------------------------------------
+TARGET INFO: (317, 'går')
+TARGET ALL TAGS: [('20|004|Fratrædelse', 0.9999715468552162), ('20|026|Salg, værdi', 0.9999715468552162), ('08|017|Flyvemaskine', 1.0), ('14|010|Film og biograf', 1.0), ('17|026|Fornøjelser og fritidsaktiviteter', 1.0)]
+TARGET DUPLICATE TAGS: [('08|017|Flyvemaskine', 1.0), ('14|010|Film og biograf', 1.0), ('17|026|Fornøjelser og fritidsaktiviteter', 1.0)]
+TAGS CONTEXT: ['11|013|Begrundelse', '08|023|Styre mod, retning', '21|025|Politi', '04|028|Tilføje', '08|035|Sprede']
+TOP LEVEL TAG COUNTS: [(('08|017|Flyvemaskine', 1.0), 2), (('14|010|Film og biograf', 1.0), 0), (('17|026|Fornøjelser og fritidsaktiviteter', 1.0), 0)]
+SUB LEVEL TAGS COUNTS: [(('08|017|Flyvemaskine', 1.0), 0), (('14|010|Film og biograf', 1.0), 0), (('17|026|Fornøjelser og fritidsaktiviteter', 1.0), 0)]
+TAG SIZE DISAMBIGUATION: [(('08|017|Flyvemaskine', 1.0), 1588), (('14|010|Film og biograf', 1.0), 1635), (('17|026|Fornøjelser og fritidsaktiviteter', 1.0), 3085)]
+
+----------------------------------------------
+TARGET INFO: (320, 'blive')
+TARGET ALL TAGS: [('11|011|Måle, regne', 1.0), ('12|011|Betegnelse, ord', 1.0)]
+TARGET DUPLICATE TAGS: [('11|011|Måle, regne', 1.0), ('12|011|Betegnelse, ord', 1.0)]
+TAGS CONTEXT: ['03|034|Række', '18|009|Valghandling', '03|025|Foran', '09|067|Middel']
+TOP LEVEL TAG COUNTS: [(('11|011|Måle, regne', 1.0), 0), (('12|011|Betegnelse, ord', 1.0), 0)]
+SUB LEVEL TAGS COUNTS: [(('11|011|Måle, regne', 1.0), 0), (('12|011|Betegnelse, ord', 1.0), 0)]
+TAG SIZE DISAMBIGUATION: [(('11|011|Måle, regne', 1.0), 2159), (('12|011|Betegnelse, ord', 1.0), 1110)]
+
+----------------------------------------------
+TARGET INFO: (340, 'ved')
+TARGET ALL TAGS: [('03|002|Beliggenhed, sted', 0.9999629066360028), ('03|007|Nær', 0.9999629066360028)]
+TARGET DUPLICATE TAGS: [('03|002|Beliggenhed, sted', 0.9999629066360028), ('03|007|Nær', 0.9999629066360028)]
+TAGS CONTEXT: ['12|002|Fortælle', '04|042|Tilhørende', '18|009|Valghandling']
+TOP LEVEL TAG COUNTS: [(('03|002|Beliggenhed, sted', 0.9999629066360028), 0), (('03|007|Nær', 0.9999629066360028), 0)]
+SUB LEVEL TAGS COUNTS: [(('03|002|Beliggenhed, sted', 0.9999629066360028), 0), (('03|007|Nær', 0.9999629066360028), 0)]
+TAG SIZE DISAMBIGUATION: [(('03|002|Beliggenhed, sted', 0.9999629066360028), 569), (('03|007|Nær', 0.9999629066360028), 106)]
+
+----------------------------------------------
+TARGET INFO: (343, 'i')
+TARGET ALL TAGS: [('03|002|Beliggenhed, sted', 0.9999258050155809), ('03|003|Tilstedeværelse', 0.9999258050155809), ('06|004|Klokkeslæt, dato', 0.9999668632778845), ('13|004|Matematik', 0.9999715440213989), ('19|008|Tøj, påklædning', 0.9999856328031838)]
+TARGET DUPLICATE TAGS: [('03|002|Beliggenhed, sted', 0.9999258050155809), ('03|003|Tilstedeværelse', 0.9999258050155809)]
+TAGS CONTEXT: ['04|042|Tilhørende', '18|009|Valghandling']
+TOP LEVEL TAG COUNTS: [(('03|002|Beliggenhed, sted', 0.9999258050155809), 0), (('03|003|Tilstedeværelse', 0.9999258050155809), 0)]
+SUB LEVEL TAGS COUNTS: [(('03|002|Beliggenhed, sted', 0.9999258050155809), 0), (('03|003|Tilstedeværelse', 0.9999258050155809), 0)]
+TAG SIZE DISAMBIGUATION: [(('03|002|Beliggenhed, sted', 0.9999258050155809), 569), (('03|003|Tilstedeværelse', 0.9999258050155809), 77)]
