@@ -1,9 +1,23 @@
-cff-version: 1.0
-message: "If you use this software, please cite it as below."
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: DDB Tagger
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
 authors:
-  - family-names: Kristensen-McLachlan
-    given-names: Ross Deans
-    orcid: https://orcid.org/0000-0001-8714-1911
-title: "DDB Tagger"
-version: 1.0
-date-released: 2022-05-01
+  - given-names: 'Ross Deans '
+    family-names: Kristensen-McLachlan
+    email: rdkm@cc.au.dk
+    affiliation: Center for Humanities Computing
+    orcid: 'https://orcid.org/0000-0001-8714-1911'
+  - given-names: Nicole
+    family-names: Dwenger
+    affiliation: Center for Humanities Computing
+  - given-names: Sanni
+    family-names: Nimb
+    affiliation: Det Danske Sprog- og Litteraturselskab
+repository-code: >-
+  https://github.com/centre-for-humanities-computing/DDB_Tagger
